@@ -2600,6 +2600,11 @@ video {
     box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.5) !important;
     padding: 25px !important;
 }
+.bg-\[\#f1f1\] {
+    --tw-bg-opacity: 1;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.3) !important;
+}
+
 .bg-\[\#f3f4f3\] {
     --tw-bg-opacity: 1;
     background-color: #271033;
@@ -2717,6 +2722,9 @@ video {
 .bg-\[url\(\'\/images\/breadcrumb-bg\.png\'\)\] {
     background-image: url(/images/breadcrumb-bg.png)
 }
+.bg-\[url\(\'\/images\/contact-banner-bg\.png\'\)\] {
+    background-image: url(/images/contact-banner.png)
+}
 
 .bg-\[url\(\'\/images\/contact-bg\.jpg\'\)\] {
     background-image: url(/images/contact-bg.jpg)
@@ -2796,6 +2804,9 @@ video {
 
 .bg-\[url\(\/images\/about-bg\.jpg\)\] {
     background-image: url(/images/about-bg.jpg)
+}
+.bg-\[url\(\/images\/contact-bottom-bg\.jpg\)\] {
+    background-image: url(/images/contact-bottom.jpg)
 }
 
 .bg-\[url\(\/images\/about-images-bg\.png\)\] {
@@ -3042,6 +3053,10 @@ video {
 .py-28 {
     padding-top: 7rem;
     padding-bottom: 7rem
+}
+.py-20 {
+    padding-top: 4rem;
+    padding-bottom: 4rem
 }
 
 .py-3 {
@@ -4231,7 +4246,7 @@ body {
     border-radius: 9999px;
     border-width: 1px;
     --tw-border-opacity: 1;
-    border-color: rgb(12 89 219 / var(--tw-border-opacity));
+    border-color: rgb(255 255 255 / var(--tw-border-opacity));
     --tw-bg-opacity: 1;
     background-color: #84189e;
     padding-left: 2.25rem;
@@ -6082,7 +6097,7 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active:before {
 
 .hover\:border-PrimaryColor-0:hover {
     --tw-border-opacity: 1;
-    border-color: rgb(12 89 219 / var(--tw-border-opacity))
+    border-color: rgb(255 255 255 / var(--tw-border-opacity))
 }
 
 .hover\:border-SecondaryColor-0:hover {

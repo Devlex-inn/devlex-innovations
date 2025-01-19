@@ -1150,7 +1150,7 @@ const About = () => {
                         </div>
                     </div>
                 </div> */}
-                <section className="py-28">
+                <section className="py-20">
                     <div className="Container">
                         <div className="text-center">
                             <h5 className="font-Rajdhani text-lg font-semibold #9C5EEE">
@@ -1162,7 +1162,7 @@ const About = () => {
                         </div>
                         <div className="mt-[46px]">
                             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7">
-                                <div>
+                                <div className="bg-[#f1f1]">
                                     <div className="group p-5 transition-all duration-500 bg-white rounded-md">
                                         <div className="relative rounded-md overflow-hidden before:absolute before:top-0 before:left-1/2 before:w-0 before:h-full before:bg-PrimaryColor-0 before:transition-all before:duration-500 group-hover:before:w-full group-hover:before:left-0 before:z-10 group-hover:before:opacity-0">
                                             <img
@@ -1231,7 +1231,7 @@ const About = () => {
                                         </div>
                                     </div>
                                 </div>
-                                <div>
+                                <div className="bg-[#f1f1]">
                                     <div className="group p-5 transition-all duration-500 bg-white rounded-md">
                                         <div className="relative rounded-md overflow-hidden before:absolute before:top-0 before:left-1/2 before:w-0 before:h-full before:bg-PrimaryColor-0 before:transition-all before:duration-500 group-hover:before:w-full group-hover:before:left-0 before:z-10 group-hover:before:opacity-0">
                                             <img
@@ -1300,7 +1300,7 @@ const About = () => {
                                         </div>
                                     </div>
                                 </div>
-                                <div>
+                                <div className="bg-[#f1f1]">
                                     <div className="group p-5 transition-all duration-500 bg-white rounded-md">
                                         <div className="relative rounded-md overflow-hidden before:absolute before:top-0 before:left-1/2 before:w-0 before:h-full before:bg-PrimaryColor-0 before:transition-all before:duration-500 group-hover:before:w-full group-hover:before:left-0 before:z-10 group-hover:before:opacity-0">
                                             <img
