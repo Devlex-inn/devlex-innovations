@@ -2,7 +2,7 @@ const Contact = () => {
     return (
         <>
             <div>
-                <div className="bg-[url('/images/breadcrumb-bg.png')] bg-no-repeat bg-cover bg-center flex items-center justify-start h-[400px] sm:h-[500px] pt-20">
+                <div className="bg-[url('/images/contact-banner-bg.png')] bg-no-repeat bg-cover bg-center flex items-center justify-start h-[400px] sm:h-[500px] pt-20">
                     <div className="Container">
                         <h1 className="font-Rajdhani font-bold text-4xl sm:text-[44px] md:text-[55px] text-white capitalize">
                             Contact Us
@@ -55,7 +55,7 @@ const Contact = () => {
                         </div>
                     </div>
                 </div>
-                <section className="py-28 relative bg-[url(/images/about-bg.jpg)] z-10 ">
+                {/* <section className="py-28 relative bg-[url(/images/about-bg.jpg)] z-10 ">
                     <div className="Container">
                         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-7 gap-y-10">
                             <div>
@@ -137,7 +137,98 @@ const Contact = () => {
                             </div>
                         </div>
                     </div>
-                </section>
+                </section> */}
+
+                <section className="py-[50px] relative bg-[url(/images/contact-bottom-bg.jpg)] bg-cover bg-no-repeat bg-center">
+          <div className="Container">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7 relative z-10">
+              <div>
+                <div className="group flex items-center gap-4 sm:gap-6 bg-white p-4 sm:p-6 lg:p-4 xl:p-6 border border-PrimaryColor-0 rounded overflow-hidden relative z-10 before:absolute before:top-0 before:right-0 before:-z-10 before:w-0 before:h-full before:bg-PrimaryColor-0 before:transition-all before:duration-500 hover:before:left-0 hover:before:w-full">
+                  <div className="w-[60px] h-[60px] rounded-full flex justify-center items-center text-2xl border-2 border-PrimaryColor-0 #9C5EEE transition-all duration-500 group-hover:border-white group-hover:text-white">
+                    <svg
+                      stroke="currentColor"
+                      fill="currentColor"
+                      strokeWidth={0}
+                      viewBox="0 0 512 512"
+                      height="1em"
+                      width="1em"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path d="M497.39 361.8l-112-48a24 24 0 0 0-28 6.9l-49.6 60.6A370.66 370.66 0 0 1 130.6 204.11l60.6-49.6a23.94 23.94 0 0 0 6.9-28l-48-112A24.16 24.16 0 0 0 122.6.61l-104 24A24 24 0 0 0 0 48c0 256.5 207.9 464 464 464a24 24 0 0 0 23.4-18.6l24-104a24.29 24.29 0 0 0-14.01-27.6z"></path>
+                    </svg>
+                  </div>
+                  <div className="flex-1">
+                    <h6 className="font-Rajdhani font-semibold text-base text-HeadingColor-0 transition-all duration-500 group-hover:text-white">
+                      Call Us Anytime
+                    </h6>
+                    <h4 className="font-Rajdhani text-PrimaryColor-0 font-semibold text-xl sm:text-[20px] lg:text-xl xl:text-[20px] 2xl:text-[22px] #9C5EEE transition-all duration-500 group-hover:text-white mt-[2px]">
+                      +123 (4567) 890
+                    </h4>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div className="group flex items-center gap-4 sm:gap-6 bg-white p-4 sm:p-6 lg:p-4 xl:p-6 border border-PrimaryColor-0 rounded overflow-hidden relative z-10 before:absolute before:top-0 before:right-0 before:-z-10 before:w-0 before:h-full before:bg-PrimaryColor-0 before:transition-all before:duration-500 hover:before:left-0 hover:before:w-full">
+                  <div className="w-[60px] h-[60px] rounded-full flex justify-center items-center text-2xl border-2 border-PrimaryColor-0 #9C5EEE transition-all duration-500 group-hover:border-white group-hover:text-white">
+                    <svg
+                      stroke="currentColor"
+                      fill="none"
+                      strokeWidth={2}
+                      viewBox="0 0 24 24"
+                      aria-hidden="true"
+                      height="1em"
+                      width="1em"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+                      ></path>
+                    </svg>
+                  </div>
+                  <div className="flex-1">
+                    <h6 className="font-Rajdhani font-semibold text-base text-HeadingColor-0 transition-all duration-500 group-hover:text-white">
+                      Send E-Mail
+                    </h6>
+                    <h4 className="font-Rajdhani text-PrimaryColor-0 font-semibold text-xl sm:text-[20px] lg:text-xl xl:text-[22px] 2xl:text-[22px] #9C5EEE transition-all duration-500 group-hover:text-white mt-[2px]">
+                      info@gmail.com
+                    </h4>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div className="group flex items-center gap-4 sm:gap-6 bg-white p-4 sm:p-6 lg:p-4 xl:p-6 border border-PrimaryColor-0 rounded overflow-hidden relative z-10 before:absolute before:top-0 before:right-0 before:-z-10 before:w-0 before:h-full before:bg-PrimaryColor-0 before:transition-all before:duration-500 hover:before:left-0 hover:before:w-full">
+                  <div className="w-[60px] h-[60px] rounded-full flex justify-center items-center text-2xl border-2 border-PrimaryColor-0 #9C5EEE transition-all duration-500 group-hover:border-white group-hover:text-white">
+                    <svg
+                      stroke="currentColor"
+                      fill="none"
+                      strokeWidth={2}
+                      viewBox="0 0 24 24"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      height="1em"
+                      width="1em"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <circle cx={12} cy={12} r={10} />
+                      <polyline points="12 6 12 12 16 14" />
+                    </svg>
+                  </div>
+                  <div className="flex-1">
+                    <h6 className="font-Rajdhani font-semibold text-base text-HeadingColor-0 transition-all duration-500 group-hover:text-white">
+                      Opening Hours
+                    </h6>
+                    <h4 className="font-Rajdhani text-PrimaryColor-0 font-semibold text-xl sm:text-[20px] lg:text-xl xl:text-[22px] 2xl:text-[22px] #9C5EEE transition-all duration-500 group-hover:text-white mt-[2px]">
+                      Mon - Fri (8.00 - 5.00
+                    </h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+                
                 <div className="Container py-28 bg-BodyBg-0 border-t-4 border-PrimaryColor-0">
                     <div className="grid grid-cols-2 lg:grid-cols-3 lg:items-center gap-10 lg:gap-0">
                         <div className="col-span-2 lg:col-span-1 rounded-md overflow-hidden inline-block">
@@ -278,7 +369,7 @@ const Contact = () => {
                                 <div className="inline-block mt-3">
                                     <button
                                         type="submit"
-                                        className="primary-btn2 !bg-SecondaryColor-0 hover:!border-PrimaryColor-0 !border-SecondaryColor-0 before:!bg-PrimaryColor-0"
+                                        className="primary-btn2 !bg-SecondaryColor-0 hover:border-PrimaryColor-0 !border-SecondaryColor-0 before:!bg-PrimaryColor-0"
                                     >
                                         Submit Message
                                     </button>
@@ -290,9 +381,9 @@ const Contact = () => {
                 <section>
                     <div className="relative">
                         <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d867283.0267128727!2d34.232606549050644!3d31.8841932044305!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x151cf2d28866bdd9%3A0xee17a001d166f686!2sPalestine!5e0!3m2!1sen!2sbd!4v1715597594739!5m2!1sen!2sbd"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4305.506624872687!2d77.37034480672621!3d28.586832389927196!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce500436cc523%3A0x45095a1da1716dd1!2sSector%2052%20metro%20station%20Noida!5e0!3m2!1sen!2sin!4v1737283356332!5m2!1sen!2sin"
                             width="100%"
-                            height={552}
+                            height={400}
                             loading="lazy"
                             referrerPolicy="no-referrer-when-downgrade"
                             className="rounded-lg w-full"
