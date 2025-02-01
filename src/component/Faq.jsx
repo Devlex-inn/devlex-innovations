@@ -2,13 +2,13 @@ const Faq = () => {
     return (
         <>
             <div>
-                <div className="bg-[url('/images/breadcrumb-bg.png')] bg-no-repeat bg-cover bg-center flex items-center justify-start h-[400px] sm:h-[500px] pt-20">
+                <div className="bg-[url('/images/faq-bg.png')] bg-no-repeat bg-cover bg-center flex items-center justify-start h-[400px] sm:h-[300px] pt-5">
                     <div className="Container">
                         <h1 className="font-Rajdhani font-bold text-4xl sm:text-[44px] md:text-[55px] text-white capitalize">
                             FAQ
                         </h1>
                         <div className="border-2 rounded border-BorderColor-0 mt-8 sm:mt-5 inline-block px-8 py-2">
-                            <ul className="flex flex-col sm:flex-row gap-2 sm:gap-4 sm:items-center justify-start">
+                            <ul className="flex sm:flex-row gap-2 sm:gap-4 sm:items-center justify-start">
                                 <li>
                                     <a href="/">
                                         <button className="font-Rajdhani font-medium text-lg text-white flex items-center gap-2 transition-all duration-500 hover:text-PrimaryColor-0">
@@ -58,7 +58,7 @@ const Faq = () => {
                 <section className="relative overflow-hidden py-28 bg-BodyBg-0">
                     <div className="Container">
                         <div className="grid grid-cols-1 gap-10 lg:grid-cols-2 items-center">
-                            <div className="relative">
+                            <div className="relative faq-section">
                                 <h5 className="font-Rajdhani text-lg font-semibold text-PrimaryColor-0">
                                     IT Support For Business
                                 </h5>
@@ -321,7 +321,7 @@ const Faq = () => {
                         </div>
                     </div>
                 </section>
-                <section className="relative bg-BodyBg-0 pt-28 z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-[80%] before:-z-10 before:bg-[url('/images/subscribe-bg.jpg')] before:bg-cover before:bg-no-repeat before:bg-center">
+                {/* <section className="relative bg-BodyBg-0 pt-28 z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-[80%] before:-z-10 before:bg-[url('/images/subscribe-bg.jpg')] before:bg-cover before:bg-no-repeat before:bg-center">
                     <div className="Container">
                         <div className="grid grid-cols-1 lg:grid-cols-2 lg:items-center">
                             <div>
@@ -398,8 +398,8 @@ const Faq = () => {
                             </div>
                         </section>
                     </div>
-                </section>
-                <div className="bg-[url('/images/brand-bg.jpg')] pt-[120px] pb-28 mt-[120px]">
+                </section> */}
+                {/* <div className="bg-[url('/images/brand-bg.jpg')] pt-[120px] pb-28 mt-[120px]">
                     <div className="Container relative z-10">
                         <div className="swiper swiper-initialized swiper-horizontal">
                             <div className="swiper-wrapper">
@@ -484,7 +484,7 @@ const Faq = () => {
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> */}
             </div>
         </>
     )

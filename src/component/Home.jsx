@@ -38,7 +38,7 @@ const Home = () => {
                 <div className="flex flex-col sm:flex-row gap-5">
                   <a href="/contact">
                     <button className="primary-btn">
-                      Let's Talk
+                      Lets Talk
                       <svg
                         stroke="currentColor"
                         fill="currentColor"

@@ -2,13 +2,13 @@ const Whychoose = () => {
     return (
         <>
             <div>
-                <div className="bg-[url('/images/breadcrumb-bg.png')] bg-no-repeat bg-cover bg-center flex items-center justify-start h-[400px] sm:h-[500px] pt-20">
+                <div className="bg-[url('/images/chooseUs-bg.png')] bg-no-repeat bg-cover bg-center flex items-center justify-start h-[400px] sm:h-[300px] pt-5">
                     <div className="Container">
                         <h1 className="font-Rajdhani font-bold text-4xl sm:text-[44px] md:text-[55px] text-white capitalize">
                             Why Choose Us
                         </h1>
                         <div className="border-2 rounded border-BorderColor-0 mt-8 sm:mt-5 inline-block px-8 py-2">
-                            <ul className="flex flex-col sm:flex-row gap-2 sm:gap-4 sm:items-center justify-start">
+                            <ul className="flex sm:flex-row gap-2 sm:gap-4 sm:items-center justify-start">
                                 <li>
                                     <a href="/">
                                         <button className="font-Rajdhani font-medium text-lg text-white flex items-center gap-2 transition-all duration-500 hover:text-PrimaryColor-0">
@@ -55,9 +55,9 @@ const Whychoose = () => {
                         </div>
                     </div>
                 </div>
-                <section className="pt-28 pb-[120px] p relative z-10 bg-[url(/images/choose-us-bg.jpg)]">
+                <section className="pt-28 pb-[120px] p relative z-10  bg-[url(/images/choose-us-bg.jpg)]">
                     <div className="Container">
-                        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 2xl:gap-24 lg:items-center mb-[100px]">
+                        <div className="grid  grid-cols-1 lg:grid-cols-2 gap-10 2xl:gap-24 lg:items-center mb-[100px]">
                             <div>
                                 <h5 className="font-Rajdhani text-lg font-semibold text-PrimaryColor-0">
                                     IT Support For Business
@@ -138,7 +138,7 @@ const Whychoose = () => {
                                 <img src="/images/choose-us-thumb.png" draggable="false" />
                             </div>
                         </div>
-                        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-[30px] pt-[100px] border-t border-PrimaryColor-0">
+                        <div className="grid custom-border grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-[30px] pt-[100px] border-t border-PrimaryColor-0">
                             <div>
                                 <div className="relative z-10 text-center">
                                     <div>
