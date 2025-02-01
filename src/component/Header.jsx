@@ -248,96 +248,105 @@ const Header = () => {
 
                                                 <div className="px-5 group hover:bg-PrimaryColor-0">
                                                     <li className="hover:ml-3 duration-300">
-                                                        <Link className="py-2 block" to={"/servicedetails"}>
+                                                        <Link className="py-2 block" to={"/web-development"}>
                                                             Web Development
                                                         </Link>
                                                     </li>
+                                                </div>
+                                                <div className="px-5 group hover:bg-PrimaryColor-0">
                                                     <li className="hover:ml-3 duration-300">
-                                                        <Link className="py-2 block" to={"/servicedetails"}>
+                                                        <Link className="py-2 block" to={"/UIUX-design"}>
                                                             UI/UX Design
                                                         </Link>
                                                     </li>
+                                                </div>
+                                                <div className="px-5 group hover:bg-PrimaryColor-0">
                                                     <li className="hover:ml-3 duration-300">
-                                                        <Link className="py-2 block" to={"/servicedetails"}>
+                                                        <Link className="py-2 block" to={"/app-development"}>
                                                             App Development
                                                         </Link>
                                                     </li>
+                                                </div>
+                                                <div className="px-5 group hover:bg-PrimaryColor-0">
                                                     <li className="hover:ml-3 duration-300">
-                                                        <Link className="py-2 block" to={"/servicedetails"}>
+                                                        <Link className="py-2 block" to={"/digital-marketing"}>
                                                             Digital Marketing
                                                         </Link>
                                                     </li>
+                                                </div>
+                                                <div className="px-5 group hover:bg-PrimaryColor-0">
                                                     <li className="hover:ml-3 duration-300">
-                                                        <Link className="py-2 block" to={"/servicedetails"}>
+                                                        <Link className="py-2 block" to={"/video-editing"}>
                                                             Video Editing
                                                         </Link>
                                                     </li>
-                                                </div>
-                                            </ul>
+                                               
                                         </div>
-                                    </li>
-                                    <li className="relative group">
-                                        <Link
-                                            aria-current="page"
-                                            className="text-HeadingColor-0 text-left hover:text-PrimaryColor-0 lg:border-b-0 px-3 lg:px-2 xl:px-3 w-full block transition-all duration-300 group relative active font-bold"
-                                            href="/"
-                                        >
-                                            <span className="flex items-center">
-                                                Pages
-                                                <svg
-                                                    stroke="currentColor"
-                                                    fill="currentColor"
-                                                    strokeWidth="0"
-                                                    viewBox="0 0 24 24"
-                                                    className="ml-1"
-                                                    height="1em"
-                                                    width="1em"
-                                                    xmlns="http://www.w3.org/2000/svg"
-                                                >
-                                                    <path d="M16.293 9.293 12 13.586 7.707 9.293l-1.414 1.414L12 16.414l5.707-5.707z" />
-                                                </svg>
-                                            </span>
-                                        </Link>
+                                </ul>
+                            </div>
+                        </li>
+                        <li className="relative group">
+                            <Link
+                                aria-current="page"
+                                className="text-HeadingColor-0 text-left hover:text-PrimaryColor-0 lg:border-b-0 px-3 lg:px-2 xl:px-3 w-full block transition-all duration-300 group relative active font-bold"
+                                href="/"
+                            >
+                                <span className="flex items-center">
+                                    Pages
+                                    <svg
+                                        stroke="currentColor"
+                                        fill="currentColor"
+                                        strokeWidth="0"
+                                        viewBox="0 0 24 24"
+                                        className="ml-1"
+                                        height="1em"
+                                        width="1em"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                        <path d="M16.293 9.293 12 13.586 7.707 9.293l-1.414 1.414L12 16.414l5.707-5.707z" />
+                                    </svg>
+                                </span>
+                            </Link>
 
-                                        <div className="absolute pt-5 lg:pt-8 z-20 hidden group-hover:block">
-                                            <ul className="shadow-lg rounded-sm text-white w-[240px] text-left transition-all duration-500 text-sm sm:text-base py-4 bg-SecondaryColor-0">
-                                                <div className="px-5 group hover:bg-PrimaryColor-0">
-                                                    <li className="hover:ml-3 duration-300">
-                                                        <Link className="py-2 block" to={"/whychoose"}>Why Choose Us</Link>
-                                                    </li>
-                                                </div>
-                                                <div className="px-5 group hover:bg-PrimaryColor-0">
-                                                    <li className="hover:ml-3 duration-300">
-                                                        <a className="py-2 block" href="/mission_inner">Our Mission</a>
-                                                    </li>
-                                                </div>
-                                                <div className="px-5 group hover:bg-PrimaryColor-0">
-                                                    <li className="hover:ml-3 duration-300">
-                                                        <a className="py-2 block" href="/project">Projects</a>
-                                                    </li>
-                                                </div>
-                                                <div className="px-5 group hover:bg-PrimaryColor-0">
-                                                    <li className="hover:ml-3 duration-300">
-                                                        <Link className="py-2 block" to={"/faq"}>FAQ</Link>
-                                                    </li>
-                                                </div>
-                                                {/* <div className="px-5 group hover:bg-PrimaryColor-0">
+                            <div className="absolute pt-5 lg:pt-8 z-20 hidden group-hover:block">
+                                <ul className="shadow-lg rounded-sm text-white w-[240px] text-left transition-all duration-500 text-sm sm:text-base py-4 bg-SecondaryColor-0">
+                                    <div className="px-5 group hover:bg-PrimaryColor-0">
+                                        <li className="hover:ml-3 duration-300">
+                                            <Link className="py-2 block" to={"/whychoose"}>Why Choose Us</Link>
+                                        </li>
+                                    </div>
+                                    <div className="px-5 group hover:bg-PrimaryColor-0">
+                                        <li className="hover:ml-3 duration-300">
+                                            <a className="py-2 block" href="/mission_inner">Our Mission</a>
+                                        </li>
+                                    </div>
+                                    <div className="px-5 group hover:bg-PrimaryColor-0">
+                                        <li className="hover:ml-3 duration-300">
+                                            <a className="py-2 block" href="/project">Projects</a>
+                                        </li>
+                                    </div>
+                                    <div className="px-5 group hover:bg-PrimaryColor-0">
+                                        <li className="hover:ml-3 duration-300">
+                                            <Link className="py-2 block" to={"/faq"}>FAQ</Link>
+                                        </li>
+                                    </div>
+                                    {/* <div className="px-5 group hover:bg-PrimaryColor-0">
                                                     <li className="hover:ml-3 duration-300">
                                                         <a className="py-2 block" href="/team_inner">Team Member</a>
                                                     </li>
                                                 </div> */}
-                                                {/* <div className="px-5 group hover:bg-PrimaryColor-0">
+                                    {/* <div className="px-5 group hover:bg-PrimaryColor-0">
                                                     <li className="hover:ml-3 duration-300">
                                                         <a className="py-2 block" href="/team_details">Team Details</a>
                                                     </li>
                                                 </div> */}
 
-                                                {/* <div className="px-5 group hover:bg-PrimaryColor-0">
+                                    {/* <div className="px-5 group hover:bg-PrimaryColor-0">
                                                     <li className="hover:ml-3 duration-300">
                                                         <a className="py-2 block" href="/project_details">Project Details</a>
                                                     </li>
                                                 </div> */}
-                                                {/* <div className="px-5 group hover:bg-PrimaryColor-0">
+                                    {/* <div className="px-5 group hover:bg-PrimaryColor-0">
                                                     <li className="hover:ml-3 duration-300">
                                                         <a className="py-2 block" href="/pricing_inner">Pricing Plan</a>
                                                     </li>
@@ -353,10 +362,10 @@ const Header = () => {
                                                     </li>
                                                 </div> */}
 
-                                            </ul>
-                                        </div>
-                                    </li>
-                                    {/* <li className="relative group">
+                                </ul>
+                            </div>
+                        </li>
+                        {/* <li className="relative group">
                                         <a
                                             aria-current="page"
                                             className='({isActive:i,isPending:o})=>o?"pending":i?"active":"" text-HeadingColor-0 text-left hover:text-PrimaryColor-0 lg:border-b-0 px-3 lg:px-2 xl:px-3 w-full block transition-all duration-300 group relative  active'
@@ -431,17 +440,17 @@ const Header = () => {
                                             </ul>
                                         </div>
                                     </li> */}
-                                    <li className="relative group">
-                                        <Link
-                                            className='({isActive:i,isPending:o})=>o?"pending":i?"active":"" text-HeadingColor-0 text-left lg:border-b-0 px-3 lg:px-2 xl:px-3 w-full block transition-all duration-300 font-bold'
-                                            to={"/contact"}
-                                        >
-                                            Contact
-                                        </Link>
-                                    </li>
-                                </ul>
-                                <div className="hidden lg:flex items-center">
-                                    {/* <button>
+                        <li className="relative group">
+                            <Link
+                                className='({isActive:i,isPending:o})=>o?"pending":i?"active":"" text-HeadingColor-0 text-left lg:border-b-0 px-3 lg:px-2 xl:px-3 w-full block transition-all duration-300 font-bold'
+                                to={"/contact"}
+                            >
+                                Contact
+                            </Link>
+                        </li>
+                    </ul>
+                    <div className="hidden lg:flex items-center">
+                        {/* <button>
                                         <svg
                                             stroke="currentColor"
                                             fill="currentColor"
@@ -455,14 +464,14 @@ const Header = () => {
                                             <path d="M456.69 421.39 362.6 327.3a173.81 173.81 0 0 0 34.84-104.58C397.44 126.38 319.06 48 222.72 48S48 126.38 48 222.72s78.38 174.72 174.72 174.72A173.81 173.81 0 0 0 327.3 362.6l94.09 94.09a25 25 0 0 0 35.3-35.3zM97.92 222.72a124.8 124.8 0 1 1 124.8 124.8 124.95 124.95 0 0 1-124.8-124.8z" />
                                         </svg>
                                     </button> */}
-                                    <a className="header-btn" href="/contact">
-                                        Get A Quote
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
+                        <a className="header-btn" href="/contact">
+                            Get A Quote
+                        </a>
                     </div>
-                </header>
+                </div>
+            </div>
+        </div >
+                </header >
             </nav >
 
         </>

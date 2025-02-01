@@ -1207,6 +1207,9 @@ video {
 .grid {
     display: grid
 }
+.custom-border{
+    border-top: 1px solid #84189e !important ;
+}
 
 .hidden {
     display: none
@@ -2722,6 +2725,29 @@ video {
 .bg-\[url\(\'\/images\/breadcrumb-bg\.png\'\)\] {
     background-image: url(/images/breadcrumb-bg.png)
 }
+.bg-\[url\(\'\/images\/web-development-bg\.png\'\)\] {
+    background-image: url(/images/web-development-bg.png)
+}
+.bg-\[url\(\'\/images\/app-development-bg\.png\'\)\] {
+    background-image: url(/images/app-development-bg.png)
+}
+.bg-\[url\(\'\/images\/designing-bg\.png\'\)\] {
+    background-image: url(/images/designing-bg.png)
+}
+.bg-\[url\(\'\/images\/digital-marketing-bg\.png\'\)\] {
+    background-image: url(/images/digital-marketing-bg.png)
+}
+.bg-\[url\(\'\/images\/video-editing-bg\.png\'\)\] {
+    background-image: url(/images/video-editing-bg.png)
+}
+
+.bg-\[url\(\'\/images\/chooseUs-bg\.png\'\)\] {
+    background-image: url(/images/chooseus.png)
+}
+.bg-\[url\(\'\/images\/faq-bg\.png\'\)\] {
+    background-image: url(/images/faq-bg.png)
+}
+
 .bg-\[url\(\'\/images\/contact-banner-bg\.png\'\)\] {
     background-image: url(/images/contact-banner.png)
 }
@@ -4012,7 +4038,17 @@ body {
         padding-left: 1rem;
         padding-right: 1rem
     }
+    .faq-section{
+        margin-top: -140px !important;
+    }
 }
+@media (max-width: 992px) {
+    
+    .faq-section{
+        margin-top: -70px !important;
+    }
+}
+
 
 @media (min-width: 1200px) {
     .Container {
@@ -4806,7 +4842,7 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active:before {
 
 .faq-button3[aria-expanded=true],
 .faq-button3:hover {
-    background: #0b59db;
+    background: #84189e;
     border-radius: 6px 6px 0 0
 }
 
@@ -4816,7 +4852,7 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active:before {
 }
 
 .faq-button2[aria-expanded=true] {
-    background: #0b59db;
+    background: #84189e;
     border-radius: 6px 6px 0 0
 }
 
@@ -6682,6 +6718,12 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active:before {
 
     .sm\:h-\[100px\] {
         height: 100px
+    }
+    .sm\:h-\[300px\] {
+        height: 300px
+    }
+    .sm\:h-\[400px\] {
+        height: 400px
     }
     .sm\:h-\[600px\] {
         height: 600px
@@ -9232,6 +9274,7 @@ button.swiper-pagination-bullet {
     opacity: 1
 }
 
+
 .content-slider-section {
     padding: 42px 0;
     background-size: cover;
@@ -9287,3 +9330,5 @@ button.swiper-pagination-bullet {
         transform: translate(calc(-100% - var(--gap)))
     }
 }
+
+
