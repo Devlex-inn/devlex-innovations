@@ -1,3 +1,47 @@
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation, Pagination, Autoplay } from "swiper/modules";
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+
+const testimonials1 = [
+    {
+        id: 1,
+        img: "/images/testi-4.jpg",
+        icon: "/images/testi-icon.png",
+        text: "Accelerate innovation with world-class tech teams Beyond more stoic this along goodness hey this this wow manatee",
+        name: "Mike Fermalin",
+        designation: "CEO, Harlond Inc",
+    },
+    {
+        id: 2,
+        img: "/images/testi-3.jpg",
+        icon: "/images/testi-icon.png",
+        text: "Accelerate innovation with world-class tech teams Beyond more stoic this along goodness hey this this wow manatee",
+        name: "Mike Holder",
+        designation: "CEO, Harlond Inc",
+    },
+    {
+        id: 3,
+        img: "/images/testi-3.jpg",
+        icon: "/images/testi-icon.png",
+        text: "Accelerate innovation with world-class tech teams Beyond more stoic this along goodness hey this this wow manatee",
+        name: "Mike Holder",
+        designation: "CEO, Harlond Inc",
+    },
+];
+// const testimonials = [
+//     {
+//         text: "Completely extend leveraged customer service rather than performance-based imperatives. Magnetic relationships rather than leveraged e-markets. Rapidiously transform timely niches technology.",
+//         name: "Anjelina Watson",
+//         designation: "Web Developer",
+//     },
+//     {
+//         text: "Enthusiastically e-enable global e-markets for cooperative e-business. Authoritatively deliver highly efficient expertise.",
+//         name: "John Doe",
+//         designation: "Software Engineer",
+//     },
+// ];
 const About = () => {
     return (
         <>
@@ -482,9 +526,6 @@ const About = () => {
                 </section>
 
 
-
-
-
                 {/* <section className="pt-[86px] pb-28 bg-[url('/images/counter-bg.jpg')] bg-no-repeat bg-cover bg-center">
                     <div className="Container">
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-7 lg:gap-0 lg:grid-cols-4 items-center justify-center">
@@ -540,7 +581,8 @@ const About = () => {
                         </div>
                     </div>
                 </section> */}
-                <section className="testimonial py-28 bg-[url(/images/testi-bg.jpg)] bg-no-repeat bg-cover bg-center relative z-10 overflow-hidden">
+
+                {/* <section className="testimonial py-28 bg-[url(/images/testi-bg.jpg)] bg-no-repeat bg-cover bg-center relative z-10 overflow-hidden">
                     <div className="Container">
                         <div className="text-center">
                             <h5 className="font-Rajdhani text-lg font-semibold text-PrimaryColor-0">
@@ -551,6 +593,56 @@ const About = () => {
                                 About Our Services
                             </h1>
                         </div>
+                        <div className="mt-[46px] relative">
+                            <Swiper
+                                modules={[Navigation, Pagination, Autoplay]}
+                                spaceBetween={30}
+                                slidesPerView={1}
+                                navigation={{
+                                    nextEl: ".custom-next",
+                                    prevEl: ".custom-prev"
+                                }}
+                                pagination={{ clickable: true }}
+                                autoplay={{ delay: 3000 }}
+                                loop
+                            >
+                                {testimonials.map((testimonial, index) => (
+                                    <SwiperSlide key={index}>
+                                        <div className="pt-[80px] md:pt-[150px]">
+                                            <div className="relative text-center">
+                                                <p className="font-Nunito sm:text-xl sm:leading-9 text-HeadingColor-0 lg:w-[80%] xl:w-[78%] 2xl:w-[68%] m-auto">
+                                                    {testimonial.text}
+                                                </p>
+                                                <ul className="flex gap-[6px] items-center justify-center mb-7 mt-6">
+                                                    {[...Array(5)].map((_, i) => (
+                                                        <li key={i} className="text-[#ffb50a] text-xl">
+                                                            ⭐
+                                                        </li>
+                                                    ))}
+                                                </ul>
+                                                <h5 className="font-Rajdhani font-semibold inline-block text-HeadingColor-0 text-2xl pt-7 mb-1 relative">
+                                                    {testimonial.name}
+                                                </h5>
+                                                <p className="font-Nunito text-TextColor2-0">{testimonial.designation}</p>
+                                            </div>
+                                        </div>
+                                    </SwiperSlide>
+                                ))}
+                            </Swiper>
+                            <div className="flex justify-between w-full absolute px-0 top-[80%] md:top-[60%] lg:top-1/2">
+                                <button className="custom-prev w-[60px] h-[60px] rounded-full overflow-hidden relative bg-white flex items-center text-2xl text-PrimaryColor-0 hover:text-white justify-center transition-all duration-500 z-10 after:absolute after:top-[0] after:left-[0] after:bg-PrimaryColor-0 after:w-full after:h-full after:scale-0 after:-z-10 after:transition-all after:duration-500 hover:after:scale-100">
+                                    <svg stroke="currentColor" fill="currentColor" strokeWidth={0} viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M10.78 19.03a.75.75 0 0 1-1.06 0l-6.25-6.25a.75.75 0 0 1 0-1.06l6.25-6.25a.749.749 0 0 1 1.275.326.749.749 0 0 1-.215.734L5.81 11.5h14.44a.75.75 0 0 1 0 1.5H5.81l4.97 4.97a.75.75 0 0 1 0 1.06Z" />
+                                    </svg>
+                                </button>
+                                <button className="custom-next w-[60px] h-[60px] rounded-full overflow-hidden relative bg-white flex items-center text-2xl text-PrimaryColor-0 hover:text-white justify-center transition-all duration-500 z-10 after:absolute after:top-[0] after:left-[0] after:bg-PrimaryColor-0 after:w-full after:h-full after:scale-0 after:-z-10 after:transition-all after:duration-500 hover:after:scale-100">
+                                    <svg stroke="currentColor" fill="currentColor" strokeWidth={0} viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.749.749 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z" />
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+
                         <div className="mt-[46px]">
                             <div className="swiper swiper-initialized swiper-horizontal">
                                 <div className="swiper-wrapper">
@@ -1063,7 +1155,7 @@ const About = () => {
                             </div>
                         </div>
                     </div>
-                </section>
+                </section> */}
                 {/* <div className="bg-[url('/images/brand-bg.jpg')] bg-no-repeat bg-center bg-cover pt-[120px] pb-28">
                     <div className="Container relative z-10">
                         <div className="swiper swiper-initialized swiper-horizontal swiper-backface-hidden">
@@ -1150,6 +1242,9 @@ const About = () => {
                         </div>
                     </div>
                 </div> */}
+
+
+
                 <section className="py-20">
                     <div className="Container">
                         <div className="text-center">
@@ -1373,7 +1468,8 @@ const About = () => {
                         </div>
                     </div>
                 </section>
-                <section className="bg-[url('/images/team-bg.jpg')] bg-no-repeat bg-cover bg-center py-28 relative">
+
+                {/* <section className="bg-[url('/images/team-bg.jpg')] bg-no-repeat bg-cover bg-center py-28 relative">
                     <div className="Container">
                         <div className="grid grid-cols-1 gap-8 lg:gap-0 lg:grid-cols-2 lg:items-center">
                             <div>
@@ -1951,7 +2047,188 @@ const About = () => {
                             </div>
                         </div>
                     </div>
+                </section> */}
+
+                <section className="section techwix-testimonial-section-02 techwix-testimonial-section-03 section-padding-02 bg-gray-50 py-10">
+                    <div className="Container mx-auto px-4">
+                        <div className="section-title text-center mb-10">
+                            <h3 className="sub-title text-blue-500 uppercase text-sm font-semibold">Testimonial</h3>
+                            <h2 className="title text-3xl font-bold">20k+ satisfied clients worldwide</h2>
+                        </div>
+
+                        <Swiper
+                            modules={[Navigation, Pagination, Autoplay]}
+                            spaceBetween={30}
+                            slidesPerView={2}
+                            navigation={false}
+                            pagination={{ clickable: true }}
+                            autoplay={{ delay: 3000 }}
+                            loop={true}
+                            breakpoints={{
+                                640: { slidesPerView: 1 },
+                                768: { slidesPerView: 1.5 },
+                                1024: { slidesPerView: 2 },
+                            }}
+                            className="swiper-container testimonial-02-active"
+                        >
+                            {testimonials1.map((testimonial) => (
+                                <SwiperSlide key={testimonial.id} className="swiper-slide">
+                                    <div className="single-testimonial-02">
+                                        <div className="testimonial-thumb">
+                                            <img src={testimonial.img} alt={testimonial.name} />
+                                        </div>
+
+                                        <div className="testimonial-content">
+                                            <img src={testimonial.icon} alt="testimonial icon" />
+                                            <p>{testimonial.text}</p>
+                                            <span className="name">{testimonial.name}</span>
+                                            <span className="designation "> / {testimonial.designation}</span>
+                                        </div>
+                                    </div>
+                                </SwiperSlide>
+                            ))}
+                        </Swiper>
+
+                    </div>
                 </section>
+
+                <div className="section techwix-skill-section-02 techwix-skill-section-03 section-padding">
+                    <div className="Container mx-auto px-4">
+                        <div className="skill-wrap">
+                            <div className="flex flex-wrap">
+                                <div className="lg:w-1/2 w-full">
+                                    {/* Skill Left Start */}
+                                    <div className="skill-left">
+                                        <div className="section-title">
+                                            <h2 className="title">Preparing for your success, we provide truly prominent IT solutions</h2>
+                                        </div>
+                                        <div className="about-list">
+                                            <ul>
+                                                <li className="flex items-center">
+                                                    <span className="about-icon text-green-500 mr-2">
+                                                        <i className="fas fa-check"></i>
+                                                    </span>
+                                                    <span className="about-text">
+                                                        We always focus on technical excellence
+                                                    </span>
+                                                </li>
+                                                <li className="flex items-center">
+                                                    <span className="about-icon text-green-500 mr-2">
+                                                        <i className="fas fa-check"></i>
+                                                    </span>
+                                                    <span className="about-text">
+                                                        Wherever you’re going, we bring ideas and excitement
+                                                    </span>
+                                                </li>
+                                                <li className="flex items-center mb-4">
+                                                    <span className="about-icon text-green-500 mr-2">
+                                                        <i className="fas fa-check"></i>
+                                                    </span>
+                                                    <span className="about-text">
+                                                        We’re consultants, guides, and partners for brands
+                                                    </span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        {/* About Author Info Wrap Start */}
+                                        <div className="about-author-info-wrap mt-6">
+                                            <div className="about-author mb-4">
+                                                <img
+                                                    src="assets/images/sign.png"
+                                                    alt=""
+                                                    className="w-16 h-16 rounded-full"
+                                                />
+                                                <h3 className="name text-xl font-semibold">Alen Morno sin</h3>
+                                                <span className="designation text-gray-600">
+                                                    CEO, Techmax
+                                                </span>
+                                            </div>
+                                            <div className="about-info">
+                                                <p className="text-gray-600">Call to ask any question</p>
+                                                <h3 className="number text-2xl font-bold">0123-456-7890</h3>
+                                            </div>
+                                        </div>
+                                        {/* About Author Info Wrap End */}
+                                    </div>
+                                    {/* Skill Left End */}
+                                </div>
+                                <div className="lg:w-1/2 w-full">
+                                    {/* Skill Right Start */}
+                                    <div className="skill-right">
+                                        <p className="text-lg text-gray-700 mb-6">
+                                            Accelerate innovation with world-class tech teams. We’ll match
+                                            you to an entire remote team of incredible freelance talent for
+                                            all your software development needs. Building cloud,
+                                            infrastructure, network, etc. We put a strong focus on the needs
+                                            of your business to figure out solutions that best fit your
+                                            demand and nail it.
+                                        </p>
+                                        <div className="counter-bar">
+                                            {/* Skill Item Start */}
+                                            <div className="skill-item">
+                                                <span className="title">IT Managment</span>
+                                                <div className="skill-bar">
+                                                    <div className="bar-inner">
+                                                        <div
+                                                            className="bar progress-line color-1"
+                                                            data-width={80}
+                                                            style={{ width: "80%" }}
+                                                        >
+                                                            <span className="skill-percent">
+                                                                <span className="counter">80</span>%
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            {/* Skill Item End */}
+                                            {/* Skill Item Start */}
+                                            <div className="skill-item">
+                                                <span className="title">Data Security</span>
+                                                <div className="skill-bar">
+                                                    <div className="bar-inner">
+                                                        <div
+                                                            className="bar progress-line color-1"
+                                                            data-width={95}
+                                                            style={{ width: "95%" }}
+                                                        >
+                                                            <span className="skill-percent">
+                                                                <span className="counter">95</span>%
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            {/* Skill Item End */}
+                                            {/* Skill Item Start */}
+                                            <div className="skill-item">
+                                                <span className="title">Information Technology</span>
+                                                <div className="skill-bar">
+                                                    <div className="bar-inner">
+                                                        <div
+                                                            className="bar progress-line color-1"
+                                                            data-width={80}
+                                                            style={{ width: "80%" }}
+                                                        >
+                                                            <span className="skill-percent">
+                                                                <span className="counter">80</span>%
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            {/* Skill Item End */}
+                                        </div>
+
+                                    </div>
+                                    {/* Skill Right End */}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
             </div>
 
         </>

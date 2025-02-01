@@ -1,3 +1,78 @@
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Navigation, Pagination, Autoplay } from 'swiper/modules';
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import CountUp from 'react-countup';
+const formatNumber = (num, suffix) => {
+  if (suffix === '%') {
+    return num + '%';
+  }
+  if (num >= 1000) {
+    return (num / 1000).toFixed(1).replace(/\.0$/, '') + 'K+';
+  }
+  return num + '+';
+};
+const testimonials = [
+  {
+    name: 'Founder & CEO',
+    role: 'Web Developer',
+    img: '/public/images/bussiness-man.png',
+    date: '20 July, 2024',
+    review:
+      'Their relentless attention to detail gave me peace of mind. I highly recommend their legal services; they are true advocates for clients.',
+  },
+  {
+    name: 'Anjelina Watson',
+    role: 'UI/UX Designer',
+    img: '/public/images/girl.png',
+    date: '20 July, 2024',
+    review:
+      'Their relentless attention to detail gave me peace of mind. I highly recommend their legal services; they are true advocates for clients.',
+  },
+  {
+    name: 'Al-Amin Islam',
+    role: 'IT Specialist',
+    img: '/images/profile.png',
+    date: '20 July, 2024',
+    review:
+      'Their relentless attention to detail gave me peace of mind. I highly recommend their legal services; they are true advocates for clients.',
+  },
+  {
+    name: 'Anjelina Watson',
+    role: 'Web Developer',
+    img: '/images/profile.png',
+    date: '20 July, 2024',
+    review:
+      'Their relentless attention to detail gave me peace of mind. I highly recommend their legal services; they are true advocates for clients.',
+  },
+];
+const projects = [
+  {
+    id: 1,
+    number: '04',
+    title: 'Business Growth with Toptech Agency',
+    img: 'images/portfolio-1.png',
+  },
+  {
+    id: 2,
+    number: '01',
+    title: 'Business Growth with Toptech Agency',
+    img: 'images/portfolio-2.png',
+  },
+  {
+    id: 3,
+    number: '03',
+    title: 'Business Growth with Toptech Agency',
+    img: 'images/portfolio-3.png',
+  },
+  {
+    id: 4,
+    number: '04',
+    title: 'Business Growth with Toptech Agency',
+    img: 'images/portfolio-2.png',
+  },
+];
 
 const Home = () => {
   return (
@@ -1184,233 +1259,54 @@ const Home = () => {
             </div>
           </div>
         </section> */}
-
         <section className="portfolio relative z-10 py-28 bg-SecondaryColor-0 before:absolute before:top-0 before:left-0 before:h-[70%] before:w-full before:bg-[url('/images/portfolio-bg.jpg')] before:-z-10 before:bg-center before:bg-cover before:bg-no-repeat -mb-[1px]">
-          <div className="Container">
+          <div className="container mx-auto px-4">
             <div className="text-center">
-              <h5 className="font-Rajdhani text-lg font-semibold #9C5EEE">
-                IT Support For Business
-              </h5>
+              <h5 className="font-Rajdhani text-lg font-semibold text-[#9C5EEE]">IT Support For Business</h5>
               <h1 className="font-Rajdhani font-bold text-xl leading-7 sm:text-[34px] sm:leading-[44px] md:text-[44px] md:leading-[54px] lg:text-[32px] lg:leading-[42px] xl:text-[36px] xl:leading-[46px] 2xl:text-[42px] 2xl:leading-[52px] text-HeadingColor-0 mt-[18px] mb-3">
-                Ensuring Your Success Trusted <br />
-                IT Services Source
+                Ensuring Your Success Trusted <br /> IT Services Source
               </h1>
             </div>
           </div>
-          <div className="mt-[60px] 2xl:mx-[100px]">
-            <div className="swiper swiper-initialized swiper-horizontal swiper-backface-hidden">
-              <div
-                className="swiper-wrapper"
-                style={{
-                  transitionDuration: "0ms",
-                  transitionDelay: "0ms",
-                  transform: "translate3d(-431px, 0px, 0px)"
-                }}
-              >
-                <div
-                  className="swiper-slide"
-                  style={{ width: 401, marginRight: 30 }}
-                  data-swiper-slide-index={3}
-                >
+          <div className="mt-[60px] px-4 md:px-10 lg:px-16 xl:px-24 2xl:mx-[100px]">
+
+            <Swiper
+              modules={[Navigation, Pagination, Autoplay]}
+              spaceBetween={30}
+              slidesPerView={1}
+              loop={true}
+              autoplay={{ delay: 3000 }}
+              pagination={false}
+              navigation={false}
+              breakpoints={{
+                640: { slidesPerView: 1 },
+                768: { slidesPerView: 2 },
+                1024: { slidesPerView: 3 },
+              }}
+              centeredSlides={true}
+            >
+              {projects.map((project) => (
+                <SwiperSlide key={project.id}>
                   <div className="pb-[90px]">
-                    <div>
-                      <div className="portfolio-box relative z-10 overflow-hidden group">
-                        <div className="portfolio-img rounded-lg relative overflow-hidden before:absolute before:bottom-0 before:left-0 before:w-full before:h-0 before:bg-PrimaryColor-0 before:transition-all before:duration-500 group-hover:before:h-full group-hover:before:top-0 before:z-10 group-hover:before:opacity-20">
-                          <img
-                            src="images/portfolio-1.png"
-                            draggable="false"
-                            className="w-full"
-                          />
-                        </div>
-                        <div className="portfolio-content relative z-10 py-3 xl:-mt-[70px] rounded-l-lg rounded-r-lg xl:rounded-l-none xl:rounded-r-md bg-white xl:w-10/12 2xl:w-9/12 border-l-[7px] pl-7 border-PrimaryColor-0 transition-all duration-500 group-hover:rounded-se-none">
-                          <div className="flex items-center gap-6 lg:gap-4 xl:gap-6">
-                            <h1 className="portfolio-icon font-Rajdhani font-bold text-5xl sm:text-[76px] xl:text-5xl 2xl:text-[76px] text-transparent transition-all duration-500 my-1">
-                              04
-                            </h1>
-                            <a href="/project_details">
-                              <button className="portfolio-title font-Rajdhani font-semibold text-xl lg:text-lg xl:text-[22px] 2xl:text-2xl text-HeadingColor-0 text-left transition-all duration-500 group-hover:#9C5EEE">
-                                Business Growth with Toptech Agency{" "}
-                              </button>
-                            </a>
-                          </div>
-                          <a
-                            className="portfolio-btn -rotate-90 xl:rotate-0 transition-all duration-500 absolute -top-0 opacity-0 right-0 xl:-right-[50px] group-hover:-top-[50px] group-hover:opacity-100"
-                            href="/project_details"
-                          >
-                            <button className="w-[50px] h-[50px] rounded-r-full rounded-t-full flex items-center justify-center text-white bg-PrimaryColor-0">
-                              <svg
-                                stroke="currentColor"
-                                fill="currentColor"
-                                strokeWidth={0}
-                                viewBox="0 0 448 512"
-                                height="1em"
-                                width="1em"
-                                xmlns="http://www.w3.org/2000/svg"
-                              >
-                                <path d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32V224H48c-17.7 0-32 14.3-32 32s14.3 32 32 32H192V432c0 17.7 14.3 32 32 32s32-14.3 32-32V288H400c17.7 0 32-14.3 32-32s-14.3-32-32-32H256V80z"></path>
-                              </svg>
+                    <div className="portfolio-box relative z-10 overflow-hidden group">
+                      <div className="portfolio-img rounded-lg relative overflow-hidden before:absolute before:bottom-0 before:left-0 before:w-full before:h-0 before:bg-PrimaryColor-0 before:transition-all before:duration-500 group-hover:before:h-full group-hover:before:top-0 before:z-10 group-hover:before:opacity-20">
+                        <img src={project.img} draggable="false" className="w-full" />
+                      </div>
+                      <div className="portfolio-content relative z-10 py-3 xl:-mt-[70px] rounded-l-lg rounded-r-lg xl:rounded-l-none xl:rounded-r-md bg-white xl:w-10/12 2xl:w-9/12 border-l-[7px] pl-7 border-PrimaryColor-0 transition-all duration-500 group-hover:rounded-se-none">
+                        <div className="flex items-center gap-6 lg:gap-4 xl:gap-6">
+                          <h1 className="portfolio-icon font-Rajdhani font-bold text-5xl sm:text-[76px] xl:text-5xl 2xl:text-[76px] text-transparent transition-all duration-500 my-1">{project.number}</h1>
+                          <a href="/project_details">
+                            <button className="portfolio-title font-Rajdhani font-semibold text-xl lg:text-lg xl:text-[22px] 2xl:text-2xl text-HeadingColor-0 text-left transition-all duration-500 group-hover:#9C5EEE">
+                              {project.title}
                             </button>
                           </a>
                         </div>
                       </div>
                     </div>
                   </div>
-                </div>
-                <div
-                  className="swiper-slide swiper-slide-prev"
-                  style={{ width: 401, marginRight: 30 }}
-                  data-swiper-slide-index={0}
-                >
-                  <div className="pb-[90px]">
-                    <div>
-                      <div className="portfolio-box relative z-10 overflow-hidden group">
-                        <div className="portfolio-img rounded-lg relative overflow-hidden before:absolute before:bottom-0 before:left-0 before:w-full before:h-0 before:bg-PrimaryColor-0 before:transition-all before:duration-500 group-hover:before:h-full group-hover:before:top-0 before:z-10 group-hover:before:opacity-20">
-                          <img
-                            src="images/portfolio-1.png"
-                            draggable="false"
-                            className="w-full"
-                          />
-                        </div>
-                        <div className="portfolio-content relative z-10 py-3 xl:-mt-[70px] rounded-l-lg rounded-r-lg xl:rounded-l-none xl:rounded-r-md bg-white xl:w-10/12 2xl:w-9/12 border-l-[7px] pl-7 border-PrimaryColor-0 transition-all duration-500 group-hover:rounded-se-none">
-                          <div className="flex items-center gap-6 lg:gap-4 xl:gap-6">
-                            <h1 className="portfolio-icon font-Rajdhani font-bold text-5xl sm:text-[76px] xl:text-5xl 2xl:text-[76px] text-transparent transition-all duration-500 my-1">
-                              01
-                            </h1>
-                            <a href="/project_details">
-                              <button className="portfolio-title font-Rajdhani font-semibold text-xl lg:text-lg xl:text-[22px] 2xl:text-2xl text-HeadingColor-0 text-left transition-all duration-500 group-hover:#9C5EEE">
-                                Business Growth with Toptech Agency{" "}
-                              </button>
-                            </a>
-                          </div>
-                          <a
-                            className="portfolio-btn -rotate-90 xl:rotate-0 transition-all duration-500 absolute -top-0 opacity-0 right-0 xl:-right-[50px] group-hover:-top-[50px] group-hover:opacity-100"
-                            href="/project_details"
-                          >
-                            <button className="w-[50px] h-[50px] rounded-r-full rounded-t-full flex items-center justify-center text-white bg-PrimaryColor-0">
-                              <svg
-                                stroke="currentColor"
-                                fill="currentColor"
-                                strokeWidth={0}
-                                viewBox="0 0 448 512"
-                                height="1em"
-                                width="1em"
-                                xmlns="http://www.w3.org/2000/svg"
-                              >
-                                <path d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32V224H48c-17.7 0-32 14.3-32 32s14.3 32 32 32H192V432c0 17.7 14.3 32 32 32s32-14.3 32-32V288H400c17.7 0 32-14.3 32-32s-14.3-32-32-32H256V80z"></path>
-                              </svg>
-                            </button>
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div
-                  className="swiper-slide swiper-slide-active"
-                  style={{ width: 401, marginRight: 30 }}
-                  data-swiper-slide-index={1}
-                >
-                  <div className="pb-[90px]">
-                    <div>
-                      <div className="portfolio-box relative z-10 overflow-hidden group">
-                        <div className="portfolio-img rounded-lg relative overflow-hidden before:absolute before:bottom-0 before:left-0 before:w-full before:h-0 before:bg-PrimaryColor-0 before:transition-all before:duration-500 group-hover:before:h-full group-hover:before:top-0 before:z-10 group-hover:before:opacity-20">
-                          <img
-                            src="images/portfolio-2.png"
-                            draggable="false"
-                            className="w-full"
-                          />
-                        </div>
-                        <div className="portfolio-content relative z-10 py-3 xl:-mt-[70px] rounded-l-lg rounded-r-lg xl:rounded-l-none xl:rounded-r-md bg-white xl:w-10/12 2xl:w-9/12 border-l-[7px] pl-7 border-PrimaryColor-0 transition-all duration-500 group-hover:rounded-se-none">
-                          <div className="flex items-center gap-6 lg:gap-4 xl:gap-6">
-                            <h1 className="portfolio-icon font-Rajdhani font-bold text-5xl sm:text-[76px] xl:text-5xl 2xl:text-[76px] text-transparent transition-all duration-500 my-1">
-                              02
-                            </h1>
-                            <a href="/project_details">
-                              <button className="portfolio-title font-Rajdhani font-semibold text-xl lg:text-lg xl:text-[22px] 2xl:text-2xl text-HeadingColor-0 text-left transition-all duration-500 group-hover:#9C5EEE">
-                                Business Growth with Toptech Agency{" "}
-                              </button>
-                            </a>
-                          </div>
-                          <a
-                            className="portfolio-btn -rotate-90 xl:rotate-0 transition-all duration-500 absolute -top-0 opacity-0 right-0 xl:-right-[50px] group-hover:-top-[50px] group-hover:opacity-100"
-                            href="/project_details"
-                          >
-                            <button className="w-[50px] h-[50px] rounded-r-full rounded-t-full flex items-center justify-center text-white bg-PrimaryColor-0">
-                              <svg
-                                stroke="currentColor"
-                                fill="currentColor"
-                                strokeWidth={0}
-                                viewBox="0 0 448 512"
-                                height="1em"
-                                width="1em"
-                                xmlns="http://www.w3.org/2000/svg"
-                              >
-                                <path d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32V224H48c-17.7 0-32 14.3-32 32s14.3 32 32 32H192V432c0 17.7 14.3 32 32 32s32-14.3 32-32V288H400c17.7 0 32-14.3 32-32s-14.3-32-32-32H256V80z"></path>
-                              </svg>
-                            </button>
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div
-                  className="swiper-slide swiper-slide-next"
-                  style={{ width: 401, marginRight: 30 }}
-                  data-swiper-slide-index={2}
-                >
-                  <div className="pb-[90px]">
-                    <div>
-                      <div className="portfolio-box relative z-10 overflow-hidden group">
-                        <div className="portfolio-img rounded-lg relative overflow-hidden before:absolute before:bottom-0 before:left-0 before:w-full before:h-0 before:bg-PrimaryColor-0 before:transition-all before:duration-500 group-hover:before:h-full group-hover:before:top-0 before:z-10 group-hover:before:opacity-20">
-                          <img
-                            src="images/portfolio-3.png"
-                            draggable="false"
-                            className="w-full"
-                          />
-                        </div>
-                        <div className="portfolio-content relative z-10 py-3 xl:-mt-[70px] rounded-l-lg rounded-r-lg xl:rounded-l-none xl:rounded-r-md bg-white xl:w-10/12 2xl:w-9/12 border-l-[7px] pl-7 border-PrimaryColor-0 transition-all duration-500 group-hover:rounded-se-none">
-                          <div className="flex items-center gap-6 lg:gap-4 xl:gap-6">
-                            <h1 className="portfolio-icon font-Rajdhani font-bold text-5xl sm:text-[76px] xl:text-5xl 2xl:text-[76px] text-transparent transition-all duration-500 my-1">
-                              03
-                            </h1>
-                            <a href="/project_details">
-                              <button className="portfolio-title font-Rajdhani font-semibold text-xl lg:text-lg xl:text-[22px] 2xl:text-2xl text-HeadingColor-0 text-left transition-all duration-500 group-hover:#9C5EEE">
-                                Business Growth with Toptech Agency{" "}
-                              </button>
-                            </a>
-                          </div>
-                          <a
-                            className="portfolio-btn -rotate-90 xl:rotate-0 transition-all duration-500 absolute -top-0 opacity-0 right-0 xl:-right-[50px] group-hover:-top-[50px] group-hover:opacity-100"
-                            href="/project_details"
-                          >
-                            <button className="w-[50px] h-[50px] rounded-r-full rounded-t-full flex items-center justify-center text-white bg-PrimaryColor-0">
-                              <svg
-                                stroke="currentColor"
-                                fill="currentColor"
-                                strokeWidth={0}
-                                viewBox="0 0 448 512"
-                                height="1em"
-                                width="1em"
-                                xmlns="http://www.w3.org/2000/svg"
-                              >
-                                <path d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32V224H48c-17.7 0-32 14.3-32 32s14.3 32 32 32H192V432c0 17.7 14.3 32 32 32s32-14.3 32-32V288H400c17.7 0 32-14.3 32-32s-14.3-32-32-32H256V80z"></path>
-                              </svg>
-                            </button>
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets swiper-pagination-horizontal">
-                <span className="swiper-pagination-bullet pagination-bullet" />
-                <span className="swiper-pagination-bullet pagination-bullet swiper-pagination-bullet-active" />
-                <span className="swiper-pagination-bullet pagination-bullet" />
-                <span className="swiper-pagination-bullet pagination-bullet" />
-              </div>
-            </div>
+                </SwiperSlide>
+              ))}
+            </Swiper>
           </div>
         </section>
         <section className="pb-10 relative bg-SecondaryColor-0 z-10 ">
@@ -2060,410 +1956,64 @@ const Home = () => {
               </h1>
             </div>
             <div className="mt-[30px]">
-              <div className="swiper swiper-initialized swiper-horizontal swiper-backface-hidden">
-                <div className="swiper-wrapper">
-                  <div
-                    className="swiper-slide swiper-slide-active"
-                    data-swiper-slide-index={0}
-                    style={{ width: "406.667px", marginRight: 30 }}
-                  >
+
+              <Swiper
+                modules={[Navigation, Pagination, Autoplay]}
+                spaceBetween={30}
+                slidesPerView={1}
+                loop={true}
+                autoplay={{ delay: 3000 }}
+                pagination={false}
+                navigation={false}
+                breakpoints={{
+                  640: { slidesPerView: 1 },
+                  768: { slidesPerView: 2 },
+                  1024: { slidesPerView: 3 },
+                }}
+                centeredSlides={true}
+              >
+                {testimonials.map((testimonial, index) => (
+                  <SwiperSlide key={index}>
                     <div className="pt-3">
                       <div className="px-4 sm:px-10 lg:px-5 xl:px-10 pt-8 pb-9 relative bg-[#f1f1f1] group rounded-md z-10 overflow-hidden before:absolute before:top-0 before:left-1/2 before:w-0 before:h-full before:bg-SecondaryColor-0 before:-z-10 before:rounded-md before:transition-all before:duration-500 hover:before:w-full hover:before:left-0 transition-all duration-500">
                         <div className="flex flex-col md:items-center md:flex-row gap-5 md:gap-4 xl:gap-5 pb-8 border-b border-BorderColor2-0">
                           <div>
-                            <img src="/public/images/bussiness-man.png" draggable="false" />
+                            <img src={testimonial.img} draggable="false" alt={testimonial.name} />
                           </div>
                           <div className="flex-1">
                             <h5 className="font-Rajdhani font-semibold text-HeadingColor-0 text-2xl transition-all duration-500 group-hover:text-white">
-                              Founder &amp; CEO
+                              {testimonial.name}
                             </h5>
                             <p className="font-Nunito text-TextColor2-0 transition-all duration-500 group-hover:text-white">
-                              Web Developer
+                              {testimonial.role}
                             </p>
                           </div>
                         </div>
                         <div className="flex items-center justify-between mt-7">
                           <ul className="flex items-center gap-1">
-                            <li className="text-white size-[18px] bg-PrimaryColor-0 flex justify-center items-center text-xs">
-                              <svg
-                                stroke="currentColor"
-                                fill="currentColor"
-                                strokeWidth={0}
-                                viewBox="0 0 512 512"
-                                height="1em"
-                                width="1em"
-                                xmlns="http://www.w3.org/2000/svg"
+                            {[...Array(5)].map((_, i) => (
+                              <li
+                                key={i}
+                                className="text-white size-[18px] bg-PrimaryColor-0 flex justify-center items-center text-xs"
                               >
-                                <path d="M394 480a16 16 0 0 1-9.39-3L256 383.76 127.39 477a16 16 0 0 1-24.55-18.08L153 310.35 23 221.2a16 16 0 0 1 9-29.2h160.38l48.4-148.95a16 16 0 0 1 30.44 0l48.4 149H480a16 16 0 0 1 9.05 29.2L359 310.35l50.13 148.53A16 16 0 0 1 394 480z" />
-                              </svg>
-                            </li>
-                            <li className="text-white size-[18px] bg-PrimaryColor-0 flex justify-center items-center text-xs">
-                              <svg
-                                stroke="currentColor"
-                                fill="currentColor"
-                                strokeWidth={0}
-                                viewBox="0 0 512 512"
-                                height="1em"
-                                width="1em"
-                                xmlns="http://www.w3.org/2000/svg"
-                              >
-                                <path d="M394 480a16 16 0 0 1-9.39-3L256 383.76 127.39 477a16 16 0 0 1-24.55-18.08L153 310.35 23 221.2a16 16 0 0 1 9-29.2h160.38l48.4-148.95a16 16 0 0 1 30.44 0l48.4 149H480a16 16 0 0 1 9.05 29.2L359 310.35l50.13 148.53A16 16 0 0 1 394 480z" />
-                              </svg>
-                            </li>
-                            <li className="text-white size-[18px] bg-PrimaryColor-0 flex justify-center items-center text-xs">
-                              <svg
-                                stroke="currentColor"
-                                fill="currentColor"
-                                strokeWidth={0}
-                                viewBox="0 0 512 512"
-                                height="1em"
-                                width="1em"
-                                xmlns="http://www.w3.org/2000/svg"
-                              >
-                                <path d="M394 480a16 16 0 0 1-9.39-3L256 383.76 127.39 477a16 16 0 0 1-24.55-18.08L153 310.35 23 221.2a16 16 0 0 1 9-29.2h160.38l48.4-148.95a16 16 0 0 1 30.44 0l48.4 149H480a16 16 0 0 1 9.05 29.2L359 310.35l50.13 148.53A16 16 0 0 1 394 480z" />
-                              </svg>
-                            </li>
-                            <li className="text-white size-[18px] bg-PrimaryColor-0 flex justify-center items-center text-xs">
-                              <svg
-                                stroke="currentColor"
-                                fill="currentColor"
-                                strokeWidth={0}
-                                viewBox="0 0 512 512"
-                                height="1em"
-                                width="1em"
-                                xmlns="http://www.w3.org/2000/svg"
-                              >
-                                <path d="M394 480a16 16 0 0 1-9.39-3L256 383.76 127.39 477a16 16 0 0 1-24.55-18.08L153 310.35 23 221.2a16 16 0 0 1 9-29.2h160.38l48.4-148.95a16 16 0 0 1 30.44 0l48.4 149H480a16 16 0 0 1 9.05 29.2L359 310.35l50.13 148.53A16 16 0 0 1 394 480z" />
-                              </svg>
-                            </li>
-                            <li className="text-white size-[18px] bg-PrimaryColor-0 flex justify-center items-center text-xs">
-                              <svg
-                                stroke="currentColor"
-                                fill="currentColor"
-                                strokeWidth={0}
-                                viewBox="0 0 512 512"
-                                height="1em"
-                                width="1em"
-                                xmlns="http://www.w3.org/2000/svg"
-                              >
-                                <path d="M394 480a16 16 0 0 1-9.39-3L256 383.76 127.39 477a16 16 0 0 1-24.55-18.08L153 310.35 23 221.2a16 16 0 0 1 9-29.2h160.38l48.4-148.95a16 16 0 0 1 30.44 0l48.4 149H480a16 16 0 0 1 9.05 29.2L359 310.35l50.13 148.53A16 16 0 0 1 394 480z" />
-                              </svg>
-                            </li>
+                                <svg stroke="currentColor" fill="currentColor" strokeWidth={0} viewBox="0 0 512 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                                  <path d="M394 480a16 16 0 0 1-9.39-3L256 383.76 127.39 477a16 16 0 0 1-24.55-18.08L153 310.35 23 221.2a16 16 0 0 1 9-29.2h160.38l48.4-148.95a16 16 0 0 1 30.44 0l48.4 149H480a16 16 0 0 1 9.05 29.2L359 310.35l50.13 148.53A16 16 0 0 1 394 480z" />
+                                </svg>
+                              </li>
+                            ))}
                           </ul>
                           <p className="font-Nunito text-[15px] text-TextColor2-0 transition-all duration-500 group-hover:text-white">
-                            20 July, 2024
+                            {testimonial.date}
                           </p>
                         </div>
                         <p className="font-Nunito text-[17px] text-TextColor2-0 transition-all duration-500 group-hover:text-white pt-8">
-                          Their relentless of attention to detail gave me peace of mind.
-                          I highly recommend their legal services; they are true
-                          advocates for clients.
+                          {testimonial.review}
                         </p>
                       </div>
                     </div>
-                  </div>
-                  <div
-                    className="swiper-slide swiper-slide-next"
-                    data-swiper-slide-index={1}
-                    style={{ width: "406.667px", marginRight: 30 }}
-                  >
-                    <div className="pt-3">
-                      <div className="px-4 sm:px-10 lg:px-5 xl:px-10 pt-8 pb-9 relative bg-[#f1f1f1] group rounded-md z-10 overflow-hidden before:absolute before:top-0 before:left-1/2 before:w-0 before:h-full before:bg-SecondaryColor-0 before:-z-10 before:rounded-md before:transition-all before:duration-500 hover:before:w-full hover:before:left-0 transition-all duration-500">
-                        <div className="flex flex-col md:items-center md:flex-row gap-5 md:gap-4 xl:gap-5 pb-8 border-b border-BorderColor2-0">
-                          <div>
-                            <img src="/public/images/girl.png" draggable="false" />
-                          </div>
-                          <div className="flex-1">
-                            <h5 className="font-Rajdhani font-semibold text-HeadingColor-0 text-2xl transition-all duration-500 group-hover:text-white">
-                              Anjelina Watson
-                            </h5>
-                            <p className="font-Nunito text-TextColor2-0 transition-all duration-500 group-hover:text-white">
-                              UI/UX Designer
-                            </p>
-                          </div>
-                        </div>
-                        <div className="flex items-center justify-between mt-7">
-                          <ul className="flex items-center gap-1">
-                            <li className="text-white size-[18px] bg-PrimaryColor-0 flex justify-center items-center text-xs">
-                              <svg
-                                stroke="currentColor"
-                                fill="currentColor"
-                                strokeWidth={0}
-                                viewBox="0 0 512 512"
-                                height="1em"
-                                width="1em"
-                                xmlns="http://www.w3.org/2000/svg"
-                              >
-                                <path d="M394 480a16 16 0 0 1-9.39-3L256 383.76 127.39 477a16 16 0 0 1-24.55-18.08L153 310.35 23 221.2a16 16 0 0 1 9-29.2h160.38l48.4-148.95a16 16 0 0 1 30.44 0l48.4 149H480a16 16 0 0 1 9.05 29.2L359 310.35l50.13 148.53A16 16 0 0 1 394 480z" />
-                              </svg>
-                            </li>
-                            <li className="text-white size-[18px] bg-PrimaryColor-0 flex justify-center items-center text-xs">
-                              <svg
-                                stroke="currentColor"
-                                fill="currentColor"
-                                strokeWidth={0}
-                                viewBox="0 0 512 512"
-                                height="1em"
-                                width="1em"
-                                xmlns="http://www.w3.org/2000/svg"
-                              >
-                                <path d="M394 480a16 16 0 0 1-9.39-3L256 383.76 127.39 477a16 16 0 0 1-24.55-18.08L153 310.35 23 221.2a16 16 0 0 1 9-29.2h160.38l48.4-148.95a16 16 0 0 1 30.44 0l48.4 149H480a16 16 0 0 1 9.05 29.2L359 310.35l50.13 148.53A16 16 0 0 1 394 480z" />
-                              </svg>
-                            </li>
-                            <li className="text-white size-[18px] bg-PrimaryColor-0 flex justify-center items-center text-xs">
-                              <svg
-                                stroke="currentColor"
-                                fill="currentColor"
-                                strokeWidth={0}
-                                viewBox="0 0 512 512"
-                                height="1em"
-                                width="1em"
-                                xmlns="http://www.w3.org/2000/svg"
-                              >
-                                <path d="M394 480a16 16 0 0 1-9.39-3L256 383.76 127.39 477a16 16 0 0 1-24.55-18.08L153 310.35 23 221.2a16 16 0 0 1 9-29.2h160.38l48.4-148.95a16 16 0 0 1 30.44 0l48.4 149H480a16 16 0 0 1 9.05 29.2L359 310.35l50.13 148.53A16 16 0 0 1 394 480z" />
-                              </svg>
-                            </li>
-                            <li className="text-white size-[18px] bg-PrimaryColor-0 flex justify-center items-center text-xs">
-                              <svg
-                                stroke="currentColor"
-                                fill="currentColor"
-                                strokeWidth={0}
-                                viewBox="0 0 512 512"
-                                height="1em"
-                                width="1em"
-                                xmlns="http://www.w3.org/2000/svg"
-                              >
-                                <path d="M394 480a16 16 0 0 1-9.39-3L256 383.76 127.39 477a16 16 0 0 1-24.55-18.08L153 310.35 23 221.2a16 16 0 0 1 9-29.2h160.38l48.4-148.95a16 16 0 0 1 30.44 0l48.4 149H480a16 16 0 0 1 9.05 29.2L359 310.35l50.13 148.53A16 16 0 0 1 394 480z" />
-                              </svg>
-                            </li>
-                            <li className="text-white size-[18px] bg-PrimaryColor-0 flex justify-center items-center text-xs">
-                              <svg
-                                stroke="currentColor"
-                                fill="currentColor"
-                                strokeWidth={0}
-                                viewBox="0 0 512 512"
-                                height="1em"
-                                width="1em"
-                                xmlns="http://www.w3.org/2000/svg"
-                              >
-                                <path d="M394 480a16 16 0 0 1-9.39-3L256 383.76 127.39 477a16 16 0 0 1-24.55-18.08L153 310.35 23 221.2a16 16 0 0 1 9-29.2h160.38l48.4-148.95a16 16 0 0 1 30.44 0l48.4 149H480a16 16 0 0 1 9.05 29.2L359 310.35l50.13 148.53A16 16 0 0 1 394 480z" />
-                              </svg>
-                            </li>
-                          </ul>
-                          <p className="font-Nunito text-[15px] text-TextColor2-0 transition-all duration-500 group-hover:text-white">
-                            20 July, 2024
-                          </p>
-                        </div>
-                        <p className="font-Nunito text-[17px] text-TextColor2-0 transition-all duration-500 group-hover:text-white pt-8">
-                          Their relentless of attention to detail gave me peace of mind.
-                          I highly recommend their legal services; they are true
-                          advocates for clients.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  <div
-                    className="swiper-slide"
-                    data-swiper-slide-index={2}
-                    style={{ width: "406.667px", marginRight: 30 }}
-                  >
-                    <div className="pt-3">
-                      <div className="px-4 sm:px-10 lg:px-5 xl:px-10 pt-8 pb-9 relative bg-[#f1f1f1] group rounded-md z-10 overflow-hidden before:absolute before:top-0 before:left-1/2 before:w-0 before:h-full before:bg-SecondaryColor-0 before:-z-10 before:rounded-md before:transition-all before:duration-500 hover:before:w-full hover:before:left-0 transition-all duration-500">
-                        <div className="flex flex-col md:items-center md:flex-row gap-5 md:gap-4 xl:gap-5 pb-8 border-b border-BorderColor2-0">
-                          <div>
-                            <img src="/public/images/profile.png" draggable="false" />
-                          </div>
-                          <div className="flex-1">
-                            <h5 className="font-Rajdhani font-semibold text-HeadingColor-0 text-2xl transition-all duration-500 group-hover:text-white">
-                              Al-Amin Islam
-                            </h5>
-                            <p className="font-Nunito text-TextColor2-0 transition-all duration-500 group-hover:text-white">
-                              IT Specialist
-                            </p>
-                          </div>
-                        </div>
-                        <div className="flex items-center justify-between mt-7">
-                          <ul className="flex items-center gap-1">
-                            <li className="text-white size-[18px] bg-PrimaryColor-0 flex justify-center items-center text-xs">
-                              <svg
-                                stroke="currentColor"
-                                fill="currentColor"
-                                strokeWidth={0}
-                                viewBox="0 0 512 512"
-                                height="1em"
-                                width="1em"
-                                xmlns="http://www.w3.org/2000/svg"
-                              >
-                                <path d="M394 480a16 16 0 0 1-9.39-3L256 383.76 127.39 477a16 16 0 0 1-24.55-18.08L153 310.35 23 221.2a16 16 0 0 1 9-29.2h160.38l48.4-148.95a16 16 0 0 1 30.44 0l48.4 149H480a16 16 0 0 1 9.05 29.2L359 310.35l50.13 148.53A16 16 0 0 1 394 480z" />
-                              </svg>
-                            </li>
-                            <li className="text-white size-[18px] bg-PrimaryColor-0 flex justify-center items-center text-xs">
-                              <svg
-                                stroke="currentColor"
-                                fill="currentColor"
-                                strokeWidth={0}
-                                viewBox="0 0 512 512"
-                                height="1em"
-                                width="1em"
-                                xmlns="http://www.w3.org/2000/svg"
-                              >
-                                <path d="M394 480a16 16 0 0 1-9.39-3L256 383.76 127.39 477a16 16 0 0 1-24.55-18.08L153 310.35 23 221.2a16 16 0 0 1 9-29.2h160.38l48.4-148.95a16 16 0 0 1 30.44 0l48.4 149H480a16 16 0 0 1 9.05 29.2L359 310.35l50.13 148.53A16 16 0 0 1 394 480z" />
-                              </svg>
-                            </li>
-                            <li className="text-white size-[18px] bg-PrimaryColor-0 flex justify-center items-center text-xs">
-                              <svg
-                                stroke="currentColor"
-                                fill="currentColor"
-                                strokeWidth={0}
-                                viewBox="0 0 512 512"
-                                height="1em"
-                                width="1em"
-                                xmlns="http://www.w3.org/2000/svg"
-                              >
-                                <path d="M394 480a16 16 0 0 1-9.39-3L256 383.76 127.39 477a16 16 0 0 1-24.55-18.08L153 310.35 23 221.2a16 16 0 0 1 9-29.2h160.38l48.4-148.95a16 16 0 0 1 30.44 0l48.4 149H480a16 16 0 0 1 9.05 29.2L359 310.35l50.13 148.53A16 16 0 0 1 394 480z" />
-                              </svg>
-                            </li>
-                            <li className="text-white size-[18px] bg-PrimaryColor-0 flex justify-center items-center text-xs">
-                              <svg
-                                stroke="currentColor"
-                                fill="currentColor"
-                                strokeWidth={0}
-                                viewBox="0 0 512 512"
-                                height="1em"
-                                width="1em"
-                                xmlns="http://www.w3.org/2000/svg"
-                              >
-                                <path d="M394 480a16 16 0 0 1-9.39-3L256 383.76 127.39 477a16 16 0 0 1-24.55-18.08L153 310.35 23 221.2a16 16 0 0 1 9-29.2h160.38l48.4-148.95a16 16 0 0 1 30.44 0l48.4 149H480a16 16 0 0 1 9.05 29.2L359 310.35l50.13 148.53A16 16 0 0 1 394 480z" />
-                              </svg>
-                            </li>
-                            <li className="text-white size-[18px] bg-PrimaryColor-0 flex justify-center items-center text-xs">
-                              <svg
-                                stroke="currentColor"
-                                fill="currentColor"
-                                strokeWidth={0}
-                                viewBox="0 0 512 512"
-                                height="1em"
-                                width="1em"
-                                xmlns="http://www.w3.org/2000/svg"
-                              >
-                                <path d="M394 480a16 16 0 0 1-9.39-3L256 383.76 127.39 477a16 16 0 0 1-24.55-18.08L153 310.35 23 221.2a16 16 0 0 1 9-29.2h160.38l48.4-148.95a16 16 0 0 1 30.44 0l48.4 149H480a16 16 0 0 1 9.05 29.2L359 310.35l50.13 148.53A16 16 0 0 1 394 480z" />
-                              </svg>
-                            </li>
-                          </ul>
-                          <p className="font-Nunito text-[15px] text-TextColor2-0 transition-all duration-500 group-hover:text-white">
-                            20 July, 2024
-                          </p>
-                        </div>
-                        <p className="font-Nunito text-[17px] text-TextColor2-0 transition-all duration-500 group-hover:text-white pt-8">
-                          Their relentless of attention to detail gave me peace of mind.
-                          I highly recommend their legal services; they are true
-                          advocates for clients.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  <div
-                    className="swiper-slide"
-                    data-swiper-slide-index={3}
-                    style={{ width: "406.667px", marginRight: 30 }}
-                  >
-                    <div className="pt-3">
-                      <div className="px-4 sm:px-10 lg:px-5 xl:px-10 pt-8 pb-9 relative bg-BodyBg-0 group rounded-md z-10 overflow-hidden before:absolute before:top-0 before:left-1/2 before:w-0 before:h-full before:bg-SecondaryColor-0 before:-z-10 before:rounded-md before:transition-all before:duration-500 hover:before:w-full hover:before:left-0 transition-all duration-500">
-                        <div className="flex flex-col md:items-center md:flex-row gap-5 md:gap-4 xl:gap-5 pb-8 border-b border-BorderColor2-0">
-                          <div>
-                            <img src="/images/testi2.png" draggable="false" />
-                          </div>
-                          <div className="flex-1">
-                            <h5 className="font-Rajdhani font-semibold text-HeadingColor-0 text-2xl transition-all duration-500 group-hover:text-white">
-                              Anjelina Watson
-                            </h5>
-                            <p className="font-Nunito text-TextColor2-0 transition-all duration-500 group-hover:text-white">
-                              Web Developer
-                            </p>
-                          </div>
-                        </div>
-                        <div className="flex items-center justify-between mt-7">
-                          <ul className="flex items-center gap-1">
-                            <li className="text-white size-[18px] bg-PrimaryColor-0 flex justify-center items-center text-xs">
-                              <svg
-                                stroke="currentColor"
-                                fill="currentColor"
-                                strokeWidth={0}
-                                viewBox="0 0 512 512"
-                                height="1em"
-                                width="1em"
-                                xmlns="http://www.w3.org/2000/svg"
-                              >
-                                <path d="M394 480a16 16 0 0 1-9.39-3L256 383.76 127.39 477a16 16 0 0 1-24.55-18.08L153 310.35 23 221.2a16 16 0 0 1 9-29.2h160.38l48.4-148.95a16 16 0 0 1 30.44 0l48.4 149H480a16 16 0 0 1 9.05 29.2L359 310.35l50.13 148.53A16 16 0 0 1 394 480z" />
-                              </svg>
-                            </li>
-                            <li className="text-white size-[18px] bg-PrimaryColor-0 flex justify-center items-center text-xs">
-                              <svg
-                                stroke="currentColor"
-                                fill="currentColor"
-                                strokeWidth={0}
-                                viewBox="0 0 512 512"
-                                height="1em"
-                                width="1em"
-                                xmlns="http://www.w3.org/2000/svg"
-                              >
-                                <path d="M394 480a16 16 0 0 1-9.39-3L256 383.76 127.39 477a16 16 0 0 1-24.55-18.08L153 310.35 23 221.2a16 16 0 0 1 9-29.2h160.38l48.4-148.95a16 16 0 0 1 30.44 0l48.4 149H480a16 16 0 0 1 9.05 29.2L359 310.35l50.13 148.53A16 16 0 0 1 394 480z" />
-                              </svg>
-                            </li>
-                            <li className="text-white size-[18px] bg-PrimaryColor-0 flex justify-center items-center text-xs">
-                              <svg
-                                stroke="currentColor"
-                                fill="currentColor"
-                                strokeWidth={0}
-                                viewBox="0 0 512 512"
-                                height="1em"
-                                width="1em"
-                                xmlns="http://www.w3.org/2000/svg"
-                              >
-                                <path d="M394 480a16 16 0 0 1-9.39-3L256 383.76 127.39 477a16 16 0 0 1-24.55-18.08L153 310.35 23 221.2a16 16 0 0 1 9-29.2h160.38l48.4-148.95a16 16 0 0 1 30.44 0l48.4 149H480a16 16 0 0 1 9.05 29.2L359 310.35l50.13 148.53A16 16 0 0 1 394 480z" />
-                              </svg>
-                            </li>
-                            <li className="text-white size-[18px] bg-PrimaryColor-0 flex justify-center items-center text-xs">
-                              <svg
-                                stroke="currentColor"
-                                fill="currentColor"
-                                strokeWidth={0}
-                                viewBox="0 0 512 512"
-                                height="1em"
-                                width="1em"
-                                xmlns="http://www.w3.org/2000/svg"
-                              >
-                                <path d="M394 480a16 16 0 0 1-9.39-3L256 383.76 127.39 477a16 16 0 0 1-24.55-18.08L153 310.35 23 221.2a16 16 0 0 1 9-29.2h160.38l48.4-148.95a16 16 0 0 1 30.44 0l48.4 149H480a16 16 0 0 1 9.05 29.2L359 310.35l50.13 148.53A16 16 0 0 1 394 480z" />
-                              </svg>
-                            </li>
-                            <li className="text-white size-[18px] bg-PrimaryColor-0 flex justify-center items-center text-xs">
-                              <svg
-                                stroke="currentColor"
-                                fill="currentColor"
-                                strokeWidth={0}
-                                viewBox="0 0 512 512"
-                                height="1em"
-                                width="1em"
-                                xmlns="http://www.w3.org/2000/svg"
-                              >
-                                <path d="M394 480a16 16 0 0 1-9.39-3L256 383.76 127.39 477a16 16 0 0 1-24.55-18.08L153 310.35 23 221.2a16 16 0 0 1 9-29.2h160.38l48.4-148.95a16 16 0 0 1 30.44 0l48.4 149H480a16 16 0 0 1 9.05 29.2L359 310.35l50.13 148.53A16 16 0 0 1 394 480z" />
-                              </svg>
-                            </li>
-                          </ul>
-                          <p className="font-Nunito text-[15px] text-TextColor2-0 transition-all duration-500 group-hover:text-white">
-                            20 July, 2024
-                          </p>
-                        </div>
-                        <p className="font-Nunito text-[17px] text-TextColor2-0 transition-all duration-500 group-hover:text-white pt-8">
-                          Their relentless of attention to detail gave me peace of mind.
-                          I highly recommend their legal services; they are true
-                          advocates for clients.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+                  </SwiperSlide>
+                ))}
+              </Swiper>
             </div>
           </div>
         </section>
@@ -2499,6 +2049,7 @@ const Home = () => {
             </div>
           </div>
         </section> */}
+
         <section className="py-[50px] bg-[#f3f4f3] bg-cover bg-no-repeat bg-center">
           <div className="Container">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7 relative z-10">
@@ -2590,65 +2141,29 @@ const Home = () => {
         </section>
 
 
-
-
-
         <section className="pt-[35px] pb-16 bg-[url('/images/counter-bg.jpg')] bg-no-repeat bg-cover bg-center">
           <div className="Container">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-7 lg:gap-10 lg:grid-cols-4 items-center justify-center">
-              <div>
-                <div className="text-center">
+              {[
+                { end: 10000, label: 'HAPPY CUSTOMERS' },
+                { end: 20000, label: 'WORKS COMPLETED' },
+                { end: 99, label: 'EXPERT MEMBERS' },
+                { end: 100, suffix: '%', label: 'SATISFACTION RATES' },
+              ].map((item, index) => (
+                <div key={index} className="text-center">
                   <div className="mt-3">
                     <span className="font-Rajdhani text-[50px] font-bold" style={{ color: '#84198e' }}>
-                      10K+
-                    </span>
-
-                  </div>
-                  <p className="font-Nunito text-[15px] font-bold text-TextColor-0 uppercase" style={{ color: '#84198e' }}>
-                    HAPPY CUSTOMERS
-                  </p>
-                </div>
-              </div>
-              <div>
-                <div className="text-center">
-                  <div className="mt-3">
-                    <span className="font-Rajdhani text-[50px]  font-bold" style={{ color: '#84198e' }}>
-                      20K+
+                      <CountUp start={0} end={item.end} duration={3} formattingFn={(num) => formatNumber(num, item.suffix)} />
                     </span>
                   </div>
                   <p className="font-Nunito text-[15px] font-bold text-TextColor-0 uppercase" style={{ color: '#84198e' }}>
-                    WORKS COMPLETED
+                    {item.label}
                   </p>
                 </div>
-              </div>
-              <div>
-                <div className="text-center">
-                  <div className="mt-3">
-                    <span className="font-Rajdhani text-[50px] font-bold" style={{ color: '#84198e' }}>
-                      99
-                    </span>
-                  </div>
-                  <p className="font-Nunito text-[15px] font-bold text-TextColor-0 uppercase" style={{ color: '#84198e' }}>
-                    EXPERT MEMBERS
-                  </p>
-                </div>
-              </div>
-              <div>
-                <div className="text-center">
-                  <div className="mt-3">
-                    <span className="font-Rajdhani text-[50px] font-bold" style={{ color: '#84198e' }}>
-                      100%
-                    </span>
-                  </div>
-                  <p className="font-Nunito text-[15px] font-bold text-TextColor-0 uppercase" style={{ color: '#84198e' }}>
-                    SATISFACTION RATES
-                  </p>
-                </div>
-              </div>
+              ))}
             </div>
           </div>
         </section>
-
 
 
         {/* <section className="relative overflow-hidden py-28 bg-[url('/images/pricing-bg.jpg')] bg-cover bg-no-repeat bg-center">
@@ -2922,6 +2437,7 @@ const Home = () => {
             </div>
           </div>
         </section> */}
+
         {/* <section className="py-28 bg-BodyBg-0">
           <div className="Container">
             <div className="text-center">
@@ -3145,6 +2661,7 @@ const Home = () => {
             </div>
           </div>
         </section> */}
+
         {/* <div className="bg-[url('/images/brand-bg.jpg')] bg-no-repeat bg-center bg-cover pt-[120px] pb-28">
           <div className="Container relative z-10">
             <div className="swiper swiper-initialized swiper-horizontal swiper-backface-hidden">
