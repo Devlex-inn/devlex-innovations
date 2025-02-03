@@ -2120,3 +2120,21 @@
         line-height: 25px;
     }
 }
+
+
+.dropdown-menu {
+    position: absolute;
+}
+
+.triangle {
+    position: absolute;
+    top: -4px; 
+    left: 20px; 
+    width: 20px !important;
+    height: 20px !important;
+    border-left: 13px solid transparent;
+    border-right: 13px solid transparent;
+    border-bottom: 13px solid #271033;
+}
+
+ 

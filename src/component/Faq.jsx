@@ -132,12 +132,12 @@ const Faq = () => {
                                             <h2>
                                                 <button
                                                     onClick={() => toggleFAQ(index)}
-                                                    className={`faq-button2 rounded-md flex items-center justify-between pl-4 pr-2 md:pl-7 md:pr-6 lg:pl-6 lg:pr-4 xl:pl-7 xl:pr-6 py-4 w-full text-left font-semibold font-Nunito transition-all duration-500 group border border-BorderColor2-0 ${openIndex === index ? "bg-PrimaryColor-0 text-white" : "bg-white"
+                                                    className={`faq-button2 rounded-md flex items-center justify-between pl-4 pr-2 md:pl-7 md:pr-6 lg:pl-6 lg:pr-4 xl:pl-7 xl:pr-6 py-4 w-full text-left font-semibold hover:bg-PrimaryColor-0 font-Nunito transition-all duration-500 group border border-BorderColor2-0 ${openIndex === index ? "bg-PrimaryColor-0 text-white" : "bg-white"
                                                         }`}
                                                     aria-expanded={openIndex === index}
                                                     aria-controls={`accordion-text-faqs-${index}`}
                                                 >
-                                                    <span className={`transition !leading-5 duration-400 text-base sm:text-lg flex items-center gap-4 ${openIndex === index ? "text-white" : "text-HeadingColor-0"
+                                                    <span className={` group-hover:text-white  transition !leading-5 duration-400 text-base sm:text-lg flex items-center gap-4 ${openIndex === index ? "text-white" : "text-HeadingColor-0"
                                                         }`}>
                                                         <img src="/images/faqs-icon1.png" draggable="false" className="size-[30px] transition-all duration-500" />
                                                         <span>{faq.question}</span>
@@ -147,7 +147,7 @@ const Faq = () => {
                                                         fill="currentColor"
                                                         strokeWidth={0}
                                                         viewBox="0 0 448 512"
-                                                        className={`transition duration-400 ${openIndex === index ? "rotate-180 text-white" : "text-HeadingColor-0"}`}
+                                                        className={`transition group-hover:text-white duration-400 ${openIndex === index ? "rotate-180 text-white" : "text-HeadingColor-0"}`}
                                                         height="1em"
                                                         width="1em"
                                                         xmlns="http://www.w3.org/2000/svg"
@@ -160,11 +160,11 @@ const Faq = () => {
                                                 id={`accordion-text-faqs-${index}`}
                                                 role="region"
                                                 aria-labelledby={`accordion-title-faqs-${index}`}
-                                                className={`grid font-Nunito font-light leading-[26px] text-TextColor2-0 px-4 md:px-7 lg:px-6 xl:px-7 overflow-hidden transition-all duration-300 ease-in-out ${openIndex === index ? "grid-rows-[1fr] opacity-100 py-4 bg-white" : "grid-rows-[0fr] opacity-0"
+                                                className={`grid font-Nunito font-light leading-[26px] text-TextColor2-0 px-4 md:px-7 lg:px-6 xl:px-7 overflow-hidden transition-all duration-300 ease-in-out ${openIndex === index ? "grid-rows-[1fr] opacity-100 py-4 bg-custom" : "grid-rows-[0fr] opacity-0"
                                                     }`}
                                             >
                                                 <div className="overflow-hidden">
-                                                    <p className="pb-6 pt-6 text-sm sm:text-base font-Nunito">{faq.answer}</p>
+                                                    <p className="pb-4 pt-4 text-sm sm:text-base font-Nunito" style={{color:'black'}}>{faq.answer}</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -344,3 +344,5 @@ const Faq = () => {
 }
 
 export default Faq
+
+

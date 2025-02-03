@@ -8,7 +8,7 @@ const Contact = () => {
                             Contact Us
                         </h1>
                         <div className="border-2 rounded border-BorderColor-0 mt-8 sm:mt-5 inline-block px-8 py-2">
-                            <ul className="flex flex-col sm:flex-row gap-2 sm:gap-4 sm:items-center justify-start">
+                            <ul className="flex sm:flex-row gap-2 sm:gap-4 sm:items-center justify-start">
                                 <li>
                                     <a href="/">
                                         <button className="font-Rajdhani font-medium text-lg text-white flex items-center gap-2 transition-all duration-500 hover:text-PrimaryColor-0">
