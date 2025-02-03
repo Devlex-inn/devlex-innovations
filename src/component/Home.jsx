@@ -15,62 +15,64 @@ const formatNumber = (num, suffix) => {
 };
 const testimonials = [
   {
-    name: 'Founder & CEO',
-    role: 'Web Developer',
+    name: 'Rajesh Kumar',
+    role: 'Business Executive',
     img: '/public/images/bussiness-man.png',
     date: '20 July, 2024',
     review:
-      'Their relentless attention to detail gave me peace of mind. I highly recommend their legal services; they are true advocates for clients.',
+      'Their exceptional IT services transformed our business operations efficiently. Highly recommend their expertise for innovative digital solutions.',
   },
   {
-    name: 'Anjelina Watson',
-    role: 'UI/UX Designer',
+    name: 'Priya Sharma',
+    role: 'Civil Engineer',
     img: '/public/images/girl.png',
     date: '20 July, 2024',
     review:
-      'Their relentless attention to detail gave me peace of mind. I highly recommend their legal services; they are true advocates for clients.',
+      'A reliable partner for all our design needs. Their professionalism, creativity, and attention to detail are truly unmatched and exceptional'
   },
   {
-    name: 'Al-Amin Islam',
-    role: 'IT Specialist',
+    name: 'Amit Verma',
+    role: 'Corporate Counsel',
     img: '/images/profile.png',
     date: '20 July, 2024',
     review:
-      'Their relentless attention to detail gave me peace of mind. I highly recommend their legal services; they are true advocates for clients.',
+      'Their technical expertise helped us streamline operations and achieve seamless integrations across various platforms and technologies.',
   },
   {
-    name: 'Anjelina Watson',
-    role: 'Web Developer',
-    img: '/images/profile.png',
+    name: 'Neha Desai',
+    role: 'Doctor',
+    img: '/images/woman.png',
     date: '20 July, 2024',
     review:
-      'Their relentless attention to detail gave me peace of mind. I highly recommend their legal services; they are true advocates for clients.',
+      'An outstanding IT service provider that consistently delivers high-quality, efficient solutions for complex problems and technical challenges.',
   },
 ];
+
+
 const projects = [
   {
     id: 1,
-    number: '04',
-    title: 'Business Growth with Toptech Agency',
+    number: '01',
+    title: 'Tour And Travel Website',
     img: 'images/portfolio-1.png',
   },
   {
     id: 2,
-    number: '01',
-    title: 'Business Growth with Toptech Agency',
+    number: '02',
+    title: 'Beauty & Personal Care',
     img: 'images/portfolio-2.png',
   },
   {
     id: 3,
     number: '03',
-    title: 'Business Growth with Toptech Agency',
+    title: 'Hope Foundation Website',
     img: 'images/portfolio-3.png',
   },
   {
     id: 4,
     number: '04',
-    title: 'Business Growth with Toptech Agency',
-    img: 'images/portfolio-2.png',
+    title: 'HostDec Hosting Website',
+    img: 'images/portfolio-4.png',
   },
 ];
 
@@ -78,7 +80,7 @@ const Home = () => {
   return (
     <>
       <div className="relative">
-        <div className="fixed bottom-10 text-white right-6 z-50 bg-PrimaryColor-0 border-2 border-white rounded-full h-12 w-12 cursor-pointer animate-movebtn flex justify-center items-center hover:border-PrimaryColor-0 hover:bg-white hover:#9C5EEE hover:animate-none">
+        <div className="fixed bottom-10 text-white right-6 z-50 bg-PrimaryColor-0 border-2 border-white rounded-full h-12 w-12 cursor-pointer animate-movebtn flex justify-center items-center cborder-PrimaryColor-0 hover:bg-white hover:text-PrimaryColor-0 hover:animate-none">
           <svg
             stroke="currentColor"
             fill="currentColor"
@@ -100,15 +102,14 @@ const Home = () => {
                 <h5 className="font-Rajdhani text-white text-[19px] font-medium flex items-center gap-2 mb-4">
                   IT SOLUTION AGENCY IN INDIA
                 </h5>
-                <h1 className="font-Rajdhani font-extrabold text-white text-[30px] leading-[36px] sm:text-[56px] sm:leading-[60px] md:text-[68x] lg:text-[50px] xl:text-[58px] xl:leading-[68px] 2xl:text-[69px] 2xl:leading-[79px]">
-                  BUSINESS INNOVATION
+                <h1 className="font-Rajdhani font-extrabold text-white text-[30px] leading-[36px] sm:text-[48px] sm:leading-[60px] md:text-[68x] lg:text-[45px] xl:text-[53px] xl:leading-[68px] 2xl:text-[60px] 2xl:leading-[79px]">
+                  INNOVATING CODE FOR A
                   <br />
-                  WITH IT EXPERT
+                  BETTER TOMORROW
                 </h1>
                 <p className="font-Nunito sm:text-lg text-TextColor-0 mb-[46px] mt-1">
-                  Professionally optimize interdependent intellectual interoperable
-                  connect <br className="hidden 2xl:block" /> best practices.
-                  Progressively fabricate done
+                  Delivering an advanced, tailored, and immersive user experience with
+                  <br className="hidden 2xl:block" /> innovation and seamless interaction.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-5">
                   <a href="/contact">
@@ -174,8 +175,7 @@ const Home = () => {
                     1+ Year Experience
                   </h4>
                   <p className="font-Nunito text-TextColor2-0 transition-all duration-500 group-hover:text-white mb-[18px]">
-                    Monotonically synergize grants to business visualize strategic
-                    infomediaries
+                    Gaining expertise to deliver impactful solutions and innovation
                   </p>
                   <a
                     className="inline-block relative before:absolute before:top-1/2 before:-translate-y-1/2 before:left-1/2 before:w-8 before:h-[2px] before:-translate-x-1/2 before:bg-PrimaryColor-0 before:transition-all before:duration-500 group-hover:before:w-4 group-hover:before:bg-white group-hover:before:-left-6 group-hover:before:-translate-x-0"
@@ -210,8 +210,7 @@ const Home = () => {
                     Dedicated Members
                   </h4>
                   <p className="font-Nunito text-TextColor2-0 transition-all duration-500 group-hover:text-white mb-[18px]">
-                    Monotonically synergize grants to business visualize strategic
-                    infomediaries
+                    Passionately collaborate to achieve goals and drive collective success
                   </p>
                   <a
                     className="inline-block relative before:absolute before:top-1/2 before:-translate-y-1/2 before:left-1/2 before:w-8 before:h-[2px] before:-translate-x-1/2 before:bg-PrimaryColor-0 before:transition-all before:duration-500 group-hover:before:w-4 group-hover:before:bg-white group-hover:before:-left-6 group-hover:before:-translate-x-0"
@@ -246,8 +245,7 @@ const Home = () => {
                     Valuable Supports
                   </h4>
                   <p className="font-Nunito text-TextColor2-0 transition-all duration-500 group-hover:text-white mb-[18px]">
-                    Monotonically synergize grants to business visualize strategic
-                    infomediaries
+                    Consistently empowering growth through reliable and strategic assistance
                   </p>
                   <a
                     className="inline-block relative before:absolute before:top-1/2 before:-translate-y-1/2 before:left-1/2 before:w-8 before:h-[2px] before:-translate-x-1/2 before:bg-PrimaryColor-0 before:transition-all before:duration-500 group-hover:before:w-4 group-hover:before:bg-white group-hover:before:-left-6 group-hover:before:-translate-x-0"
@@ -285,25 +283,21 @@ const Home = () => {
               </div>
               <div className="relative">
                 <h5 className="font-Rajdhani text-lg font-semibold #9C5EEE">
-                  IT Support For Business
+                  Comprehensive IT Solutions for Business Growth
                 </h5>
                 <h1 className="font-Rajdhani font-bold text-xl leading-7 sm:text-[34px] sm:leading-[44px] md:text-[44px] md:leading-[54px] lg:text-[30px] lg:leading-[40px] xl:text-[36px] xl:leading-[46px] 2xl:text-[42px] 2xl:leading-[52px] text-HeadingColor-0 mt-[18px] mb-3">
-                  Ensuring Your Success Trusted <br />
-                  IT Services Source
+                  Empowering success with reliable,<br /> innovative IT solutions
                 </h1>
                 <p className="font-Nunito text-TextColor2-0 pb-9 border-b border-BorderColor2-0 relative before:absolute before:left-0 before:-bottom-[1px] before:w-[50px] before:h-[1px] before:bg-PrimaryColor-0 before:animate-dance4">
-                  Monotonectally synergize granular markets and front markets.
-                  Collaboratively visualize strategic infomediaries after multimedia
-                  based models. Synergistically task state of the art
-                  infrastructures for
-                </p>
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-y-[30px] my-10">
+
+                  Revolutionizing the IT landscape with Devlex Innovations’ cutting-edge solutions and agile strategies. Seamlessly integrating advanced technologies to drive growth, efficiency, and long-term success.                </p>
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-y-[5px] my-10">
                   <div className="flex gap-5 items-center">
                     <div className="w-[70px] h-[70px] rounded bg-white flex justify-center items-center">
                       <img src="images/about-icon1.png" draggable="false" />
                     </div>
                     <div className="flex-1">
-                      <h5 className="font-Rajdhani font-semibold text-[22px] lg:text-base xl:text-xl 2xl:text-[22px] text-HeadingColor-0">
+                      <h5 className="font-Rajdhani font-semibold text-[19px] lg:text-base xl:text-xl text-HeadingColor-0">
                         End-To-End IT Services Support
                       </h5>
                     </div>
@@ -313,7 +307,7 @@ const Home = () => {
                       <img src="images/about-icon2.png" draggable="false" />
                     </div>
                     <div className="flex-1">
-                      <h5 className="font-Rajdhani font-semibold text-[22px] lg:text-base xl:text-xl 2xl:text-[22px] text-HeadingColor-0">
+                      <h5 className="font-Rajdhani font-semibold text-[19px] lg:text-base xl:text-xl text-HeadingColor-0">
                         Expert &amp; Dedicated Team Members
                       </h5>
                     </div>
@@ -323,8 +317,8 @@ const Home = () => {
                       <img src="images/about-icon3.png" draggable="false" />
                     </div>
                     <div className="flex-1">
-                      <h5 className="font-Rajdhani font-semibold text-[22px] lg:text-base xl:text-xl 2xl:text-[22px] text-HeadingColor-0">
-                        24/7 Free Tehcnical Supports
+                      <h5 className="font-Rajdhani font-semibold text-[19px] lg:text-base xl:text-xl text-HeadingColor-0">
+                        24/7 Tehcnical Support
                       </h5>
                     </div>
                   </div>
@@ -333,7 +327,7 @@ const Home = () => {
                       <img src="images/about-icon4.png" draggable="false" />
                     </div>
                     <div className="flex-1">
-                      <h5 className="font-Rajdhani font-semibold text-[22px] lg:text-base xl:text-xl 2xl:text-[22px] text-HeadingColor-0">
+                      <h5 className="font-Rajdhani font-semibold text-[19px] lg:text-base xl:text-xl text-HeadingColor-0">
                         100% Customers Satisfaction
                       </h5>
                     </div>
@@ -380,7 +374,7 @@ const Home = () => {
                 <div className="px-10 lg:px-7 2xl:px-10 pt-9 pb-[34px] rounded-lg bg-[#f5f8ed] group relative z-10 overflow-hidden before:absolute before:top-0 before:right-0 before:w-0 before:h-full before:bg-PrimaryColor-0 before:-z-10 before:transition-all before:duration-500 hover:before:w-full hover:before:left-0">
                   <div className="relative pt-[6px] z-10 before:absolute before:top-0 before:-left-[6px] before:w-10 before:h-10 before:bg-PrimaryColor-0 before:transition-all before:duration-500 before:opacity-20 group-hover:before:bg-SecondaryColor-0 group-hover:before:opacity-30 before:rounded-full before:-z-10">
                     <img
-                      src="images/service-1.png"
+                      src="images/service-3.png"
                       draggable="false"
                       className="transition-all duration-500 group-hover:brightness-0 group-hover:invert-[1]"
                     />
@@ -390,21 +384,20 @@ const Home = () => {
                       01
                     </h5>
                   </div>
-                  <a href="/service_details">
+                  <a href="/app-development">
                     <button className="font-Rajdhani font-bold text-[22px] sm:text-[26px] pb-[10px] text-HeadingColor-0 transition-all duration-500 group-hover:text-white mt-4">
-                      Graphic Design
+                      Web Development
                     </button>
                   </a>
                   <p className="font-Nunito text-TextColor2-0 transition-all duration-500 group-hover:text-white pb-6">
-                    Monotonectally synergize grants to business visualize strategic
-                    infomediaries
+                    Building responsive, user-friendly, scalable websites for enhanced online presence
                   </p>
-                  <a href="/service_details">
+                  <a href="/app-development">
                     <button className="font-Rajdhani font-medium text-white text-[19px] flex gap-2 items-center transition-all duration-500 -ml-[90px] group-hover:ml-0">
                       <span className="opacity-0 transition-all duration-500 group-hover:opacity-100">
                         Read More
                       </span>
-                      <span className="#9C5EEE text-2xl transition-all duration-500 group-hover:text-white">
+                      <span className="text-PrimaryColor-0 text-2xl transition-all duration-500 group-hover:text-white">
                         <svg
                           stroke="currentColor"
                           fill="currentColor"
@@ -430,7 +423,7 @@ const Home = () => {
                 <div className="px-10 lg:px-7 2xl:px-10 pt-9 pb-[34px] rounded-lg bg-[#f5f8ed] group relative z-10 overflow-hidden before:absolute before:top-0 before:right-0 before:w-0 before:h-full before:bg-PrimaryColor-0 before:-z-10 before:transition-all before:duration-500 hover:before:w-full hover:before:left-0">
                   <div className="relative pt-[6px] z-10 before:absolute before:top-0 before:-left-[6px] before:w-10 before:h-10 before:bg-PrimaryColor-0 before:transition-all before:duration-500 before:opacity-20 group-hover:before:bg-SecondaryColor-0 group-hover:before:opacity-30 before:rounded-full before:-z-10">
                     <img
-                      src="images/service-2.png"
+                      src="images/service-1.png"
                       draggable="false"
                       className="transition-all duration-500 group-hover:brightness-0 group-hover:invert-[1]"
                     />
@@ -440,21 +433,20 @@ const Home = () => {
                       02
                     </h5>
                   </div>
-                  <a href="/service_details">
+                  <a href="/UIUX-design">
                     <button className="font-Rajdhani font-bold text-[22px] sm:text-[26px] pb-[10px] text-HeadingColor-0 transition-all duration-500 group-hover:text-white mt-4">
-                      Cloud Solutions
+                      UI/UX Design
                     </button>
                   </a>
                   <p className="font-Nunito text-TextColor2-0 transition-all duration-500 group-hover:text-white pb-6">
-                    Monotonectally synergize grants to business visualize strategic
-                    infomediaries
+                    Creating intuitive, user-friendly designs for exceptional digital experiences
                   </p>
-                  <a href="/service_details">
+                  <a href="/UIUX-design">
                     <button className="font-Rajdhani font-medium text-white text-[19px] flex gap-2 items-center transition-all duration-500 -ml-[90px] group-hover:ml-0">
                       <span className="opacity-0 transition-all duration-500 group-hover:opacity-100">
                         Read More
                       </span>
-                      <span className="#9C5EEE text-2xl transition-all duration-500 group-hover:text-white">
+                      <span className="text-PrimaryColor-0 text-2xl transition-all duration-500 group-hover:text-white">
                         <svg
                           stroke="currentColor"
                           fill="currentColor"
@@ -480,7 +472,7 @@ const Home = () => {
                 <div className="px-10 lg:px-7 2xl:px-10 pt-9 pb-[34px] rounded-lg bg-[#f5f8ed] group relative z-10 overflow-hidden before:absolute before:top-0 before:right-0 before:w-0 before:h-full before:bg-PrimaryColor-0 before:-z-10 before:transition-all before:duration-500 hover:before:w-full hover:before:left-0">
                   <div className="relative pt-[6px] z-10 before:absolute before:top-0 before:-left-[6px] before:w-10 before:h-10 before:bg-PrimaryColor-0 before:transition-all before:duration-500 before:opacity-20 group-hover:before:bg-SecondaryColor-0 group-hover:before:opacity-30 before:rounded-full before:-z-10">
                     <img
-                      src="images/service-3.png"
+                      src="images/service-5.png"
                       draggable="false"
                       className="transition-all duration-500 group-hover:brightness-0 group-hover:invert-[1]"
                     />
@@ -490,21 +482,20 @@ const Home = () => {
                       03
                     </h5>
                   </div>
-                  <a href="/service_details">
+                  <a href="/app-development">
                     <button className="font-Rajdhani font-bold text-[22px] sm:text-[26px] pb-[10px] text-HeadingColor-0 transition-all duration-500 group-hover:text-white mt-4">
-                      Web Development
+                      App Development
                     </button>
                   </a>
                   <p className="font-Nunito text-TextColor2-0 transition-all duration-500 group-hover:text-white pb-6">
-                    Monotonectally synergize grants to business visualize strategic
-                    infomediaries
+                    Creating user-friendly, scalable, innovative, and secure mobile apps
                   </p>
-                  <a href="/service_details">
+                  <a href="/app-development">
                     <button className="font-Rajdhani font-medium text-white text-[19px] flex gap-2 items-center transition-all duration-500 -ml-[90px] group-hover:ml-0">
                       <span className="opacity-0 transition-all duration-500 group-hover:opacity-100">
                         Read More
                       </span>
-                      <span className="#9C5EEE text-2xl transition-all duration-500 group-hover:text-white">
+                      <span className="text-PrimaryColor-0 text-2xl transition-all duration-500 group-hover:text-white">
                         <svg
                           stroke="currentColor"
                           fill="currentColor"
@@ -540,21 +531,20 @@ const Home = () => {
                       04
                     </h5>
                   </div>
-                  <a href="/service_details">
+                  <a href="/digital-marketing">
                     <button className="font-Rajdhani font-bold text-[22px] sm:text-[26px] pb-[10px] text-HeadingColor-0 transition-all duration-500 group-hover:text-white mt-4">
                       Digital Marketing
                     </button>
                   </a>
                   <p className="font-Nunito text-TextColor2-0 transition-all duration-500 group-hover:text-white pb-6">
-                    Monotonectally synergize grants to business visualize strategic
-                    infomediaries
+                    Digital marketing enhances brand visibility, engagement, and online growth
                   </p>
-                  <a href="/service_details">
+                  <a href="/digital-marketing">
                     <button className="font-Rajdhani font-medium text-white text-[19px] flex gap-2 items-center transition-all duration-500 -ml-[90px] group-hover:ml-0">
                       <span className="opacity-0 transition-all duration-500 group-hover:opacity-100">
                         Read More
                       </span>
-                      <span className="#9C5EEE text-2xl transition-all duration-500 group-hover:text-white">
+                      <span className="text-PrimaryColor-0 text-2xl transition-all duration-500 group-hover:text-white">
                         <svg
                           stroke="currentColor"
                           fill="currentColor"
@@ -580,7 +570,7 @@ const Home = () => {
                 <div className="px-10 lg:px-7 2xl:px-10 pt-9 pb-[34px] rounded-lg bg-[#f5f8ed] group relative z-10 overflow-hidden before:absolute before:top-0 before:right-0 before:w-0 before:h-full before:bg-PrimaryColor-0 before:-z-10 before:transition-all before:duration-500 hover:before:w-full hover:before:left-0">
                   <div className="relative pt-[6px] z-10 before:absolute before:top-0 before:-left-[6px] before:w-10 before:h-10 before:bg-PrimaryColor-0 before:transition-all before:duration-500 before:opacity-20 group-hover:before:bg-SecondaryColor-0 group-hover:before:opacity-30 before:rounded-full before:-z-10">
                     <img
-                      src="images/service-5.png"
+                      src="images/service-2.png"
                       draggable="false"
                       className="transition-all duration-500 group-hover:brightness-0 group-hover:invert-[1]"
                     />
@@ -590,21 +580,20 @@ const Home = () => {
                       05
                     </h5>
                   </div>
-                  <a href="/service_details">
+                  <a href="/video-editing">
                     <button className="font-Rajdhani font-bold text-[22px] sm:text-[26px] pb-[10px] text-HeadingColor-0 transition-all duration-500 group-hover:text-white mt-4">
-                      App Development
+                      Video Editing
                     </button>
                   </a>
                   <p className="font-Nunito text-TextColor2-0 transition-all duration-500 group-hover:text-white pb-6">
-                    Monotonectally synergize grants to business visualize strategic
-                    infomediaries
+                    Video editing enhances creativity, storytelling, and visual content impact
                   </p>
-                  <a href="/service_details">
+                  <a href="/video-editing">
                     <button className="font-Rajdhani font-medium text-white text-[19px] flex gap-2 items-center transition-all duration-500 -ml-[90px] group-hover:ml-0">
                       <span className="opacity-0 transition-all duration-500 group-hover:opacity-100">
                         Read More
                       </span>
-                      <span className="#9C5EEE text-2xl transition-all duration-500 group-hover:text-white">
+                      <span className="text-PrimaryColor-0 text-2xl transition-all duration-500 group-hover:text-white">
                         <svg
                           stroke="currentColor"
                           fill="currentColor"
@@ -640,21 +629,20 @@ const Home = () => {
                       06
                     </h5>
                   </div>
-                  <a href="/service_details">
+                  <a href="#">
                     <button className="font-Rajdhani font-bold text-[22px] sm:text-[26px] pb-[10px] text-HeadingColor-0 transition-all duration-500 group-hover:text-white mt-4">
-                      Hosting Services
+                      DevOps Services
                     </button>
                   </a>
                   <p className="font-Nunito text-TextColor2-0 transition-all duration-500 group-hover:text-white pb-6">
-                    Monotonectally synergize grants to business visualize strategic
-                    infomediaries
+                    DevOps services streamline development, improve collaboration, and ensure efficiency
                   </p>
-                  <a href="/service_details">
+                  <a href="#">
                     <button className="font-Rajdhani font-medium text-white text-[19px] flex gap-2 items-center transition-all duration-500 -ml-[90px] group-hover:ml-0">
                       <span className="opacity-0 transition-all duration-500 group-hover:opacity-100">
                         Read More
                       </span>
-                      <span className="#9C5EEE text-2xl transition-all duration-500 group-hover:text-white">
+                      <span className="text-PrimaryColor-0 text-2xl transition-all duration-500 group-hover:text-white">
                         <svg
                           stroke="currentColor"
                           fill="currentColor"
@@ -1262,9 +1250,9 @@ const Home = () => {
         <section className="portfolio relative z-10 py-28 bg-SecondaryColor-0 before:absolute before:top-0 before:left-0 before:h-[70%] before:w-full before:bg-[url('/images/portfolio-bg.jpg')] before:-z-10 before:bg-center before:bg-cover before:bg-no-repeat -mb-[1px]">
           <div className="container mx-auto px-4">
             <div className="text-center">
-              <h5 className="font-Rajdhani text-lg font-semibold text-[#9C5EEE]">IT Support For Business</h5>
+              <h5 className="font-Rajdhani text-lg font-semibold text-[#9C5EEE]">Our Projects</h5>
               <h1 className="font-Rajdhani font-bold text-xl leading-7 sm:text-[34px] sm:leading-[44px] md:text-[44px] md:leading-[54px] lg:text-[32px] lg:leading-[42px] xl:text-[36px] xl:leading-[46px] 2xl:text-[42px] 2xl:leading-[52px] text-HeadingColor-0 mt-[18px] mb-3">
-                Ensuring Your Success Trusted <br /> IT Services Source
+                Excellence in Every Project Trusted  <br />Solutions for Success
               </h1>
             </div>
           </div>
@@ -1292,7 +1280,7 @@ const Home = () => {
                       <div className="portfolio-img rounded-lg relative overflow-hidden before:absolute before:bottom-0 before:left-0 before:w-full before:h-0 before:bg-PrimaryColor-0 before:transition-all before:duration-500 group-hover:before:h-full group-hover:before:top-0 before:z-10 group-hover:before:opacity-20">
                         <img src={project.img} draggable="false" className="w-full" />
                       </div>
-                      <div className="portfolio-content relative z-10 py-3 xl:-mt-[70px] rounded-l-lg rounded-r-lg xl:rounded-l-none xl:rounded-r-md bg-white xl:w-10/12 2xl:w-9/12 border-l-[7px] pl-7 border-PrimaryColor-0 transition-all duration-500 group-hover:rounded-se-none">
+                      <div className="portfolio-content relative z-10 py-3 xl:-mt-[70px] rounded-l-lg rounded-r-lg xl:rounded-l-none xl:rounded-r-md bg-white xl:w-10/12 2xl:w-9/12 border-l-[7px] pl-7 cborder-PrimaryColor-0 transition-all duration-500 group-hover:rounded-se-none">
                         <div className="flex items-center gap-6 lg:gap-4 xl:gap-6">
                           <h1 className="portfolio-icon font-Rajdhani font-bold text-5xl sm:text-[76px] xl:text-5xl 2xl:text-[76px] text-transparent transition-all duration-500 my-1">{project.number}</h1>
                           <a href="/project_details">
@@ -1323,7 +1311,7 @@ const Home = () => {
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-7 gap-y-10">
                 <div>
                   <div className="text-center group relative">
-                    <div className="inline-block m-auto relative z-10 before:absolute before:-top-[13px] before:-left-[13px] before:w-[242px] before:h-[242px] before:border-[2px] before:border-dashed before:border-PrimaryColor-0 before:rounded-full before:animate-rotate">
+                    <div className="inline-block m-auto relative z-10 before:absolute before:-top-[13px] before:-left-[13px] before:w-[242px] before:h-[242px] before:border-[2px] before:border-dashed before:custom-border-PrimaryColor-0 before:rounded-full before:animate-rotate">
                       <img src="images/process-1.png" draggable="false" />
                       <img
                         src="images/porcess-shape1.png"
@@ -1338,9 +1326,7 @@ const Home = () => {
                       Start A Project
                     </h5>
                     <p className="font-Nunito text-TextColor-0 sm:w-2/3 md:w-full 2xl:w-3/4 mx-auto">
-                      Proactively drive maintainable value next mission-critical
-                      infrastructures done the new business to planning
-                    </p>
+                      Start and execute successful projects with strategic planning, innovation, efficiency, and a results-driven approach                    </p>
                   </div>
                 </div>
                 <div>
@@ -1360,8 +1346,7 @@ const Home = () => {
                       Project Analysis
                     </h5>
                     <p className="font-Nunito text-TextColor-0 sm:w-2/3 md:w-full 2xl:w-3/4 mx-auto">
-                      Proactively drive maintainable value next mission-critical
-                      infrastructures done the new business to planning
+                      Analyze projects strategically for efficiency, sustainability, and successful implementation for growth
                     </p>
                   </div>
                 </div>
@@ -1381,8 +1366,7 @@ const Home = () => {
                       Deliver to Succes
                     </h5>
                     <p className="font-Nunito text-TextColor-0 sm:w-2/3 md:w-full 2xl:w-3/4 mx-auto">
-                      Proactively drive maintainable value next mission-critical
-                      infrastructures done the new business to planning
+                      Ensure successful delivery through strategic planning, innovation, efficiency, and sustainable growth solutions
                     </p>
                   </div>
                 </div>
@@ -2006,7 +1990,7 @@ const Home = () => {
                             {testimonial.date}
                           </p>
                         </div>
-                        <p className="font-Nunito text-[17px] text-TextColor2-0 transition-all duration-500 group-hover:text-white pt-8">
+                        <p className="font-Nunito text-[18px] text-TextColor2-0 transition-all duration-500 group-hover:text-white pt-8">
                           {testimonial.review}
                         </p>
                       </div>
@@ -2073,7 +2057,7 @@ const Home = () => {
                       Call Us Anytime
                     </h6>
                     <h4 className="font-Rajdhani font-semibold text-xl sm:text-[20px] lg:text-xl xl:text-[20px] 2xl:text-[22px] #9C5EEE transition-all duration-500 group-hover:text-white mt-[2px]">
-                      +123 (4567) 890
+                     +91- 6306011968
                     </h4>
                   </div>
                 </div>
@@ -2103,7 +2087,7 @@ const Home = () => {
                       Send E-Mail
                     </h6>
                     <h4 className="font-Rajdhani font-semibold text-xl sm:text-[20px] lg:text-xl xl:text-[22px] 2xl:text-[22px] #9C5EEE transition-all duration-500 group-hover:text-white mt-[2px]">
-                      info@gmail.com
+                      info.devlexinnovations.com
                     </h4>
                   </div>
                 </div>
@@ -2122,16 +2106,17 @@ const Home = () => {
                       width="1em"
                       xmlns="http://www.w3.org/2000/svg"
                     >
-                      <circle cx={12} cy={12} r={10} />
-                      <polyline points="12 6 12 12 16 14" />
+                      <path d="M12 2C8.13 2 5 5.13 5 8.5c0 3.54 5 9.5 7 11.5 2-2 7-7.96 7-11.5C19 5.13 15.87 2 12 2zM12 11c-1.66 0-3-1.34-3-3s1.34-3 3-3 3 1.34 3 3-1.34 3-3 3z"></path>
                     </svg>
+
+
                   </div>
                   <div className="flex-1">
                     <h6 className="font-Rajdhani font-semibold text-base text-HeadingColor-0 transition-all duration-500 group-hover:text-white">
-                      Opening Hours
+                      Location
                     </h6>
                     <h4 className="font-Rajdhani font-semibold text-xl sm:text-[20px] lg:text-xl xl:text-[22px] 2xl:text-[22px] #9C5EEE transition-all duration-500 group-hover:text-white mt-[2px]">
-                      Mon - Fri (8.00 - 5.00
+                    Sector 51 Noida, UP 201307
                     </h4>
                   </div>
                 </div>
@@ -2145,9 +2130,9 @@ const Home = () => {
           <div className="Container">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-7 lg:gap-10 lg:grid-cols-4 items-center justify-center">
               {[
-                { end: 10000, label: 'HAPPY CUSTOMERS' },
-                { end: 20000, label: 'WORKS COMPLETED' },
-                { end: 99, label: 'EXPERT MEMBERS' },
+                { end: 50, label: 'HAPPY CUSTOMERS' },
+                { end: 20, label: 'WORKS COMPLETED' },
+                { end: 4, label: 'EXPERT MEMBERS' },
                 { end: 100, suffix: '%', label: 'SATISFACTION RATES' },
               ].map((item, index) => (
                 <div key={index} className="text-center">
