@@ -1,4 +1,40 @@
+import { useState } from "react";
+
+const faqs = [
+    {
+        question: "Project Horizon Redevelopment?",
+        answer:
+            "Distinctively plagiarize ubiquitous mindshare goal-oriented collaboration idea-sharing. Efficiently transition dynamic initiatives to business testing procedures enthusiastically negotiate high.",
+    },
+    {
+        question: "What is your professional passion?",
+        answer:
+            "Distinctively plagiarize ubiquitous mindshare goal-oriented collaboration idea-sharing. Efficiently transition dynamic initiatives to business testing procedures enthusiastically negotiate high.",
+    },
+    {
+        question: "Service Horizon Business low?",
+        answer:
+            "Distinctively plagiarize ubiquitous mindshare goal-oriented collaboration idea-sharing. Efficiently transition dynamic initiatives to business testing procedures enthusiastically negotiate high.",
+    },
+    {
+        question: "Business Solution Redevelopment?",
+        answer:
+            "Distinctively plagiarize ubiquitous mindshare goal-oriented collaboration idea-sharing. Efficiently transition dynamic initiatives to business testing procedures enthusiastically negotiate high.",
+    },
+    {
+        question: "Do you have any custom services?",
+        answer:
+            "Distinctively plagiarize ubiquitous mindshare goal-oriented collaboration idea-sharing. Efficiently transition dynamic initiatives to business testing procedures enthusiastically negotiate high.",
+    },
+];
+
+
 const Faq = () => {
+    const [openIndex, setOpenIndex] = useState(0); 
+
+    const toggleFAQ = (index) => {
+        setOpenIndex(openIndex === index ? null : index);
+    };
     return (
         <>
             <div>
@@ -91,231 +127,48 @@ const Faq = () => {
                             </div>
                             <div className="w-full mx-auto">
                                 <div>
-                                    <div className="mb-5 rounded-md overflow-hidden">
-                                        <h2>
-                                            <button
-                                                className="faq-button2 rounded-md flex items-center justify-between pl-4 pr-2 md:pl-7 md:pr-6 lg:pl-6 lg:pr-4 xl:pl-7 xl:pr-6 py-4 w-full text-left font-semibold font-Nunito hover:bg-PrimaryColor-0 transition-all duration-500 group bg-white border border-BorderColor2-0"
-                                                aria-expanded="true"
-                                                aria-controls="accordion-text-faqs-0"
-                                            >
-                                                <span className="text-HeadingColor-0 transition !leading-5 duration-400 group-hover:text-white text-base sm:text-lg flex items-center gap-4 !text-white">
-                                                    <img
-                                                        src="/images/faqs-icon1.png"
-                                                        draggable="false"
-                                                        className="size-[30px] transition-all duration-500"
-                                                    />
-                                                    <span>Project Horizon Redevelopment?</span>
-                                                </span>
-                                                <svg
-                                                    stroke="currentColor"
-                                                    fill="currentColor"
-                                                    strokeWidth={0}
-                                                    viewBox="0 0 448 512"
-                                                    className="text-HeadingColor-0 bg-transparent transition duration-400 group-hover:text-white  !text-white rotate-180"
-                                                    height="1em"
-                                                    width="1em"
-                                                    xmlns="http://www.w3.org/2000/svg"
+                                    {faqs.map((faq, index) => (
+                                        <div key={index} className="mb-5 rounded-md overflow-hidden">
+                                            <h2>
+                                                <button
+                                                    onClick={() => toggleFAQ(index)}
+                                                    className={`faq-button2 rounded-md flex items-center justify-between pl-4 pr-2 md:pl-7 md:pr-6 lg:pl-6 lg:pr-4 xl:pl-7 xl:pr-6 py-4 w-full text-left font-semibold font-Nunito transition-all duration-500 group border border-BorderColor2-0 ${openIndex === index ? "bg-PrimaryColor-0 text-white" : "bg-white"
+                                                        }`}
+                                                    aria-expanded={openIndex === index}
+                                                    aria-controls={`accordion-text-faqs-${index}`}
                                                 >
-                                                    <path d="M201.4 374.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 306.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z" />
-                                                </svg>
-                                            </button>
-                                        </h2>
-                                        <div
-                                            id="accordion-text-faqs-0"
-                                            role="region"
-                                            aria-labelledby="accordion-title-faqs-0"
-                                            className="grid font-Nunito font-light leading-[26px] text-TextColor2-0 bg-white px-4 md:px-7 lg:px-6 xl:px-7 overflow-hidden transition-all duration-300 ease-in-out bg-normalBlack grid-rows-[1fr] opacity-100"
-                                        >
-                                            <div className="overflow-hidden">
-                                                <p className="pb-6 pt-6 text-sm sm:text-base font-Nunito">
-                                                    Distinctively plagiarize ubiquitous mindshare goal-oriented
-                                                    collaboration idea-sharing. Efficiently transition dynamic
-                                                    initiatives to business testing procedures enthusiastically
-                                                    negotiate high
-                                                </p>
+                                                    <span className={`transition !leading-5 duration-400 text-base sm:text-lg flex items-center gap-4 ${openIndex === index ? "text-white" : "text-HeadingColor-0"
+                                                        }`}>
+                                                        <img src="/images/faqs-icon1.png" draggable="false" className="size-[30px] transition-all duration-500" />
+                                                        <span>{faq.question}</span>
+                                                    </span>
+                                                    <svg
+                                                        stroke="currentColor"
+                                                        fill="currentColor"
+                                                        strokeWidth={0}
+                                                        viewBox="0 0 448 512"
+                                                        className={`transition duration-400 ${openIndex === index ? "rotate-180 text-white" : "text-HeadingColor-0"}`}
+                                                        height="1em"
+                                                        width="1em"
+                                                        xmlns="http://www.w3.org/2000/svg"
+                                                    >
+                                                        <path d="M201.4 374.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 306.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z" />
+                                                    </svg>
+                                                </button>
+                                            </h2>
+                                            <div
+                                                id={`accordion-text-faqs-${index}`}
+                                                role="region"
+                                                aria-labelledby={`accordion-title-faqs-${index}`}
+                                                className={`grid font-Nunito font-light leading-[26px] text-TextColor2-0 px-4 md:px-7 lg:px-6 xl:px-7 overflow-hidden transition-all duration-300 ease-in-out ${openIndex === index ? "grid-rows-[1fr] opacity-100 py-4 bg-white" : "grid-rows-[0fr] opacity-0"
+                                                    }`}
+                                            >
+                                                <div className="overflow-hidden">
+                                                    <p className="pb-6 pt-6 text-sm sm:text-base font-Nunito">{faq.answer}</p>
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div className="mb-5 rounded-md overflow-hidden">
-                                        <h2>
-                                            <button
-                                                className="faq-button2 rounded-md flex items-center justify-between pl-4 pr-2 md:pl-7 md:pr-6 lg:pl-6 lg:pr-4 xl:pl-7 xl:pr-6 py-4 w-full text-left font-semibold font-Nunito hover:bg-PrimaryColor-0 transition-all duration-500 group bg-white border border-BorderColor2-0"
-                                                aria-expanded="false"
-                                                aria-controls="accordion-text-faqs-1"
-                                            >
-                                                <span className="text-HeadingColor-0 transition !leading-5 duration-400 group-hover:text-white text-base sm:text-lg flex items-center gap-4 false">
-                                                    <img
-                                                        src="/images/faqs-icon1.png"
-                                                        draggable="false"
-                                                        className="size-[30px] transition-all duration-500"
-                                                    />
-                                                    <span>What is your professional passion?</span>
-                                                </span>
-                                                <svg
-                                                    stroke="currentColor"
-                                                    fill="currentColor"
-                                                    strokeWidth={0}
-                                                    viewBox="0 0 448 512"
-                                                    className="text-HeadingColor-0 bg-transparent transition duration-400 group-hover:text-white false"
-                                                    height="1em"
-                                                    width="1em"
-                                                    xmlns="http://www.w3.org/2000/svg"
-                                                >
-                                                    <path d="M201.4 374.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 306.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z" />
-                                                </svg>
-                                            </button>
-                                        </h2>
-                                        <div
-                                            id="accordion-text-faqs-1"
-                                            role="region"
-                                            aria-labelledby="accordion-title-faqs-1"
-                                            className="grid font-Nunito font-light leading-[26px] text-TextColor2-0 bg-white px-4 md:px-7 lg:px-6 xl:px-7 overflow-hidden transition-all duration-300 ease-in-out bg-normalBlack grid-rows-[0fr] opacity-0"
-                                        >
-                                            <div className="overflow-hidden">
-                                                <p className="pb-6 pt-6 text-sm sm:text-base font-Nunito">
-                                                    Distinctively plagiarize ubiquitous mindshare goal-oriented
-                                                    collaboration idea-sharing. Efficiently transition dynamic
-                                                    initiatives to business testing procedures enthusiastically
-                                                    negotiate high
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="mb-5 rounded-md overflow-hidden">
-                                        <h2>
-                                            <button
-                                                className="faq-button2 rounded-md flex items-center justify-between pl-4 pr-2 md:pl-7 md:pr-6 lg:pl-6 lg:pr-4 xl:pl-7 xl:pr-6 py-4 w-full text-left font-semibold font-Nunito hover:bg-PrimaryColor-0 transition-all duration-500 group bg-white border border-BorderColor2-0"
-                                                aria-expanded="false"
-                                                aria-controls="accordion-text-faqs-2"
-                                            >
-                                                <span className="text-HeadingColor-0 transition !leading-5 duration-400 group-hover:text-white text-base sm:text-lg flex items-center gap-4 false">
-                                                    <img
-                                                        src="/images/faqs-icon1.png"
-                                                        draggable="false"
-                                                        className="size-[30px] transition-all duration-500"
-                                                    />
-                                                    <span>Service Horizon Business low?</span>
-                                                </span>
-                                                <svg
-                                                    stroke="currentColor"
-                                                    fill="currentColor"
-                                                    strokeWidth={0}
-                                                    viewBox="0 0 448 512"
-                                                    className="text-HeadingColor-0 bg-transparent transition duration-400 group-hover:text-white false"
-                                                    height="1em"
-                                                    width="1em"
-                                                    xmlns="http://www.w3.org/2000/svg"
-                                                >
-                                                    <path d="M201.4 374.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 306.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z" />
-                                                </svg>
-                                            </button>
-                                        </h2>
-                                        <div
-                                            id="accordion-text-faqs-2"
-                                            role="region"
-                                            aria-labelledby="accordion-title-faqs-2"
-                                            className="grid font-Nunito font-light leading-[26px] text-TextColor2-0 bg-white px-4 md:px-7 lg:px-6 xl:px-7 overflow-hidden transition-all duration-300 ease-in-out bg-normalBlack grid-rows-[0fr] opacity-0"
-                                        >
-                                            <div className="overflow-hidden">
-                                                <p className="pb-6 pt-6 text-sm sm:text-base font-Nunito">
-                                                    Distinctively plagiarize ubiquitous mindshare goal-oriented
-                                                    collaboration idea-sharing. Efficiently transition dynamic
-                                                    initiatives to business testing procedures enthusiastically
-                                                    negotiate high
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="mb-5 rounded-md overflow-hidden">
-                                        <h2>
-                                            <button
-                                                className="faq-button2 rounded-md flex items-center justify-between pl-4 pr-2 md:pl-7 md:pr-6 lg:pl-6 lg:pr-4 xl:pl-7 xl:pr-6 py-4 w-full text-left font-semibold font-Nunito hover:bg-PrimaryColor-0 transition-all duration-500 group bg-white border border-BorderColor2-0"
-                                                aria-expanded="false"
-                                                aria-controls="accordion-text-faqs-3"
-                                            >
-                                                <span className="text-HeadingColor-0 transition !leading-5 duration-400 group-hover:text-white text-base sm:text-lg flex items-center gap-4 false">
-                                                    <img
-                                                        src="/images/faqs-icon1.png"
-                                                        draggable="false"
-                                                        className="size-[30px] transition-all duration-500"
-                                                    />
-                                                    <span>Business Solution Redevelopment?</span>
-                                                </span>
-                                                <svg
-                                                    stroke="currentColor"
-                                                    fill="currentColor"
-                                                    strokeWidth={0}
-                                                    viewBox="0 0 448 512"
-                                                    className="text-HeadingColor-0 bg-transparent transition duration-400 group-hover:text-white false"
-                                                    height="1em"
-                                                    width="1em"
-                                                    xmlns="http://www.w3.org/2000/svg"
-                                                >
-                                                    <path d="M201.4 374.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 306.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z" />
-                                                </svg>
-                                            </button>
-                                        </h2>
-                                        <div
-                                            id="accordion-text-faqs-3"
-                                            role="region"
-                                            aria-labelledby="accordion-title-faqs-3"
-                                            className="grid font-Nunito font-light leading-[26px] text-TextColor2-0 bg-white px-4 md:px-7 lg:px-6 xl:px-7 overflow-hidden transition-all duration-300 ease-in-out bg-normalBlack grid-rows-[0fr] opacity-0"
-                                        >
-                                            <div className="overflow-hidden">
-                                                <p className="pb-6 pt-6 text-sm sm:text-base font-Nunito">
-                                                    Distinctively plagiarize ubiquitous mindshare goal-oriented
-                                                    collaboration idea-sharing. Efficiently transition dynamic
-                                                    initiatives to business testing procedures enthusiastically
-                                                    negotiate high
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="mb-5 rounded-md overflow-hidden">
-                                        <h2>
-                                            <button
-                                                className="faq-button2 rounded-md flex items-center justify-between pl-4 pr-2 md:pl-7 md:pr-6 lg:pl-6 lg:pr-4 xl:pl-7 xl:pr-6 py-4 w-full text-left font-semibold font-Nunito hover:bg-PrimaryColor-0 transition-all duration-500 group bg-white border border-BorderColor2-0"
-                                                aria-expanded="false"
-                                                aria-controls="accordion-text-faqs-4"
-                                            >
-                                                <span className="text-HeadingColor-0 transition !leading-5 duration-400 group-hover:text-white text-base sm:text-lg flex items-center gap-4 false">
-                                                    <img
-                                                        src="/images/faqs-icon1.png"
-                                                        draggable="false"
-                                                        className="size-[30px] transition-all duration-500"
-                                                    />
-                                                    <span>Do you have any custom services?</span>
-                                                </span>
-                                                <svg
-                                                    stroke="currentColor"
-                                                    fill="currentColor"
-                                                    strokeWidth={0}
-                                                    viewBox="0 0 448 512"
-                                                    className="text-HeadingColor-0 bg-transparent transition duration-400 group-hover:text-white false"
-                                                    height="1em"
-                                                    width="1em"
-                                                    xmlns="http://www.w3.org/2000/svg"
-                                                >
-                                                    <path d="M201.4 374.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 306.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z" />
-                                                </svg>
-                                            </button>
-                                        </h2>
-                                        <div
-                                            id="accordion-text-faqs-4"
-                                            role="region"
-                                            aria-labelledby="accordion-title-faqs-4"
-                                            className="grid font-Nunito font-light leading-[26px] text-TextColor2-0 bg-white px-4 md:px-7 lg:px-6 xl:px-7 overflow-hidden transition-all duration-300 ease-in-out bg-normalBlack grid-rows-[0fr] opacity-0"
-                                        >
-                                            <div className="overflow-hidden">
-                                                <p className="pb-6 pt-6 text-sm sm:text-base font-Nunito">
-                                                    Distinctively plagiarize ubiquitous mindshare goal-oriented
-                                                    collaboration idea-sharing. Efficiently transition dynamic
-                                                    initiatives to business testing procedures enthusiastically
-                                                    negotiate high
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
+                                    ))}
                                 </div>
                             </div>
                         </div>
