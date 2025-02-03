@@ -8,7 +8,7 @@ const testimonials1 = [
     {
         id: 1,
         img: "/images/testi-4.jpg",
-        icon: "/images/testi-icon.png",
+        icon: "images/testi-icon.png",
         text: "Accelerate innovation with world-class tech teams Beyond more stoic this along goodness hey this this wow manatee",
         name: "Mike Fermalin",
         designation: "CEO, Harlond Inc",
@@ -16,7 +16,7 @@ const testimonials1 = [
     {
         id: 2,
         img: "/images/testi-3.jpg",
-        icon: "/images/testi-icon.png",
+        icon: "images/testi-icon.png",
         text: "Accelerate innovation with world-class tech teams Beyond more stoic this along goodness hey this this wow manatee",
         name: "Mike Holder",
         designation: "CEO, Harlond Inc",
@@ -24,12 +24,15 @@ const testimonials1 = [
     {
         id: 3,
         img: "/images/testi-3.jpg",
-        icon: "/images/testi-icon.png",
+        icon: "images/testi-icon.png",
         text: "Accelerate innovation with world-class tech teams Beyond more stoic this along goodness hey this this wow manatee",
         name: "Mike Holder",
         designation: "CEO, Harlond Inc",
     },
 ];
+
+
+
 // const testimonials = [
 //     {
 //         text: "Completely extend leveraged customer service rather than performance-based imperatives. Magnetic relationships rather than leveraged e-markets. Rapidiously transform timely niches technology.",
@@ -180,7 +183,8 @@ const About = () => {
                         </div>
                     </div>
                 </section>
-                <section className="pt-[238px] pb-[120px] bg-white bg-no-repeat bg-center bg-cover relative">
+
+                <section className="pt-[238px] pb-[100px] bg-white bg-no-repeat bg-center bg-cover relative">
                     <div className="Container">
                         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 md:gap-[92px] lg:gap-10 2xl:gap-[92px] items-center">
                             <div className="relative z-10">
@@ -326,6 +330,174 @@ const About = () => {
                         </div>
                     </div>
                 </section>
+
+
+
+
+
+                <section className="pt-[0px] pb-[100px] bg-white bg-no-repeat bg-center bg-cover relative" style={{ marginTop: '-40px' }}>
+                    <div className="section techwix-skill-section-02 techwix-skill-section-03">
+                        <div className="Container">
+                            <div className="skill-wrap">
+                                <div className="flex flex-wrap">
+                                    <div className="lg:w-1/2 md:w-full w-full">
+                                        {/* Skill Left Start */}
+                                        <div className="skill-left">
+                                            <div className="section-title">
+                                                <h2 className="font-Rajdhani font-bold text-xl leading-7 sm:text-[30px] sm:leading-[44px] md:text-[30px] md:leading-[54px] lg:text-[30px] lg:leading-[40px] xl:text-[30px] xl:leading-[46px] 2xl:text-[37px] 2xl:leading-[52px] text-HeadingColor-0 mt-[18px]">Preparing for your success, we provide truly prominent IT solutions</h2>
+                                            </div>
+                                            <div className="about-list font-Nunito font-medium text-HeadingColor-0">
+                                                <ul>
+
+                                                    <li className="flex items-center gap-2">
+                                                        <span className="text-PrimaryColor-0">
+                                                            <svg
+                                                                stroke="currentColor"
+                                                                fill="currentColor"
+                                                                strokeWidth={0}
+                                                                viewBox="0 0 24 24"
+                                                                height={24}
+                                                                width={24}
+                                                                xmlns="http://www.w3.org/2000/svg"
+                                                            >
+                                                                <path d="M9.9997 15.1709L19.1921 5.97852L20.6063 7.39273L9.9997 17.9993L3.63574 11.6354L5.04996 10.2212L9.9997 15.1709Z" />
+                                                            </svg>
+                                                        </span>
+                                                        <span className="about-text">
+                                                            We always focus on technical excellence
+                                                        </span>
+                                                    </li>
+                                                    <li className="flex items-center gap-2">
+                                                        <span className="text-PrimaryColor-0">
+                                                            <svg
+                                                                stroke="currentColor"
+                                                                fill="currentColor"
+                                                                strokeWidth={0}
+                                                                viewBox="0 0 24 24"
+                                                                height={24}
+                                                                width={24}
+                                                                xmlns="http://www.w3.org/2000/svg"
+                                                            >
+                                                                <path d="M9.9997 15.1709L19.1921 5.97852L20.6063 7.39273L9.9997 17.9993L3.63574 11.6354L5.04996 10.2212L9.9997 15.1709Z" />
+                                                            </svg>
+                                                        </span>
+                                                        <span className="about-text">
+                                                            Wherever you’re going, we bring ideas and excitement
+                                                        </span>
+                                                    </li>
+                                                    <li className="flex items-center mb-4 gap-2">
+                                                        <span className="text-PrimaryColor-0">
+                                                            <svg
+                                                                stroke="currentColor"
+                                                                fill="currentColor"
+                                                                strokeWidth={0}
+                                                                viewBox="0 0 24 24"
+                                                                height={24}
+                                                                width={24}
+                                                                xmlns="http://www.w3.org/2000/svg"
+                                                            >
+                                                                <path d="M9.9997 15.1709L19.1921 5.97852L20.6063 7.39273L9.9997 17.9993L3.63574 11.6354L5.04996 10.2212L9.9997 15.1709Z" />
+                                                            </svg>
+                                                        </span>
+                                                        <span className="about-text">
+                                                            We’re consultants, guides, and partners for brands
+                                                        </span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            {/* About Author Info Wrap Start */}
+                                            <div className="about-author-info-wrap mt-6">
+                                                <div className="about-author mb-4">
+                                                    <img
+                                                        src="assets/images/sign.png"
+                                                        alt=""
+                                                        className="w-16 h-16 rounded-full"
+                                                    />
+                                                    <h3 className="name text-xl font-semibold font-Rajdhani">Alen Morno sin</h3>
+                                                    <span className="designation text-gray-600 font-Rajdhani">
+                                                        CEO, Techmax
+                                                    </span>
+                                                </div>
+                                                <div className="about-info">
+                                                    <p className="text-gray-600 font-Rajdhani">Call to ask any question</p>
+                                                    <h3 className="number text-2xl font-bold font-Rajdhani">0123-456-7890</h3>
+                                                </div>
+                                            </div>
+                                            {/* About Author Info Wrap End */}
+                                        </div>
+                                        {/* Skill Left End */}
+                                    </div>
+                                    <div className="lg:w-1/2 md:w-full w-full">
+                                        <div className="skill-right">
+                                            <p className="text-gray-700 mb-6">
+                                                Accelerate innovation with world-class tech teams. We’ll match
+                                                you to an entire remote team of incredible freelance talent for
+                                                all your software development needs. Building cloud,
+                                                infrastructure, network, etc. We put a strong focus on the needs
+                                                of your business to figure out solutions that best fit your
+                                                demand and nail it.
+                                            </p>
+                                            <div className="counter-bar">
+                                                <div className="skill-item">
+                                                    <span className="title font-Rajdhani">IT Managment</span>
+                                                    <div className="skill-bar">
+                                                        <div className="bar-inner">
+                                                            <div
+                                                                className="bar progress-line color-1"
+                                                                data-width={80}
+                                                                style={{ width: "80%" }}
+                                                            >
+                                                                <span className="skill-percent">
+                                                                    <span className="counter">80</span>%
+                                                                </span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div className="skill-item">
+                                                    <span className="title font-Rajdhani">Data Security</span>
+                                                    <div className="skill-bar">
+                                                        <div className="bar-inner">
+                                                            <div
+                                                                className="bar progress-line color-1"
+                                                                data-width={95}
+                                                                style={{ width: "95%" }}
+                                                            >
+                                                                <span className="skill-percent">
+                                                                    <span className="counter">95</span>%
+                                                                </span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div className="skill-item">
+                                                    <span className="title font-Rajdhani">Information Technology</span>
+                                                    <div className="skill-bar">
+                                                        <div className="bar-inner">
+                                                            <div
+                                                                className="bar progress-line color-1"
+                                                                data-width={80}
+                                                                style={{ width: "80%" }}
+                                                            >
+                                                                <span className="skill-percent">
+                                                                    <span className="counter">80</span>%
+                                                                </span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+
+
+
 
                 <section className=" pt-28 bg-SecondaryColor-0">
                     <div className="Container">
@@ -2049,11 +2221,14 @@ const About = () => {
                     </div>
                 </section> */}
 
-                <section className="section techwix-testimonial-section-02 techwix-testimonial-section-03 section-padding-02 bg-gray-50 py-10">
-                    <div className="Container mx-auto px-4">
+
+                {/* testimonial */}
+
+                <section className="section techwix-testimonial-section-02 techwix-testimonial-section-03 section-padding-02 bg-gray-50 py-2">
+                    <div className="Container mx-auto px-4 custom-container">
                         <div className="section-title text-center mb-10">
-                            <h3 className="sub-title text-blue-500 uppercase text-sm font-semibold">Testimonial</h3>
-                            <h2 className="title text-3xl font-bold">20k+ satisfied clients worldwide</h2>
+                            <h3 className="font-Rajdhani text-lg font-semibold text-PrimaryColor-0">Testimonial</h3>
+                            <h2 className="font-Rajdhani font-bold text-xl leading-7 sm:text-[38px] sm:leading-[48px] md:text-[44px] md:leading-[54px] lg:text-[32px] lg:leading-[42px] xl:text-[36px] xl:leading-[46px] 2xl:text-[42px] 2xl:leading-[52px] text-HeadingColor-0 mt-[18px]">20k+ satisfied clients worldwide</h2>
                         </div>
 
                         <Swiper
@@ -2062,172 +2237,46 @@ const About = () => {
                             slidesPerView={2}
                             navigation={false}
                             pagination={{ clickable: true }}
-                            autoplay={{ delay: 3000 }}
+                            autoplay={{ delay: 5000 }}
                             loop={true}
                             breakpoints={{
-                                640: { slidesPerView: 1 },
-                                768: { slidesPerView: 1.5 },
-                                1024: { slidesPerView: 2 },
+                                320: { slidesPerView: 1 },
+                                992: { slidesPerView: 2 },
+                                1200: { slidesPerView: 2 },
                             }}
-                            className="swiper-container testimonial-02-active"
+                            className="swiper-container testimonial-02-active custom-swiper-container"
                         >
                             {testimonials1.map((testimonial) => (
-                                <SwiperSlide key={testimonial.id} className="swiper-slide">
+                                <SwiperSlide key={testimonial.id} className="swiper-slide custom-swiper-slide">
                                     <div className="single-testimonial-02">
-                                        <div className="testimonial-thumb">
-                                            <img src={testimonial.img} alt={testimonial.name} />
+                                        {/* Testimonial Thumbnail */}
+                                        <div className="testimonial-thumb custom-testimonial-thumb-wrapper" style={{ textAlign: 'center', marginBottom: '20px' }}>
+                                            <div>
+                                                <img
+                                                    src={testimonial.img}
+                                                    alt={testimonial.name}
+                                                    className="custom-testimonial-thumb-img"
+                                                />
+                                            </div>
                                         </div>
 
-                                        <div className="testimonial-content">
-                                            <img src={testimonial.icon} alt="testimonial icon" />
-                                            <p>{testimonial.text}</p>
-                                            <span className="name">{testimonial.name}</span>
-                                            <span className="designation "> / {testimonial.designation}</span>
+                                        {/* Testimonial Content */}
+                                        <div className="testimonial-content custom-testimonial-content">
+                                            <img
+                                                src={testimonial.icon}
+                                                alt="testimonial icon"
+                                                className="custom-testimonial-icon"
+                                            />
+                                            <p className="custom-testimonial-text">{testimonial.text}</p>
+                                            <span className="name custom-testimonial-name">{testimonial.name}</span>
+                                            <span className="designation custom-testimonial-designation"> / {testimonial.designation}</span>
                                         </div>
                                     </div>
                                 </SwiperSlide>
                             ))}
                         </Swiper>
-
                     </div>
                 </section>
-
-                <div className="section techwix-skill-section-02 techwix-skill-section-03 section-padding">
-                    <div className="Container mx-auto px-4">
-                        <div className="skill-wrap">
-                            <div className="flex flex-wrap">
-                                <div className="lg:w-1/2 w-full">
-                                    {/* Skill Left Start */}
-                                    <div className="skill-left">
-                                        <div className="section-title">
-                                            <h2 className="title">Preparing for your success, we provide truly prominent IT solutions</h2>
-                                        </div>
-                                        <div className="about-list">
-                                            <ul>
-                                                <li className="flex items-center">
-                                                    <span className="about-icon text-green-500 mr-2">
-                                                        <i className="fas fa-check"></i>
-                                                    </span>
-                                                    <span className="about-text">
-                                                        We always focus on technical excellence
-                                                    </span>
-                                                </li>
-                                                <li className="flex items-center">
-                                                    <span className="about-icon text-green-500 mr-2">
-                                                        <i className="fas fa-check"></i>
-                                                    </span>
-                                                    <span className="about-text">
-                                                        Wherever you’re going, we bring ideas and excitement
-                                                    </span>
-                                                </li>
-                                                <li className="flex items-center mb-4">
-                                                    <span className="about-icon text-green-500 mr-2">
-                                                        <i className="fas fa-check"></i>
-                                                    </span>
-                                                    <span className="about-text">
-                                                        We’re consultants, guides, and partners for brands
-                                                    </span>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        {/* About Author Info Wrap Start */}
-                                        <div className="about-author-info-wrap mt-6">
-                                            <div className="about-author mb-4">
-                                                <img
-                                                    src="assets/images/sign.png"
-                                                    alt=""
-                                                    className="w-16 h-16 rounded-full"
-                                                />
-                                                <h3 className="name text-xl font-semibold">Alen Morno sin</h3>
-                                                <span className="designation text-gray-600">
-                                                    CEO, Techmax
-                                                </span>
-                                            </div>
-                                            <div className="about-info">
-                                                <p className="text-gray-600">Call to ask any question</p>
-                                                <h3 className="number text-2xl font-bold">0123-456-7890</h3>
-                                            </div>
-                                        </div>
-                                        {/* About Author Info Wrap End */}
-                                    </div>
-                                    {/* Skill Left End */}
-                                </div>
-                                <div className="lg:w-1/2 w-full">
-                                    {/* Skill Right Start */}
-                                    <div className="skill-right">
-                                        <p className="text-lg text-gray-700 mb-6">
-                                            Accelerate innovation with world-class tech teams. We’ll match
-                                            you to an entire remote team of incredible freelance talent for
-                                            all your software development needs. Building cloud,
-                                            infrastructure, network, etc. We put a strong focus on the needs
-                                            of your business to figure out solutions that best fit your
-                                            demand and nail it.
-                                        </p>
-                                        <div className="counter-bar">
-                                            {/* Skill Item Start */}
-                                            <div className="skill-item">
-                                                <span className="title">IT Managment</span>
-                                                <div className="skill-bar">
-                                                    <div className="bar-inner">
-                                                        <div
-                                                            className="bar progress-line color-1"
-                                                            data-width={80}
-                                                            style={{ width: "80%" }}
-                                                        >
-                                                            <span className="skill-percent">
-                                                                <span className="counter">80</span>%
-                                                            </span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            {/* Skill Item End */}
-                                            {/* Skill Item Start */}
-                                            <div className="skill-item">
-                                                <span className="title">Data Security</span>
-                                                <div className="skill-bar">
-                                                    <div className="bar-inner">
-                                                        <div
-                                                            className="bar progress-line color-1"
-                                                            data-width={95}
-                                                            style={{ width: "95%" }}
-                                                        >
-                                                            <span className="skill-percent">
-                                                                <span className="counter">95</span>%
-                                                            </span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            {/* Skill Item End */}
-                                            {/* Skill Item Start */}
-                                            <div className="skill-item">
-                                                <span className="title">Information Technology</span>
-                                                <div className="skill-bar">
-                                                    <div className="bar-inner">
-                                                        <div
-                                                            className="bar progress-line color-1"
-                                                            data-width={80}
-                                                            style={{ width: "80%" }}
-                                                        >
-                                                            <span className="skill-percent">
-                                                                <span className="counter">80</span>%
-                                                            </span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            {/* Skill Item End */}
-                                        </div>
-
-                                    </div>
-                                    {/* Skill Right End */}
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
 
             </div>
 

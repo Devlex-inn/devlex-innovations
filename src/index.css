@@ -288,15 +288,15 @@
 }
 
 .about-list {
-    margin-top: 40px;
+    margin-top: 20px;
 }
 
 .about-list ul li {
-    font-size: 16px;
+    font-size: 17px;
     line-height: 36px;
-    font-family: "Jost", sans-serif;
+    font-family: Nunito, sans-serif;
     font-weight: 500;
-    color: #333333;
+    color: rgb(4 20 36);
 }
 
 .about-list ul li i {
@@ -545,15 +545,16 @@
 }
 
 .about-author-info-wrap .about-author .name {
-    font-size: 16px;
+    font-size: 20px;
     line-height: 24px;
     font-weight: 600;
     margin-top: 20px;
 }
 
 .about-author-info-wrap .about-author .designation {
-    font-size: 12px;
+    font-size: 16px;
     line-height: 18px;
+    font-weight: 500;
 }
 
 .about-author-info-wrap .about-info {
@@ -561,6 +562,7 @@
     padding-left: 50px;
     margin-left: 30px;
     position: relative;
+
 }
 
 .about-author-info-wrap .about-info::before {
@@ -581,10 +583,10 @@
 }
 
 .about-author-info-wrap .about-info .number {
-    font-size: 24px;
+    font-size: 28px;
     line-height: 36px;
     font-weight: 600;
-    color: #086ad8;
+    color: #84189e;
 }
 
 @media only screen and (max-width: 449px) {
@@ -1228,8 +1230,6 @@
 }
 
 .techwix-testimonial-section-02 .single-testimonial-02 {
-    background: #ffffff;
-    box-shadow: 0px 10px 15px 0px rgba(0, 0, 0, 0.09);
     border-radius: 10px;
     width: 570px;
     margin: 0 40px;
@@ -1333,26 +1333,7 @@
     }
 }
 
-.techwix-testimonial-section-03 .single-testimonial-02 .testimonial-thumb::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 0;
-    background: #086ad8;
-    width: 135px;
-    height: 135px;
-    border-radius: 10px;
-    transform: translate(5px, 5px);
-    z-index: -1;
-}
 
-@media only screen and (max-width: 767px) {
-    .techwix-testimonial-section-03 .single-testimonial-02 .testimonial-thumb::before {
-        left: 50%;
-        top: 50%;
-        transform: translate(-45%, -31%);
-    }
-}
 
 .techwix-testimonial-section-03 .testimonial-02-active .swiper-pagination .swiper-pagination-bullet {
     background-color: #e8e8e8;
@@ -1442,49 +1423,54 @@
 /*--
 /*  03 - Skill CSS
 /*----------------------------------------*/
-.techwix-skill-section .skill-left {
+.techwix-skill-section-02 .skill-left {
     padding-right: 120px;
 }
 
-.techwix-skill-section .skill-left p {
-    font-size: 16px;
+.techwix-skill-section-02 .skill-left p {
+    font-size: 17.5px;
     line-height: 30px;
-    margin-top: 40px;
+    font-weight: 500;
+    /* margin-top: 40px; */
 }
 
-.techwix-skill-section .skill-left .skill-author {
+.techwix-skill-section-02 .skill-left .skill-author {
     margin-top: 30px;
 }
 
-.techwix-skill-section .skill-left .skill-author .name {
+.techwix-skill-section-02 .skill-left .skill-author .name {
     font-size: 16px;
     line-height: 24px;
     font-weight: 600;
     margin-top: 10px;
 }
 
-.techwix-skill-section .skill-left .skill-author .designation {
+.techwix-skill-section-02 .skill-left .skill-author .designation {
     font-size: 12px;
     line-height: 18px;
 }
 
-.techwix-skill-section .skill-right {
-    padding-right: 50px;
-    margin-top: 30px;
+.techwix-skill-section-02 .skill-right {
+    /* padding-right: 50px; */
+    margin-top: 30px !important;
+    font-family: Nunito, sans-serif !important;
+    color: rgb(4 20 36) !important;
+    font-size: 18px !important;
+
 }
 
-.techwix-skill-section .skill-right .experience {
+.techwix-skill-section-02 .skill-right .experience {
     display: flex;
 }
 
-.techwix-skill-section .skill-right .experience .number {
+.techwix-skill-section-02 .skill-right .experience .number {
     font-size: 180px;
     line-height: 30px;
     color: #ff5538;
     margin-right: 10px;
 }
 
-.techwix-skill-section .skill-right .experience span {
+.techwix-skill-section-02 .skill-right .experience span {
     font-size: 18px;
     line-height: 24px;
     color: #333333;
@@ -1562,28 +1548,28 @@
 }
 
 @media only screen and (max-width: 1199px) {
-    .techwix-skill-section .skill-left {
+    .techwix-skill-section-02 .skill-left {
         padding-right: 30px;
     }
 
-    .techwix-skill-section .skill-right .experience .number {
+    .techwix-skill-section-02 .skill-right .experience .number {
         font-size: 150px;
     }
 }
 
 @media only screen and (max-width: 991px) {
-    .techwix-skill-section .skill-left {
+    .techwix-skill-section-02 .skill-left {
         padding-right: 0px;
         margin-bottom: 50px;
     }
 }
 
 @media only screen and (max-width: 575px) {
-    .techwix-skill-section .skill-right {
+    .techwix-skill-section-02 .skill-right {
         padding-right: 0px;
     }
 
-    .techwix-skill-section .counter-bar .skill-item .skill-bar .bar-inner .progress-line .skill-percent {
+    .techwix-skill-section-02 .counter-bar .skill-item .skill-bar .bar-inner .progress-line .skill-percent {
         right: -15px;
     }
 }
@@ -1665,7 +1651,7 @@
 }
 
 .techwix-skill-section-02 .skill-right .counter-bar .skill-item .skill-bar .bar-inner .progress-line {
-    background: #086ad8;
+    background: #84189e;
 }
 
 @media only screen and (max-width: 1199px) {
@@ -1691,49 +1677,47 @@
     }
 }
 
-.techwix-skill-section-03 .skill-left {
+/* .techwix-skill-section-02-03 .skill-left {
     padding-right: 60px;
 }
 
-.techwix-skill-section-03 .skill-left .about-list {
-    margin-top: 20px;
+.techwix-skill-section-02-03 .skill-left .about-list {
+    margin-top: 10px !important;
 }
 
-.techwix-skill-section-03 .skill-left .about-author-info-wrap {
+.techwix-skill-section-02-03 .skill-left .about-author-info-wrap {
     margin-right: 30px;
 }
 
-.techwix-skill-section-03 .skill-right {
+.techwix-skill-section-02-03 .skill-right {
     padding-right: 120px;
 }
 
-.techwix-skill-section-03 .skill-right .text {
+.techwix-skill-section-02-03 .skill-right .text {
     font-size: 18px;
     line-height: 30px;
     padding-bottom: 30px;
 }
 
 @media only screen and (max-width: 1199px) {
-    .techwix-skill-section-03 .skill-left {
+    .techwix-skill-section-02-03 .skill-left {
         padding-right: 30px;
     }
 
-    .techwix-skill-section-03 .skill-right {
+    .techwix-skill-section-02-03 .skill-right {
         padding-right: 0;
     }
 }
 
 @media only screen and (max-width: 991px) {
-    .techwix-skill-section-03 .skill-left {
+    .techwix-skill-section-02-03 .skill-left {
         padding-right: 0px;
     }
 
-    .techwix-skill-section-03 .skill-left .about-author-info-wrap {
+    .techwix-skill-section-02-03 .skill-left .about-author-info-wrap {
         margin-right: 0px;
     }
-}
-
-
+} */
 
 .progress-wrap {
     position: fixed;
@@ -1796,4 +1780,343 @@
 
 .progress-wrap-3 svg.progress-circle path {
     stroke: #ff5538;
+}
+
+
+
+
+/* custom-styles.css */
+
+.custom-container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.custom-swiper-container {
+    overflow: hidden;
+}
+
+.custom-swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.custom-testimonial-thumb-wrapper {
+    display: inline-block;
+}
+
+.custom-testimonial-thumb-img {
+    width: 135px;
+    height: 135px;
+    object-fit: cover;
+}
+
+.custom-testimonial-content {
+    text-align: center;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 0 10px;
+}
+
+.custom-testimonial-icon {
+    width: 30px !important;
+    height: 30px !important;
+    margin-bottom: 10px !important;
+}
+
+.custom-testimonial-text {
+    font-size: 17.5px !important;
+    color: #333 !important;
+    line-height: 1.5 !important;
+    font-family: sans-serif !important;
+}
+
+.custom-testimonial-name {
+    display: block !important;
+    font-size: 22px !important;
+    font-weight: 600 !important;
+    color: #000 !important;
+    margin-top: 10px !important;
+    font-family: Rajdhani, sans-serif !important;
+
+}
+
+.custom-testimonial-designation {
+    font-size: 16px !important;
+    color: #666;
+    font-weight: 600 !important;
+    font-family: Rajdhani, sans-serif !important;
+}
+
+.single-testimonial-02 {
+    width: 100% !important;
+    max-width: 580px !important;
+    position: relative !important;
+}
+
+
+
+.techwix-testimonial-section-03 .single-testimonial-02 .testimonial-thumb::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: #84189e;
+    width: 135px;
+    height: 135px;
+    border-radius: 10px;
+    transform: translate(5px, 5px);
+    z-index: -1;
+}
+
+@media only screen and (max-width: 767px) {
+    .techwix-testimonial-section-03 .single-testimonial-02 .testimonial-thumb::before {
+        left: 50%;
+        top: 50%;
+        transform: translate(-45%, -31%);
+    }
+}
+
+@media (max-width: 1400px) {
+    .custom-swiper-slide {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .custom-testimonial-thumb-img {
+        width: 105px;
+        height: 105px;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+
+    .single-testimonial-02 {
+        width: 100% !important;
+        max-width: 530px !important;
+        position: relative !important;
+        margin-left: 50px !important;
+    }
+
+    .techwix-testimonial-section-03 .single-testimonial-02 .testimonial-thumb::before {
+        width: 108px !important;
+        height: 108px !important;
+    }
+}
+@media (max-width: 1200px) {
+    .custom-swiper-slide {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .custom-testimonial-thumb-img {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+
+    .single-testimonial-02 {
+        width: 100% !important;
+        max-width: 430px !important;
+        position: relative !important;
+    }
+
+    .techwix-testimonial-section-03 .single-testimonial-02 .testimonial-thumb::before {
+        width: 103px !important;
+        height: 103px !important;
+    }
+    .custom-testimonial-text {
+        font-size: 17px !important;
+        margin-left: -40px !important;
+        margin-right: -20px !important;
+    }
+    .custom-testimonial-name {
+        display: block !important;
+        font-size: 19px !important;
+        margin-top: 5px !important;
+    }
+    .custom-testimonial-designation {
+        font-size: 15px !important;
+    }
+    .techwix-testimonial-section-02 .single-testimonial-02 .testimonial-content {
+        padding: 30px 130px;
+        padding-right: 40px;
+    }
+}
+
+@media (max-width: 992px) {
+    .single-testimonial-02 {
+        width: 100% !important;
+        max-width: 98% !important;
+        position: relative !important;
+        margin-left: 50px !important;
+    }
+    
+   
+    .custom-container {
+        padding: 0 10px;
+    }
+
+    .custom-testimonial-content {
+        padding: 15px;
+    }
+
+    .custom-testimonial-thumb-img {
+        width: 110px;
+        height: 110px;
+    }
+    .techwix-testimonial-section-03 .single-testimonial-02 .testimonial-thumb::before {
+        width: 113px !important;
+        height: 113px !important;
+    }
+
+    .custom-testimonial-text {
+        font-size: 17.5px !important;
+    }
+
+    .custom-testimonial-name {
+        font-size: 20px !important;
+    }
+
+    .custom-testimonial-designation {
+        font-size: 15px !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .single-testimonial-02 {
+        width: 100% !important;
+        max-width: 98% !important;
+        position: relative !important;
+        margin-left: 5px !important;
+        
+    }
+
+    .custom-container {
+        padding: 0 10px;
+    }
+
+    .custom-testimonial-content {
+        padding: 10px;
+        margin-top: -40px !important;
+    }
+
+    .custom-testimonial-thumb-img {
+        width: 90px !important;
+        height: 90px !important;
+    }
+    .techwix-testimonial-section-03 .single-testimonial-02 .testimonial-thumb::before {
+        width: 93px !important;
+        height: 93px !important;
+    }
+
+    .custom-testimonial-text {
+        font-size: 17.5px !important;
+        margin-left: -100px !important;
+    }
+
+    .custom-testimonial-name {
+        font-size: 20px !important;
+        margin-left: -80px !important;
+
+    }
+
+    .custom-testimonial-designation {
+        font-size: 15px !important;
+        margin-left: -80px !important;
+
+    }
+    .custom-testimonial-icon{
+        display: none;
+    }
+}
+
+@media (max-width: 480px) {
+    .single-testimonial-02 {
+        margin-left: 5px !important;   
+    }
+    .custom-container {
+        padding: 0 5px;
+    }
+
+    .custom-testimonial-content {
+        padding: 10px;
+        margin: 0 5px;
+    }
+
+    .custom-testimonial-thumb-img {
+        width: 70px;
+        height: 70px;
+    }
+
+    .custom-testimonial-text {
+        font-size: 12px;
+    }
+
+    .custom-testimonial-name {
+        font-size: 14px;
+    }
+
+    .custom-testimonial-designation {
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 320px) {
+    .single-testimonial-02 {
+        margin-left: 3px !important;   
+    }
+    
+
+    .custom-testimonial-thumb-img {
+        width: 70px !important;
+        height: 70px !important;
+    }
+    .techwix-testimonial-section-03 .single-testimonial-02 .testimonial-thumb::before {
+        width: 73px !important;
+        height: 68px !important;
+    }
+
+    .custom-testimonial-text {
+        font-size: 15.5px !important;
+    }
+
+    .custom-testimonial-name {
+        font-size: 18px !important;
+    }
+
+    .custom-testimonial-designation {
+        font-size: 15px !important;
+    }
+}
+
+
+@media (max-width:1200px) and (min-width:992px){
+    .skill-left{
+        margin-right: 20px !important;
+    }
+    .skill-right{
+        margin-left: 15px !important;
+    }
+}
+
+@media (max-width:480px){
+    .techwix-skill-section-02 .skill-right {
+        font-size: 16px !important;
+    }
+    .about-author-info-wrap .about-info .number {
+        font-size: 24px;
+    }
+    .about-author-info-wrap .about-info p {
+        font-size: 15px;
+    }
+    .about-list ul li {
+        font-size: 16px;
+        line-height: 25px;
+    }
 }
