@@ -1197,12 +1197,18 @@ video {
 }
 
 .\!flex {
-    display: flex !important
+    display: flex 
 }
 
 .flex {
     display: flex
 }
+@media (max-width:992px){
+    .flex-wrap {
+        display: block !important;
+    }
+}
+
 
 .grid {
     display: grid
@@ -3460,6 +3466,9 @@ video {
 .pt-9 {
     padding-top: 2.25rem
 }
+.pt-\[0px\] {
+    padding-top: -20px !important;
+}
 
 .pt-\[100px\] {
     padding-top: 100px
@@ -3709,6 +3718,10 @@ video {
 
 .text-xl {
     font-size: 1.25rem;
+    line-height: 1.75rem
+}
+.text-xl {
+    font-size: 1.5rem;
     line-height: 1.75rem
 }
 
@@ -4026,7 +4039,7 @@ body {
 
 @media (min-width: 768px) {
     .Container {
-        width: 720px;
+        width: 735px;
         padding-left: .75rem;
         padding-right: .75rem
     }
@@ -4034,7 +4047,7 @@ body {
 
 @media (min-width: 992px) {
     .Container {
-        width: 960px;
+        width: 980px;
         padding-left: 1rem;
         padding-right: 1rem
     }
@@ -4052,7 +4065,7 @@ body {
 
 @media (min-width: 1200px) {
     .Container {
-        width: 1140px;
+        width: 1200px;
         padding-left: 1.25rem;
         padding-right: 1.25rem
     }
