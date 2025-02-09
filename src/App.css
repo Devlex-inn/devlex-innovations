@@ -3123,6 +3123,10 @@ video {
     padding-top: 4rem;
     padding-bottom: 4rem
 }
+/* .py-35 {
+    padding-top: 10rem;
+    padding-bottom: 4rem
+} */
 
 .py-3 {
     padding-top: .75rem;
@@ -4099,7 +4103,7 @@ body {
         padding-right: 1rem
     }
     .faq-section{
-        margin-top: -140px !important;
+        margin-top: -80px !important;
     }
 }
 @media (max-width: 992px) {

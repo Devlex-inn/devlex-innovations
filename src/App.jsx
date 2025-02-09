@@ -14,6 +14,7 @@ import UiUxDesign from './component/UIUXDesign';
 import AppDevelopment from './component/AppDevelopment';
 import DigitalMarketing from './component/DigitalMarketing';
 import VideoEditing from './component/VideoEditing';
+import Blog from './component/Blog';
 
 function App() {
   return (
@@ -34,6 +35,8 @@ function App() {
         <Route path="/ourmission" element={<Ourmission />} />
         <Route path="/whychoose" element={<Whychoose />} />
         <Route path="/faq" element={<Faq />} />
+        <Route path="/blog" element={<Blog />} />
+
 
       </Routes>
       <Footer />

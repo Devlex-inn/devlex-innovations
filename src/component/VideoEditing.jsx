@@ -250,7 +250,7 @@ const VideoEditing = () => {
                                     </h4>
                                     <ul className="mt-8">
                                         <li>
-                                            <a href="/service_details">
+                                            <a href="/web-development">
                                                 <button className="w-full font-Nunito text-left text-white transition-all duration-500 group px-7 py-4 flex items-center justify-between rounded bg-PrimaryColor-0 mb-3 overflow-hidden z-[1] relative before:absolute before:top-0 before:right-0 before:w-0 before:-z-[1] before:h-full before:bg-PrimaryColor-0 before:rounded before:transition-all before:duration-500 hover:before:w-full hover:before:left-0 hover:text-white">
                                                     <span className="flex items-center gap-3 lg:gap-1 xl:gap-3">
                                                         <svg
@@ -283,7 +283,7 @@ const VideoEditing = () => {
                                             </a>
                                         </li>
                                         <li>
-                                            <a href="/service_details2">
+                                            <a href="/UIUX-design">
                                                 <button className="w-full font-Nunito text-left text-HeadingColor-0 transition-all duration-500 group px-7 py-4 flex items-center justify-between rounded bg-white mb-3 overflow-hidden z-[1] relative before:absolute before:top-0 before:right-0 before:w-0 before:-z-[1] before:h-full before:bg-PrimaryColor-0 before:rounded before:transition-all before:duration-500 hover:before:w-full hover:before:left-0 hover:text-white">
                                                     <span className="flex items-center gap-3 lg:gap-1 xl:gap-3">
                                                         <svg
@@ -298,7 +298,7 @@ const VideoEditing = () => {
                                                         >
                                                             <path d="M384 480h48c11.4 0 21.9-6 27.6-15.9l112-192c5.8-9.9 5.8-22.1 .1-32.1S555.5 224 544 224H144c-11.4 0-21.9 6-27.6 15.9L48 357.1V96c0-8.8 7.2-16 16-16H181.5c4.2 0 8.3 1.7 11.3 4.7l26.5 26.5c21 21 49.5 32.8 79.2 32.8H416c8.8 0 16 7.2 16 16v32h48V160c0-35.3-28.7-64-64-64H298.5c-17 0-33.3-6.7-45.3-18.7L226.7 50.7c-12-12-28.3-18.7-45.3-18.7H64C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H87.7 384z" />
                                                         </svg>
-                                                        Digital Marketing
+                                                        UI/UX Design
                                                     </span>
                                                     <svg
                                                         stroke="currentColor"
@@ -316,40 +316,7 @@ const VideoEditing = () => {
                                             </a>
                                         </li>
                                         <li>
-                                            <a href="/service_details3">
-                                                <button className="w-full font-Nunito text-left text-HeadingColor-0 transition-all duration-500 group px-7 py-4 flex items-center justify-between rounded bg-white mb-3 overflow-hidden z-[1] relative before:absolute before:top-0 before:right-0 before:w-0 before:-z-[1] before:h-full before:bg-PrimaryColor-0 before:rounded before:transition-all before:duration-500 hover:before:w-full hover:before:left-0 hover:text-white">
-                                                    <span className="flex items-center gap-3 lg:gap-1 xl:gap-3">
-                                                        <svg
-                                                            stroke="currentColor"
-                                                            fill="currentColor"
-                                                            strokeWidth={0}
-                                                            viewBox="0 0 576 512"
-                                                            className="text-PrimaryColor-0 transition-all duration-500 group-hover:text-white"
-                                                            height="1em"
-                                                            width="1em"
-                                                            xmlns="http://www.w3.org/2000/svg"
-                                                        >
-                                                            <path d="M384 480h48c11.4 0 21.9-6 27.6-15.9l112-192c5.8-9.9 5.8-22.1 .1-32.1S555.5 224 544 224H144c-11.4 0-21.9 6-27.6 15.9L48 357.1V96c0-8.8 7.2-16 16-16H181.5c4.2 0 8.3 1.7 11.3 4.7l26.5 26.5c21 21 49.5 32.8 79.2 32.8H416c8.8 0 16 7.2 16 16v32h48V160c0-35.3-28.7-64-64-64H298.5c-17 0-33.3-6.7-45.3-18.7L226.7 50.7c-12-12-28.3-18.7-45.3-18.7H64C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H87.7 384z" />
-                                                        </svg>
-                                                        IT Solution
-                                                    </span>
-                                                    <svg
-                                                        stroke="currentColor"
-                                                        fill="currentColor"
-                                                        strokeWidth={0}
-                                                        viewBox="0 0 512 512"
-                                                        className="text-white"
-                                                        height="1em"
-                                                        width="1em"
-                                                        xmlns="http://www.w3.org/2000/svg"
-                                                    >
-                                                        <path d="M502.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-128-128c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L402.7 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l370.7 0-73.4 73.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l128-128z" />
-                                                    </svg>
-                                                </button>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="/service_details4">
+                                            <a href="/app-development">
                                                 <button className="w-full font-Nunito text-left text-HeadingColor-0 transition-all duration-500 group px-7 py-4 flex items-center justify-between rounded bg-white mb-3 overflow-hidden z-[1] relative before:absolute before:top-0 before:right-0 before:w-0 before:-z-[1] before:h-full before:bg-PrimaryColor-0 before:rounded before:transition-all before:duration-500 hover:before:w-full hover:before:left-0 hover:text-white">
                                                     <span className="flex items-center gap-3 lg:gap-1 xl:gap-3">
                                                         <svg
@@ -382,7 +349,7 @@ const VideoEditing = () => {
                                             </a>
                                         </li>
                                         <li>
-                                            <a href="/service_details5">
+                                            <a href="/digital-marketing">
                                                 <button className="w-full font-Nunito text-left text-HeadingColor-0 transition-all duration-500 group px-7 py-4 flex items-center justify-between rounded bg-white mb-3 overflow-hidden z-[1] relative before:absolute before:top-0 before:right-0 before:w-0 before:-z-[1] before:h-full before:bg-PrimaryColor-0 before:rounded before:transition-all before:duration-500 hover:before:w-full hover:before:left-0 hover:text-white">
                                                     <span className="flex items-center gap-3 lg:gap-1 xl:gap-3">
                                                         <svg
@@ -397,7 +364,7 @@ const VideoEditing = () => {
                                                         >
                                                             <path d="M384 480h48c11.4 0 21.9-6 27.6-15.9l112-192c5.8-9.9 5.8-22.1 .1-32.1S555.5 224 544 224H144c-11.4 0-21.9 6-27.6 15.9L48 357.1V96c0-8.8 7.2-16 16-16H181.5c4.2 0 8.3 1.7 11.3 4.7l26.5 26.5c21 21 49.5 32.8 79.2 32.8H416c8.8 0 16 7.2 16 16v32h48V160c0-35.3-28.7-64-64-64H298.5c-17 0-33.3-6.7-45.3-18.7L226.7 50.7c-12-12-28.3-18.7-45.3-18.7H64C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H87.7 384z" />
                                                         </svg>
-                                                        Web Design
+                                                        Digital Marketing
                                                     </span>
                                                     <svg
                                                         stroke="currentColor"
@@ -415,7 +382,7 @@ const VideoEditing = () => {
                                             </a>
                                         </li>
                                         <li>
-                                            <a href="/service_details6">
+                                            <a href="/video-editing">
                                                 <button className="w-full font-Nunito text-left text-HeadingColor-0 transition-all duration-500 group px-7 py-4 flex items-center justify-between rounded bg-white mb-3 overflow-hidden z-[1] relative before:absolute before:top-0 before:right-0 before:w-0 before:-z-[1] before:h-full before:bg-PrimaryColor-0 before:rounded before:transition-all before:duration-500 hover:before:w-full hover:before:left-0 hover:text-white">
                                                     <span className="flex items-center gap-3 lg:gap-1 xl:gap-3">
                                                         <svg
@@ -430,7 +397,40 @@ const VideoEditing = () => {
                                                         >
                                                             <path d="M384 480h48c11.4 0 21.9-6 27.6-15.9l112-192c5.8-9.9 5.8-22.1 .1-32.1S555.5 224 544 224H144c-11.4 0-21.9 6-27.6 15.9L48 357.1V96c0-8.8 7.2-16 16-16H181.5c4.2 0 8.3 1.7 11.3 4.7l26.5 26.5c21 21 49.5 32.8 79.2 32.8H416c8.8 0 16 7.2 16 16v32h48V160c0-35.3-28.7-64-64-64H298.5c-17 0-33.3-6.7-45.3-18.7L226.7 50.7c-12-12-28.3-18.7-45.3-18.7H64C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H87.7 384z" />
                                                         </svg>
-                                                        UI/UX Design
+                                                        Video Editing
+                                                    </span>
+                                                    <svg
+                                                        stroke="currentColor"
+                                                        fill="currentColor"
+                                                        strokeWidth={0}
+                                                        viewBox="0 0 512 512"
+                                                        className="text-white"
+                                                        height="1em"
+                                                        width="1em"
+                                                        xmlns="http://www.w3.org/2000/svg"
+                                                    >
+                                                        <path d="M502.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-128-128c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L402.7 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l370.7 0-73.4 73.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l128-128z" />
+                                                    </svg>
+                                                </button>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <button className="w-full font-Nunito text-left text-HeadingColor-0 transition-all duration-500 group px-7 py-4 flex items-center justify-between rounded bg-white mb-3 overflow-hidden z-[1] relative before:absolute before:top-0 before:right-0 before:w-0 before:-z-[1] before:h-full before:bg-PrimaryColor-0 before:rounded before:transition-all before:duration-500 hover:before:w-full hover:before:left-0 hover:text-white">
+                                                    <span className="flex items-center gap-3 lg:gap-1 xl:gap-3">
+                                                        <svg
+                                                            stroke="currentColor"
+                                                            fill="currentColor"
+                                                            strokeWidth={0}
+                                                            viewBox="0 0 576 512"
+                                                            className="text-PrimaryColor-0 transition-all duration-500 group-hover:text-white"
+                                                            height="1em"
+                                                            width="1em"
+                                                            xmlns="http://www.w3.org/2000/svg"
+                                                        >
+                                                            <path d="M384 480h48c11.4 0 21.9-6 27.6-15.9l112-192c5.8-9.9 5.8-22.1 .1-32.1S555.5 224 544 224H144c-11.4 0-21.9 6-27.6 15.9L48 357.1V96c0-8.8 7.2-16 16-16H181.5c4.2 0 8.3 1.7 11.3 4.7l26.5 26.5c21 21 49.5 32.8 79.2 32.8H416c8.8 0 16 7.2 16 16v32h48V160c0-35.3-28.7-64-64-64H298.5c-17 0-33.3-6.7-45.3-18.7L226.7 50.7c-12-12-28.3-18.7-45.3-18.7H64C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H87.7 384z" />
+                                                        </svg>
+                                                        DevOps Services
                                                     </span>
                                                     <svg
                                                         stroke="currentColor"
@@ -541,7 +541,7 @@ const VideoEditing = () => {
                                     </h6>
                                     <a href="/">
                                         <button className="font-Nunito font-semibold text-2xl text-white">
-                                            +123 (4567) 890
+                                        +91- 6306011968
                                         </button>
                                     </a>
                                     <a href="/">
@@ -559,10 +559,10 @@ const VideoEditing = () => {
                                                 <path fill="none" d="M0 0h24v24H0z" />
                                                 <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z" />
                                             </svg>
-                                            example@gmail.com
+                                            info.devlexinnovations.com
                                         </button>
                                     </a>
-                                    <a href="/">
+                                    <a href="/contact">
                                         <button className="font-Nunito text-white flex gap-2 items-center bg-PrimaryColor-0 w-full h-[58px] rounded-md justify-center z-10 relative before:absolute before:top-0 before:right-0 before:scale-0 before:-z-10 before:w-full before:h-full before:bg-SecondaryColor-0 before:rounded before:transition-all before:duration-500 hover:before:scale-100 hover:text-white">
                                             Contact Us
                                             <svg

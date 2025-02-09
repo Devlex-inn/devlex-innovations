@@ -397,7 +397,7 @@ const Header = () => {
                                                 <div className="px-5 group hover:bg-PrimaryColor-0">
                                                     <li className="hover:ml-3 duration-300">
                                                         <Link className="py-2 block"
-                                                            to="#"
+                                                            to="/ourmission"
                                                             onClick={() => handleLinkClick("/mission_inner")}
                                                         >
                                                             Our Mission</Link>
@@ -409,6 +409,14 @@ const Header = () => {
                                                             to="#"
                                                             onClick={() => handleLinkClick("/project")}
                                                         >Projects</Link>
+                                                    </li>
+                                                </div>
+                                                <div className="px-5 group hover:bg-PrimaryColor-0">
+                                                    <li className="hover:ml-3 duration-300">
+                                                        <Link className="py-2 block"
+                                                            to="/blog"
+                                                            onClick={() => handleLinkClick("/blog")}
+                                                        >Blog</Link>
                                                     </li>
                                                 </div>
                                                 <div className="px-5 group hover:bg-PrimaryColor-0">

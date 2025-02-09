@@ -2,35 +2,36 @@ import { useState } from "react";
 
 const faqs = [
     {
-        question: "Project Horizon Redevelopment?",
+        question: "What is Project Horizon Redevelopment?",
         answer:
-            "Distinctively plagiarize ubiquitous mindshare goal-oriented collaboration idea-sharing. Efficiently transition dynamic initiatives to business testing procedures enthusiastically negotiate high.",
+            "Project Horizon focuses on modernizing IT infrastructure, optimizing system performance, and implementing cutting-edge solutions to enhance business efficiency.",
     },
     {
-        question: "What is your professional passion?",
+        question: "What drives your professional passion?",
         answer:
-            "Distinctively plagiarize ubiquitous mindshare goal-oriented collaboration idea-sharing. Efficiently transition dynamic initiatives to business testing procedures enthusiastically negotiate high.",
+            "We are committed to delivering innovative IT solutions, ensuring seamless digital transformation, and empowering businesses with advanced technology.",
     },
     {
-        question: "Service Horizon Business low?",
+        question: "How does Service Horizon benefit businesses?",
         answer:
-            "Distinctively plagiarize ubiquitous mindshare goal-oriented collaboration idea-sharing. Efficiently transition dynamic initiatives to business testing procedures enthusiastically negotiate high.",
+            "Service Horizon provides scalable IT services, including cloud computing, cybersecurity, and system management, tailored to meet business needs.",
     },
     {
-        question: "Business Solution Redevelopment?",
-        answer:
-            "Distinctively plagiarize ubiquitous mindshare goal-oriented collaboration idea-sharing. Efficiently transition dynamic initiatives to business testing procedures enthusiastically negotiate high.",
+        question: "What IT solutions do you provide for business growth?",
+        answer: 
+            "We offer comprehensive IT solutions, including cloud computing, cybersecurity, software development, and infrastructure optimization. Our services ensure seamless digital transformation, enhanced security, and improved operational efficiency. Whether you need system upgrades, data protection, or custom software, we tailor our solutions to meet your business objectives and drive long-term success."
     },
     {
-        question: "Do you have any custom services?",
+        question: "Do you offer custom IT services?",
         answer:
-            "Distinctively plagiarize ubiquitous mindshare goal-oriented collaboration idea-sharing. Efficiently transition dynamic initiatives to business testing procedures enthusiastically negotiate high.",
+            "Yes, we provide tailored IT solutions, including software development, infrastructure management, and cybersecurity, designed to meet specific business requirements.",
     },
 ];
 
 
+
 const Faq = () => {
-    const [openIndex, setOpenIndex] = useState(0); 
+    const [openIndex, setOpenIndex] = useState(0);
 
     const toggleFAQ = (index) => {
         setOpenIndex(openIndex === index ? null : index);
@@ -93,18 +94,16 @@ const Faq = () => {
                 </div>
                 <section className="relative overflow-hidden py-28 bg-BodyBg-0">
                     <div className="Container">
-                        <div className="grid grid-cols-1 gap-10 lg:grid-cols-2 items-center">
+                        <div className="grid grid-cols-1 gap-10 lg:grid-cols-2 items-center ">
                             <div className="relative faq-section">
                                 <h5 className="font-Rajdhani text-lg font-semibold text-PrimaryColor-0">
                                     IT Support For Business
                                 </h5>
                                 <h1 className="font-Rajdhani font-bold text-xl leading-7 sm:text-[34px] sm:leading-[44px] md:text-[44px] md:leading-[54px] lg:text-[30px] lg:leading-[40px] xl:text-[36px] xl:leading-[46px] 2xl:text-[42px] 2xl:leading-[52px] text-HeadingColor-0 mt-[18px] mb-4">
-                                    Ensuring Your Success Trusted <br />
-                                    IT Services Source
+                                    Your Trusted Partner for Seamless IT Solutions
                                 </h1>
                                 <p className="font-Nunito text-TextColor2-0 pt-1 pb-10">
-                                    Business tailored it design, management &amp; support services needs
-                                    to be business agency elit, sed do eiusmod tempor proved.
+                                    At Devlex Innovations, we provide tailored IT solutions, proactive management, and reliable support to meet your business needs. From infrastructure optimization to cybersecurity, our expert team ensures smooth and secure operations.
                                 </p>
                                 <div className="grid grid-cols-1 sm:grid-cols-2 sm:items-center gap-3 mb-10">
                                     <div>
@@ -119,9 +118,7 @@ const Faq = () => {
                                         <img src="/images/faqs-icon-s.png" draggable="false" />
                                     </div>
                                     <p className="font-Nunito text-TextColor2-0 flex-1">
-                                        Business tailored it design, management &amp; support services
-                                        busines agency elit sed do eiusmod tempor proved business task
-                                        state of the art infrastructures for you.
+                                        Tailored IT design, management, and support services to optimize your business. We deliver state-of-the-art infrastructure, innovative solutions, and expert guidance for seamless operations.
                                     </p>
                                 </div>
                             </div>
@@ -164,7 +161,7 @@ const Faq = () => {
                                                     }`}
                                             >
                                                 <div className="overflow-hidden">
-                                                    <p className="pb-4 pt-4 text-sm sm:text-base font-Nunito" style={{color:'black'}}>{faq.answer}</p>
+                                                    <p className="pb-4 pt-4 text-sm sm:text-base font-Nunito" style={{ color: 'black' }}>{faq.answer}</p>
                                                 </div>
                                             </div>
                                         </div>
