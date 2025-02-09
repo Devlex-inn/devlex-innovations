@@ -1,35 +1,71 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Autoplay } from "swiper/modules";
+import { useState, useEffect } from "react";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
+import CountUp from "react-countup";
+
+const statsData = [
+    {
+        value: 1,
+        suffix: "+",
+        title: "Years of Excellence",
+        description: "Delivering cutting-edge IT solutions with a proven record of excellence and success.",
+    },
+    {
+        value: 20,
+        suffix: "+",
+        title: "Successful Projects",
+        description: "Delivering cutting-edge software and technology solutions globally.",
+    },
+    {
+        value: 99,
+        suffix: "%",
+        title: "Client Retention Rate",
+        description: "Building long-term partnerships through quality, trust, and reliability.",
+    },
+];
+
+
 
 const testimonials1 = [
     {
         id: 1,
         img: "/images/testi-4.jpg",
         icon: "images/testi-icon.png",
-        text: "Accelerate innovation with world-class tech teams Beyond more stoic this along goodness hey this this wow manatee",
-        name: "Mike Fermalin",
-        designation: "CEO, Harlond Inc",
+        text: "Devlex Innovation provided us with advanced digital solutions that optimized our business operations and enhanced decision-making.",
+        name: "Amit Verma",
+        designation: "Entrepreneur",
     },
     {
         id: 2,
-        img: "/images/testi-3.jpg",
+        img: "/images/testi-6.jpg",
         icon: "images/testi-icon.png",
-        text: "Accelerate innovation with world-class tech teams Beyond more stoic this along goodness hey this this wow manatee",
-        name: "Mike Holder",
-        designation: "CEO, Harlond Inc",
+        text: "Their expertise in data management and automation has significantly improved efficiency in our administrative processes.",
+        name: "Priya Sharma",
+        designation: "Doctor",
     },
     {
         id: 3,
+        img: "/images/testi-5.jpg",
+        icon: "images/testi-icon.png",
+        text: "With their AI-powered solutions, we have improved patient management and diagnostic accuracy at our hospital.",
+        name: "Dr. Rajat Mehta",
+        designation: "Managing Director",
+    },
+    {
+        id: 4,
         img: "/images/testi-3.jpg",
         icon: "images/testi-icon.png",
-        text: "Accelerate innovation with world-class tech teams Beyond more stoic this along goodness hey this this wow manatee",
-        name: "Mike Holder",
-        designation: "CEO, Harlond Inc",
+        text: "Devlex Innovation’s digital transformation services have streamlined financial planning and decision-making for our corporation.",
+        name: "Rohan Kapoor",
+        designation: "Chief Surgeon",
     },
 ];
+
+
+
 
 
 
@@ -46,6 +82,32 @@ const testimonials1 = [
 //     },
 // ];
 const About = () => {
+    const skillData = [
+        { title: "IT Management", targetWidth: 80 },
+        { title: "Data Security", targetWidth: 95 },
+        { title: "Information Technology", targetWidth: 80 },
+    ];
+    const [widths, setWidths] = useState(skillData.map(() => 0)); // Initialize widths as 0 for each skill
+
+    useEffect(() => {
+        // Start animating each skill bar width when the component mounts
+        skillData.forEach((skill, index) => {
+            let currentWidth = 0;
+            const interval = setInterval(() => {
+                if (currentWidth < skill.targetWidth) {
+                    currentWidth += 1; // Increment width by 1% at a time
+                    setWidths((prevWidths) => {
+                        const updatedWidths = [...prevWidths];
+                        updatedWidths[index] = currentWidth;
+                        return updatedWidths;
+                    });
+                } else {
+                    clearInterval(interval); // Stop the animation once the target width is reached
+                }
+            }, 20); // Adjust the interval for animation speed (lower value = faster animation)
+        });
+    }, []);
+
     return (
         <>
             <div>
@@ -121,11 +183,10 @@ const About = () => {
                                             />
                                         </div>
                                         <h4 className="font-Rajdhani font-semibold text-2xl sm:text-[22px] lg:text-xl 2xl:text-2xl text-HeadingColor-0 transition-all duration-500 group-hover:text-white mt-8 mb-2">
-                                            22+ Year Experience
+                                            1+ Year Experience
                                         </h4>
                                         <p className="font-Nunito text-TextColor2-0 transition-all duration-500 group-hover:text-white mb-1">
-                                            Completely fashion reliable more products grow business
-                                        </p>
+                                            Software development, web, and IT solutions expertise                                        </p>
                                     </div>
                                 </div>
                                 <div>
@@ -141,7 +202,7 @@ const About = () => {
                                             Dedicated Members
                                         </h4>
                                         <p className="font-Nunito text-TextColor2-0 transition-all duration-500 group-hover:text-white mb-1">
-                                            Completely fashion reliable more products grow business
+                                            Providing reliable tech solutions to drive business growth
                                         </p>
                                     </div>
                                 </div>
@@ -155,10 +216,10 @@ const About = () => {
                                             />
                                         </div>
                                         <h4 className="font-Rajdhani font-semibold text-2xl sm:text-[22px] lg:text-xl 2xl:text-2xl text-HeadingColor-0 transition-all duration-500 group-hover:text-white mt-8 mb-2">
-                                            Valuable Supports
+                                            Innovative Solutions
                                         </h4>
                                         <p className="font-Nunito text-TextColor2-0 transition-all duration-500 group-hover:text-white mb-1">
-                                            Completely fashion reliable more products grow business
+                                            Empowering businesses with advanced technology solutions
                                         </p>
                                     </div>
                                 </div>
@@ -175,7 +236,7 @@ const About = () => {
                                             Valuable Supports
                                         </h4>
                                         <p className="font-Nunito text-TextColor2-0 transition-all duration-500 group-hover:text-white mb-1">
-                                            Completely fashion reliable more products grow business
+                                            Delivering reliable IT solutions for business growth
                                         </p>
                                     </div>
                                 </div>
@@ -197,7 +258,7 @@ const About = () => {
                                     <div className="bg-PrimaryColor-0 border-[6px] border-white pb-6 pt-5 flex flex-col justify-center overflow-hidden rounded-full h-[117px] sm:h-[214px] lg:h-[180px] xl:h-[214px] w-[92px] sm:w-[214px] lg:w-[180px] xl:w-[214px] items-center text-center relative z-10">
                                         <img src="/images/about-counter-icon.png" draggable="false" />
                                         <span className="text-3xl sm:text-[45px] font-Rajdhani font-bold text-white mt-2 mb-2">
-                                            283k+
+                                            20+
                                         </span>
                                         <h6 className="font-Rajdhani font-semibold text-white">
                                             Complete Projects
@@ -228,16 +289,10 @@ const About = () => {
                                 <h5 className="font-Rajdhani text-lg font-semibold text-PrimaryColor-0">
                                     IT Support For Business
                                 </h5>
-                                <h1 className="font-Rajdhani font-bold text-xl leading-7 sm:text-[34px] sm:leading-[44px] md:text-[44px] md:leading-[54px] lg:text-[30px] lg:leading-[40px] xl:text-[36px] xl:leading-[46px] 2xl:text-[42px] 2xl:leading-[52px] text-HeadingColor-0 mt-[18px] mb-4">
-                                    Ensuring Your Success Trusted <br />
-                                    IT Services Source
-                                </h1>
+                                <h1 className="font-Rajdhani font-bold text-xl leading-7 sm:text-[32px] sm:leading-[44px] md:text-[30px] md:leading-[50px] lg:text-[30px] lg:leading-[40px] xl:text-[30px] xl:leading-[46px] 2xl:text-[37px] 2xl:leading-[52px] text-HeadingColor-0 mt-[18px] mb-4">
+                                    Ensuring Your Success with Trusted IT Services at Devlex Innovations                                </h1>
                                 <p className="font-Nunito text-TextColor2-0 pb-8">
-                                    Monotonectally synergize granular markets and front markets.
-                                    Collaboratively visualize strategic infomediaries after multimedia
-                                    based models. Synergistically task state of the art infrastructures
-                                    for
-                                </p>
+                                    Expertly optimize business operations and digital landscapes. Collaboratively design tailored IT solutions utilizing advanced technologies. Seamlessly integrate state-of-the-art infrastructures to foster innovation and drive sustainable growth.                                </p>
                                 <div className="grid grid-cols-1 gap-4 md:gap-0 md:grid-cols-2 items-center mb-8">
                                     <ul>
                                         <li className="font-Nunito font-medium text-HeadingColor-0 flex items-center gap-2 mb-3">
@@ -254,7 +309,7 @@ const About = () => {
                                                     <path d="M9.9997 15.1709L19.1921 5.97852L20.6063 7.39273L9.9997 17.9993L3.63574 11.6354L5.04996 10.2212L9.9997 15.1709Z" />
                                                 </svg>
                                             </span>
-                                            Company and Research
+                                            Research and Innovation
                                         </li>
                                         <li className="font-Nunito font-medium text-HeadingColor-0 flex items-center gap-2 mb-3">
                                             <span className="text-PrimaryColor-0">
@@ -270,14 +325,14 @@ const About = () => {
                                                     <path d="M9.9997 15.1709L19.1921 5.97852L20.6063 7.39273L9.9997 17.9993L3.63574 11.6354L5.04996 10.2212L9.9997 15.1709Z" />
                                                 </svg>
                                             </span>
-                                            Business and research
+                                            Business Development & Strategy
                                         </li>
                                     </ul>
                                     <div className="flex items-center gap-6 lg:gap-2 xl:gap-6">
                                         <span
                                             className="text-xl sm:text-[22px] font-Rajdhani flex items-center justify-center font-semibold text-PrimaryColor-0 size-[65px] rounded-full border-2 border-PrimaryColor-0"
                                         >
-                                            45%
+                                            65%
                                         </span>
                                         <div>
                                             <h4 className="font-Rajdhani font-semibold text-2xl lg:text-xl xl:text-2xl text-HeadingColor-0">
@@ -305,11 +360,10 @@ const About = () => {
                                         </svg>
                                     </div>
                                     <p className="italic font-Nunito text-lg text-TextColor2-0">
-                                        If you are accused of committing a crime, you will the very best
-                                        criminal defense attorneys.
+                                        At Devlex Innovations, we deliver top-tier IT solutions to address your digital challenges and drive business success.
                                     </p>
                                 </div>
-                                <a className="mt-9 inline-block" href="/about">
+                                <a className="mt-9 inline-block" href="/ourmission">
                                     <button className="primary-btn">
                                         More About
                                         <svg
@@ -385,6 +439,24 @@ const About = () => {
                                                             Wherever you’re going, we bring ideas and excitement
                                                         </span>
                                                     </li>
+                                                    <li className="flex items-center gap-2">
+                                                        <span className="text-PrimaryColor-0">
+                                                            <svg
+                                                                stroke="currentColor"
+                                                                fill="currentColor"
+                                                                strokeWidth={0}
+                                                                viewBox="0 0 24 24"
+                                                                height={24}
+                                                                width={24}
+                                                                xmlns="http://www.w3.org/2000/svg"
+                                                            >
+                                                                <path d="M9.9997 15.1709L19.1921 5.97852L20.6063 7.39273L9.9997 17.9993L3.63574 11.6354L5.04996 10.2212L9.9997 15.1709Z" />
+                                                            </svg>
+                                                        </span>
+                                                        <span className="about-text">
+                                                            Innovating the future with technology and creativity
+                                                        </span>
+                                                    </li>
                                                     <li className="flex items-center mb-4 gap-2">
                                                         <span className="text-PrimaryColor-0">
                                                             <svg
@@ -403,24 +475,25 @@ const About = () => {
                                                             We’re consultants, guides, and partners for brands
                                                         </span>
                                                     </li>
+
                                                 </ul>
                                             </div>
                                             {/* About Author Info Wrap Start */}
                                             <div className="about-author-info-wrap mt-6">
                                                 <div className="about-author mb-4">
                                                     <img
-                                                        src="assets/images/sign.png"
+                                                        src="/images/sign.png"
                                                         alt=""
                                                         className="w-16 h-16 rounded-full"
                                                     />
-                                                    <h3 className="name text-xl font-semibold font-Rajdhani">Alen Morno sin</h3>
-                                                    <span className="designation text-gray-600 font-Rajdhani">
+                                                    <h3 className="name text-xl font-semibold font-Rajdhani">Devlex Innovations</h3>
+                                                    {/* <span className="designation text-gray-600 font-Rajdhani">
                                                         CEO, Techmax
-                                                    </span>
+                                                    </span> */}
                                                 </div>
                                                 <div className="about-info">
                                                     <p className="text-gray-600 font-Rajdhani">Call to ask any question</p>
-                                                    <h3 className="number text-2xl font-bold font-Rajdhani">0123-456-7890</h3>
+                                                    <h3 className="number text-2xl font-bold font-Rajdhani">+91- 6306011968</h3>
                                                 </div>
                                             </div>
                                             {/* About Author Info Wrap End */}
@@ -430,62 +503,28 @@ const About = () => {
                                     <div className="lg:w-1/2 md:w-full w-full">
                                         <div className="skill-right">
                                             <p className="text-gray-700 mb-6">
-                                                Accelerate innovation with world-class tech teams. We’ll match
-                                                you to an entire remote team of incredible freelance talent for
-                                                all your software development needs. Building cloud,
-                                                infrastructure, network, etc. We put a strong focus on the needs
-                                                of your business to figure out solutions that best fit your
-                                                demand and nail it.
-                                            </p>
+                                                We’ll connect you with a team of exceptional IT experts for all your software
+                                                development needs, including cloud solutions, infrastructure, and network management.
+                                                At Devlex Innovations, we focus on understanding your business requirements to deliver
+                                                tailored solutions that align perfectly with your goals and drive measurable success.                                            </p>
                                             <div className="counter-bar">
-                                                <div className="skill-item">
-                                                    <span className="title font-Rajdhani">IT Managment</span>
-                                                    <div className="skill-bar">
-                                                        <div className="bar-inner">
-                                                            <div
-                                                                className="bar progress-line color-1"
-                                                                data-width={80}
-                                                                style={{ width: "80%" }}
-                                                            >
-                                                                <span className="skill-percent">
-                                                                    <span className="counter">80</span>%
-                                                                </span>
+                                                {skillData.map((skill, index) => (
+                                                    <div key={index} className="skill-item">
+                                                        <span className="title font-Rajdhani">{skill.title}</span>
+                                                        <div className="skill-bar">
+                                                            <div className="bar-inner">
+                                                                <div
+                                                                    className="bar progress-line color-1"
+                                                                    style={{ width: `${widths[index]}%` }} // Dynamically update width
+                                                                >
+                                                                    <span className="skill-percent">
+                                                                        <span className="counter">{widths[index]}</span>%
+                                                                    </span>
+                                                                </div>
                                                             </div>
                                                         </div>
                                                     </div>
-                                                </div>
-                                                <div className="skill-item">
-                                                    <span className="title font-Rajdhani">Data Security</span>
-                                                    <div className="skill-bar">
-                                                        <div className="bar-inner">
-                                                            <div
-                                                                className="bar progress-line color-1"
-                                                                data-width={95}
-                                                                style={{ width: "95%" }}
-                                                            >
-                                                                <span className="skill-percent">
-                                                                    <span className="counter">95</span>%
-                                                                </span>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div className="skill-item">
-                                                    <span className="title font-Rajdhani">Information Technology</span>
-                                                    <div className="skill-bar">
-                                                        <div className="bar-inner">
-                                                            <div
-                                                                className="bar progress-line color-1"
-                                                                data-width={80}
-                                                                style={{ width: "80%" }}
-                                                            >
-                                                                <span className="skill-percent">
-                                                                    <span className="counter">80</span>%
-                                                                </span>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
+                                                ))}
                                             </div>
                                         </div>
                                     </div>
@@ -502,63 +541,27 @@ const About = () => {
                 <section className=" pt-28 bg-SecondaryColor-0">
                     <div className="Container">
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-7 lg:gap-0 lg:grid-cols-3 items-center justify-center">
-                            <div>
-                                <div className="sm:text-center relative z-10">
-                                    <div className="flex flex-col sm:flex-row gap-7 items-start sm:items-center">
-                                        <div className="relative before:absolute before:-bottom-5 before:left-0 before:w-full before:h-[1px] before:bg-PrimaryColor-0 ">
-                                            <span className="font-Rajdhani text-[70px] leading-10 text-white font-bold">
-                                                22+
-                                            </span>
-                                        </div>
-                                        <div className="!block text-left">
-                                            <p className="font-Rajdhani text-[22px] text-white font-semibold uppercase">
-                                                Years Experience
-                                            </p>
-                                            <p className="font-Nunito text-TextColor-0 pt-2">
-                                                Profesionaly optimize Design team feature main issue don.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div>
-                                <div className="sm:text-center relative z-10">
-                                    <div className="flex flex-col sm:flex-row gap-7 items-start sm:items-center">
-                                        <div className="relative before:absolute before:-bottom-5 before:left-0 before:w-full before:h-[1px] before:bg-PrimaryColor-0 ">
-                                            <span className="font-Rajdhani text-[70px] leading-10 text-white font-bold">
-                                                86%
-                                            </span>
-                                        </div>
-                                        <div className="!block text-left">
-                                            <p className="font-Rajdhani text-[22px] text-white font-semibold uppercase">
-                                                Client Satisfaction
-                                            </p>
-                                            <p className="font-Nunito text-TextColor-0 pt-2">
-                                                Profesionaly optimize Design team feature main issue don.
-                                            </p>
+                            {statsData.map((stat, index) => (
+                                <div key={index}>
+                                    <div className="sm:text-center relative z-10">
+                                        <div className="flex flex-col sm:flex-row gap-7 items-start sm:items-center">
+                                            <div className="relative before:absolute before:-bottom-5 before:left-0 before:w-full before:h-[1px] before:bg-PrimaryColor-0 ">
+                                                <span className="font-Rajdhani text-[70px] leading-10 text-white font-bold">
+                                                    <CountUp start={0} end={stat.value} duration={3} />{stat.suffix}
+                                                </span>
+                                            </div>
+                                            <div className="!block text-left">
+                                                <p className="font-Rajdhani text-[22px] text-white font-semibold uppercase">
+                                                    {stat.title}
+                                                </p>
+                                                <p className="font-Nunito text-TextColor-0 pt-2">
+                                                    {stat.description}
+                                                </p>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div>
-                                <div className="sm:text-center relative z-10">
-                                    <div className="flex flex-col sm:flex-row gap-7 items-start sm:items-center">
-                                        <div className="relative before:absolute before:-bottom-5 before:left-0 before:w-full before:h-[1px] before:bg-PrimaryColor-0 ">
-                                            <span className="font-Rajdhani text-[70px] leading-10 text-white font-bold">
-                                                25+
-                                            </span>
-                                        </div>
-                                        <div className="!block text-left">
-                                            <p className="font-Rajdhani text-[22px] text-white font-semibold uppercase">
-                                                Awards Wining
-                                            </p>
-                                            <p className="font-Nunito text-TextColor-0 pt-2">
-                                                Profesionaly optimize Design team feature main issue don.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                            ))}
                         </div>
                     </div>
                 </section>
@@ -608,14 +611,14 @@ const About = () => {
                                         </button>
                                     </a>
                                     <p className="font-Nunito text-TextColor-0 transition-all duration-500 group-hover:text-white pb-7">
-                                        Morem area are psum dolor com sitteme odern sectet aweur chat
-                                        adipiscing always.
+                                        Develop strategic plans to drive growth, optimize operations, and achieve long-term business success.
                                     </p>
-                                    <a href="/service_details">
+
+                                    {/* <a href="/service_details">
                                         <button className="header-btn !bg-[#ffffff1a] !border-none !px-7 !rounded-full uppercase font-Rajdhani !flex gap-2 items-center group-hover:before:w-full group-hover:before:left-0">
                                             Read More
                                         </button>
-                                    </a>
+                                    </a> */}
                                 </div>
                             </div>
                             <div>
@@ -633,14 +636,14 @@ const About = () => {
                                         </button>
                                     </a>
                                     <p className="font-Nunito text-TextColor-0 transition-all duration-500 group-hover:text-white pb-7">
-                                        Morem area are psum dolor com sitteme odern sectet aweur chat
-                                        adipiscing always.
+                                        Identify challenges, analyze root causes, and implement effective solutions to drive success and innovation.
                                     </p>
-                                    <a href="/service_details">
+
+                                    {/* <a href="/service_details">
                                         <button className="header-btn !bg-[#ffffff1a] !border-none !px-7 !rounded-full uppercase font-Rajdhani !flex gap-2 items-center group-hover:before:w-full group-hover:before:left-0">
                                             Read More
                                         </button>
-                                    </a>
+                                    </a> */}
                                 </div>
                             </div>
                             <div>
@@ -658,14 +661,14 @@ const About = () => {
                                         </button>
                                     </a>
                                     <p className="font-Nunito text-TextColor-0 transition-all duration-500 group-hover:text-white pb-7">
-                                        Morem area are psum dolor com sitteme odern sectet aweur chat
-                                        adipiscing always.
+                                        Track project progress, analyze key metrics, and deliver clear, data-driven reports for informed decision-making.
                                     </p>
-                                    <a href="/service_details">
+
+                                    {/* <a href="/service_details">
                                         <button className="header-btn !bg-[#ffffff1a] !border-none !px-7 !rounded-full uppercase font-Rajdhani !flex gap-2 items-center group-hover:before:w-full group-hover:before:left-0">
                                             Read More
                                         </button>
-                                    </a>
+                                    </a> */}
                                 </div>
                             </div>
                             <div>
@@ -683,14 +686,14 @@ const About = () => {
                                         </button>
                                     </a>
                                     <p className="font-Nunito text-TextColor-0 transition-all duration-500 group-hover:text-white pb-7">
-                                        Morem area are psum dolor com sitteme odern sectet aweur chat
-                                        adipiscing always.
+                                        Collaborate with skilled professionals dedicated to delivering expertise, innovation, and exceptional results.
                                     </p>
-                                    <a href="/service_details">
+
+                                    {/* <a href="/service_details">
                                         <button className="header-btn !bg-[#ffffff1a] !border-none !px-7 !rounded-full uppercase font-Rajdhani !flex gap-2 items-center group-hover:before:w-full group-hover:before:left-0">
                                             Read More
                                         </button>
-                                    </a>
+                                    </a> */}
                                 </div>
                             </div>
                         </div>
@@ -1420,7 +1423,7 @@ const About = () => {
                 <section className="py-20">
                     <div className="Container">
                         <div className="text-center">
-                            <h5 className="font-Rajdhani text-lg font-semibold #9C5EEE">
+                            <h5 className="font-Rajdhani text-lg font-semibold text-PrimaryColor-0">
                                 Latest Blog
                             </h5>
                             <h1 className="font-Rajdhani font-bold text-xl leading-7 sm:text-[34px] sm:leading-[44px] md:text-[44px] md:leading-[54px] lg:text-[32px] lg:leading-[42px] xl:text-[36px] xl:leading-[46px] 2xl:text-[42px] 2xl:leading-[52px] text-HeadingColor-0 mt-[18px]">
@@ -1441,7 +1444,7 @@ const About = () => {
                                             <div>
                                                 <div className="flex flex-col sm:flex-row md:flex-col xl:flex-row gap-6 mb-2">
                                                     <p className="font-Nunito text-TextColor2-0 text-sm sm:text-base flex gap-2 items-center leading-[15px]">
-                                                        <span className="#9C5EEE">
+                                                        <span className="text-PrimaryColor-0">
                                                             <svg
                                                                 stroke="currentColor"
                                                                 fill="currentColor"
@@ -1454,10 +1457,10 @@ const About = () => {
                                                                 <path d="M128 0c13.3 0 24 10.7 24 24V64H296V24c0-13.3 10.7-24 24-24s24 10.7 24 24V64h40c35.3 0 64 28.7 64 64v16 48V448c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V192 144 128C0 92.7 28.7 64 64 64h40V24c0-13.3 10.7-24 24-24zM400 192H48V448c0 8.8 7.2 16 16 16H384c8.8 0 16-7.2 16-16V192zM329 297L217 409c-9.4 9.4-24.6 9.4-33.9 0l-64-64c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l47 47 95-95c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9z"></path>
                                                             </svg>
                                                         </span>
-                                                        24 Mar, 2024
+                                                        25 Sep, 2024
                                                     </p>
                                                     <p className="font-Nunito text-TextColor2-0 text-sm sm:text-base flex gap-2 items-center leading-[15px]">
-                                                        <span className="#9C5EEE text-xl">
+                                                        <span className="text-PrimaryColor-0 text-xl">
                                                             <svg
                                                                 stroke="currentColor"
                                                                 fill="currentColor"
@@ -1474,12 +1477,12 @@ const About = () => {
                                                     </p>
                                                 </div>
                                                 <a href="/blog_details">
-                                                    <button className="font-Rajdhani text-left font-semibold text-lg sm:text-[22px] md:text-xl lg:text-base xl:text-xl 2xl:text-[23px] text-HeadingColor-0 transition-all duration-500 group-hover:#9C5EEE mt-2 mb-5">
-                                                        Most Popular Chrome Extensionfor Business Promot
+                                                    <button className="font-Rajdhani text-left font-semibold text-lg sm:text-[22px] md:text-xl lg:text-base xl:text-xl 2xl:text-[23px] text-HeadingColor-0 transition-all duration-500 group-hover:text-PrimaryColor-0 mt-2 mb-5">
+                                                    Difference Between Static and Dynamic Websites
                                                     </button>
                                                 </a>
                                                 <a className="inline-block" href="/blog_details">
-                                                    <button className="flex items-center gap-2 text-HeadingColor-0 text-lg font-Rajdhani font-medium transition-all duration-500 group-hover:#9C5EEE">
+                                                    <button className="flex items-center gap-2 text-HeadingColor-0 text-lg font-Rajdhani font-medium transition-all duration-500 group-hover:text-PrimaryColor-0">
                                                         Read More
                                                         <svg
                                                             stroke="currentColor"
@@ -1510,7 +1513,7 @@ const About = () => {
                                             <div>
                                                 <div className="flex flex-col sm:flex-row md:flex-col xl:flex-row gap-6 mb-2">
                                                     <p className="font-Nunito text-TextColor2-0 text-sm sm:text-base flex gap-2 items-center leading-[15px]">
-                                                        <span className="#9C5EEE">
+                                                        <span className="text-PrimaryColor-0">
                                                             <svg
                                                                 stroke="currentColor"
                                                                 fill="currentColor"
@@ -1523,10 +1526,10 @@ const About = () => {
                                                                 <path d="M128 0c13.3 0 24 10.7 24 24V64H296V24c0-13.3 10.7-24 24-24s24 10.7 24 24V64h40c35.3 0 64 28.7 64 64v16 48V448c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V192 144 128C0 92.7 28.7 64 64 64h40V24c0-13.3 10.7-24 24-24zM400 192H48V448c0 8.8 7.2 16 16 16H384c8.8 0 16-7.2 16-16V192zM329 297L217 409c-9.4 9.4-24.6 9.4-33.9 0l-64-64c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l47 47 95-95c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9z"></path>
                                                             </svg>
                                                         </span>
-                                                        24 Mar, 2024
+                                                        20 Nov, 2024
                                                     </p>
                                                     <p className="font-Nunito text-TextColor2-0 text-sm sm:text-base flex gap-2 items-center leading-[15px]">
-                                                        <span className="#9C5EEE text-xl">
+                                                        <span className="text-PrimaryColor-0 text-xl">
                                                             <svg
                                                                 stroke="currentColor"
                                                                 fill="currentColor"
@@ -1543,12 +1546,12 @@ const About = () => {
                                                     </p>
                                                 </div>
                                                 <a href="/blog_details">
-                                                    <button className="font-Rajdhani text-left font-semibold text-lg sm:text-[22px] md:text-xl lg:text-base xl:text-xl 2xl:text-[23px] text-HeadingColor-0 transition-all duration-500 group-hover:#9C5EEE mt-2 mb-5">
-                                                        How to Secure your facebook Business Account
+                                                    <button className="font-Rajdhani text-left font-semibold text-lg sm:text-[22px] md:text-xl lg:text-base xl:text-xl 2xl:text-[23px] text-HeadingColor-0 transition-all duration-500 group-hover:text-PrimaryColor-0 mt-2 mb-5">
+                                                    Big Data Management in Effective Way
                                                     </button>
                                                 </a>
                                                 <a className="inline-block" href="/blog_details">
-                                                    <button className="flex items-center gap-2 text-HeadingColor-0 text-lg font-Rajdhani font-medium transition-all duration-500 group-hover:#9C5EEE">
+                                                    <button className="flex items-center gap-2 text-HeadingColor-0 text-lg font-Rajdhani font-medium transition-all duration-500 group-hover:text-PrimaryColor-0">
                                                         Read More
                                                         <svg
                                                             stroke="currentColor"
@@ -1579,7 +1582,7 @@ const About = () => {
                                             <div>
                                                 <div className="flex flex-col sm:flex-row md:flex-col xl:flex-row gap-6 mb-2">
                                                     <p className="font-Nunito text-TextColor2-0 text-sm sm:text-base flex gap-2 items-center leading-[15px]">
-                                                        <span className="#9C5EEE">
+                                                        <span className="text-PrimaryColor-0">
                                                             <svg
                                                                 stroke="currentColor"
                                                                 fill="currentColor"
@@ -1592,10 +1595,10 @@ const About = () => {
                                                                 <path d="M128 0c13.3 0 24 10.7 24 24V64H296V24c0-13.3 10.7-24 24-24s24 10.7 24 24V64h40c35.3 0 64 28.7 64 64v16 48V448c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V192 144 128C0 92.7 28.7 64 64 64h40V24c0-13.3 10.7-24 24-24zM400 192H48V448c0 8.8 7.2 16 16 16H384c8.8 0 16-7.2 16-16V192zM329 297L217 409c-9.4 9.4-24.6 9.4-33.9 0l-64-64c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l47 47 95-95c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9z"></path>
                                                             </svg>
                                                         </span>
-                                                        24 Mar, 2024
+                                                        15 Jan, 2025
                                                     </p>
                                                     <p className="font-Nunito text-TextColor2-0 text-sm sm:text-base flex gap-2 items-center leading-[15px]">
-                                                        <span className="#9C5EEE text-xl">
+                                                        <span className="text-PrimaryColor-0 text-xl">
                                                             <svg
                                                                 stroke="currentColor"
                                                                 fill="currentColor"
@@ -1612,12 +1615,12 @@ const About = () => {
                                                     </p>
                                                 </div>
                                                 <a href="/blog_details">
-                                                    <button className="font-Rajdhani text-left font-semibold text-lg sm:text-[22px] md:text-xl lg:text-base xl:text-xl 2xl:text-[23px] text-HeadingColor-0 transition-all duration-500 group-hover:#9C5EEE mt-2 mb-5">
-                                                        Better Context Menus With Safe Triangles
+                                                    <button className="font-Rajdhani text-left font-semibold text-lg sm:text-[22px] md:text-xl lg:text-base xl:text-xl 2xl:text-[23px] text-HeadingColor-0 transition-all duration-500 group-hover:text-PrimaryColor-0 mt-2 mb-5">
+                                                    Tips to Rank Higher on Google Organically
                                                     </button>
                                                 </a>
                                                 <a className="inline-block" href="/blog_details">
-                                                    <button className="flex items-center gap-2 text-HeadingColor-0 text-lg font-Rajdhani font-medium transition-all duration-500 group-hover:#9C5EEE">
+                                                    <button className="flex items-center gap-2 text-HeadingColor-0 text-lg font-Rajdhani font-medium transition-all duration-500 group-hover:text-PrimaryColor-0">
                                                         Read More
                                                         <svg
                                                             stroke="currentColor"
@@ -2228,7 +2231,7 @@ const About = () => {
                     <div className="Container mx-auto px-4 custom-container">
                         <div className="section-title text-center mb-10">
                             <h3 className="font-Rajdhani text-lg font-semibold text-PrimaryColor-0">Testimonial</h3>
-                            <h2 className="font-Rajdhani font-bold text-xl leading-7 sm:text-[38px] sm:leading-[48px] md:text-[44px] md:leading-[54px] lg:text-[32px] lg:leading-[42px] xl:text-[36px] xl:leading-[46px] 2xl:text-[42px] 2xl:leading-[52px] text-HeadingColor-0 mt-[18px]">20k+ satisfied clients worldwide</h2>
+                            <h2 className="font-Rajdhani font-bold text-xl leading-7 sm:text-[38px] sm:leading-[48px] md:text-[44px] md:leading-[54px] lg:text-[32px] lg:leading-[42px] xl:text-[36px] xl:leading-[46px] 2xl:text-[42px] 2xl:leading-[52px] text-HeadingColor-0 mt-[18px]">50+ satisfied clients worldwide</h2>
                         </div>
 
                         <Swiper

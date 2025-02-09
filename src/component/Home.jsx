@@ -2113,7 +2113,7 @@ const Home = () => {
                   </div>
                   <div className="flex-1">
                     <h6 className="font-Rajdhani font-semibold text-base text-HeadingColor-0 transition-all duration-500 group-hover:text-white">
-                      Location
+                      Address
                     </h6>
                     <h4 className="font-Rajdhani font-semibold text-xl sm:text-[20px] lg:text-xl xl:text-[22px] 2xl:text-[22px] #9C5EEE transition-all duration-500 group-hover:text-white mt-[2px]">
                     Sector 51 Noida, UP 201307
@@ -2132,8 +2132,8 @@ const Home = () => {
               {[
                 { end: 50, label: 'HAPPY CUSTOMERS' },
                 { end: 20, label: 'WORKS COMPLETED' },
-                { end: 4, label: 'EXPERT MEMBERS' },
-                { end: 100, suffix: '%', label: 'SATISFACTION RATES' },
+                { end: 15, label: 'EXPERT MEMBERS' },
+                { end: 99, suffix: '%', label: 'SATISFACTION RATES' },
               ].map((item, index) => (
                 <div key={index} className="text-center">
                   <div className="mt-3">

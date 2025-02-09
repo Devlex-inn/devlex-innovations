@@ -82,8 +82,7 @@ const Ourmission = () => {
                                         </svg>
                                     </div>
                                     <p className="font-Nunito text-TextColor2-0 flex-1">
-                                        We Communicate clearly, because in a world crowded with
-                                        over-the-top marketing. simple wins.
+                                        At Devlex Innovations, we emphasize clarity and precision—because streamlined solutions drive success.
                                     </p>
                                 </div>
                                 <div className="flex flex-col sm:flex-row gap-5 sm:items-center mt-10">
@@ -103,9 +102,7 @@ const Ourmission = () => {
                                         </svg>
                                     </div>
                                     <p className="font-Nunito text-TextColor2-0 flex-1">
-                                        We are not rock stars, ninjas or any other disingenuous buzz term.
-                                        We are creative professionals.
-                                    </p>
+                                        We are committed IT experts delivering cutting-edge solutions, driven by innovation and excellence.                                    </p>
                                 </div>
                                 <div className="flex flex-col sm:flex-row gap-5 sm:items-center mt-10 mb-16">
                                     <div className="size-11 rounded-full bg-white text-xl flex items-center justify-center">
@@ -124,13 +121,12 @@ const Ourmission = () => {
                                         </svg>
                                     </div>
                                     <p className="font-Nunito text-TextColor2-0 flex-1">
-                                        Before you can market a business, you need to know its story
-                                        support staff that’s always there when you need us.
+                                        With a deep understanding of your business needs, our expert support team is always ready to ensure seamless IT operations.
                                     </p>
                                 </div>
-                                <a href="/">
+                                {/* <a href="/">
                                     <button className="primary-btn4">Find Out More</button>
-                                </a>
+                                </a> */}
                             </div>
                         </div>
                         <div className="grid grid-cols-1 lg:grid-cols-2 lg:items-center gap-10 lg:gap-0 bg-BodyBg-0 rounded-md mb-8 lg:mb-0">
@@ -155,8 +151,7 @@ const Ourmission = () => {
                                         </svg>
                                     </div>
                                     <p className="font-Nunito text-TextColor2-0 flex-1">
-                                        We Communicate clearly, because in a world crowded with
-                                        over-the-top marketing. simple wins.
+                                        At Devlex Innovations, we embrace clarity and innovation to navigate the evolving digital landscape.
                                     </p>
                                 </div>
                                 <div className="flex flex-col sm:flex-row gap-5 sm:items-center mt-10">
@@ -176,8 +171,7 @@ const Ourmission = () => {
                                         </svg>
                                     </div>
                                     <p className="font-Nunito text-TextColor2-0 flex-1">
-                                        We are not rock stars, ninjas or any other disingenuous buzz term.
-                                        We are creative professionals.
+                                        As dedicated IT experts, we deliver cutting-edge solutions tailored to your business needs.
                                     </p>
                                 </div>
                                 <div className="flex flex-col sm:flex-row gap-5 sm:items-center mt-10 mb-16">
@@ -197,13 +191,12 @@ const Ourmission = () => {
                                         </svg>
                                     </div>
                                     <p className="font-Nunito text-TextColor2-0 flex-1">
-                                        Before you can market a business, you need to know its story
-                                        support staff that’s always there when you need us.
+                                        With a commitment to excellence, our support team ensures seamless operations and sustained success.
                                     </p>
                                 </div>
-                                <a href="/">
+                                {/* <a href="/">
                                     <button className="primary-btn4">Find Out More</button>
-                                </a>
+                                </a> */}
                             </div>
                             <div>
                                 <img src="/images/mission-2.png" draggable="false" />
@@ -234,8 +227,7 @@ const Ourmission = () => {
                                         </svg>
                                     </div>
                                     <p className="font-Nunito text-TextColor2-0 flex-1">
-                                        We Communicate clearly, because in a world crowded with
-                                        over-the-top marketing. simple wins.
+                                        At Devlex Innovations, we prioritize clarity and innovation to deliver impactful IT solutions.
                                     </p>
                                 </div>
                                 <div className="flex flex-col sm:flex-row gap-5 sm:items-center mt-10">
@@ -255,8 +247,7 @@ const Ourmission = () => {
                                         </svg>
                                     </div>
                                     <p className="font-Nunito text-TextColor2-0 flex-1">
-                                        We are not rock stars, ninjas or any other disingenuous buzz term.
-                                        We are creative professionals.
+                                        We are skilled professionals committed to driving business success through technology.
                                     </p>
                                 </div>
                                 <div className="flex flex-col sm:flex-row gap-5 sm:items-center mt-10 mb-16">
@@ -276,13 +267,12 @@ const Ourmission = () => {
                                         </svg>
                                     </div>
                                     <p className="font-Nunito text-TextColor2-0 flex-1">
-                                        Before you can market a business, you need to know its story
-                                        support staff that’s always there when you need us.
+                                        Our expert support team ensures seamless operations and continuous growth.
                                     </p>
                                 </div>
-                                <a href="/">
+                                {/* <a href="/">
                                     <button className="primary-btn4">Find Out More</button>
-                                </a>
+                                </a> */}
                             </div>
                         </div>
                     </div>
@@ -300,10 +290,10 @@ const Ourmission = () => {
                                         />
                                     </div>
                                     <h4 className="font-Rajdhani font-semibold text-2xl sm:text-[22px] lg:text-xl 2xl:text-2xl text-HeadingColor-0 transition-all duration-500 group-hover:text-white mt-8 mb-2">
-                                        22+ Year Experience
+                                        1+ Year Experience
                                     </h4>
                                     <p className="font-Nunito text-TextColor2-0 transition-all duration-500 group-hover:text-white mb-1">
-                                        Completely fashion reliable more products grow business
+                                        Software development, web, and IT solutions expertise
                                     </p>
                                 </div>
                             </div>
@@ -320,7 +310,7 @@ const Ourmission = () => {
                                         Dedicated Members
                                     </h4>
                                     <p className="font-Nunito text-TextColor2-0 transition-all duration-500 group-hover:text-white mb-1">
-                                        Completely fashion reliable more products grow business
+                                        Providing reliable tech solutions to drive business growth
                                     </p>
                                 </div>
                             </div>
@@ -334,10 +324,10 @@ const Ourmission = () => {
                                         />
                                     </div>
                                     <h4 className="font-Rajdhani font-semibold text-2xl sm:text-[22px] lg:text-xl 2xl:text-2xl text-HeadingColor-0 transition-all duration-500 group-hover:text-white mt-8 mb-2">
-                                        Valuable Supports
+                                        Innovative Solutions
                                     </h4>
                                     <p className="font-Nunito text-TextColor2-0 transition-all duration-500 group-hover:text-white mb-1">
-                                        Completely fashion reliable more products grow business
+                                        Empowering businesses with advanced technology solutions
                                     </p>
                                 </div>
                             </div>
@@ -354,14 +344,13 @@ const Ourmission = () => {
                                         Valuable Supports
                                     </h4>
                                     <p className="font-Nunito text-TextColor2-0 transition-all duration-500 group-hover:text-white mb-1">
-                                        Completely fashion reliable more products grow business
-                                    </p>
+                                        Delivering reliable IT solutions for business growth                                    </p>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </section>
-                <div className="bg-[url('/images/brand-bg.jpg')] bg-no-repeat bg-center bg-cover pt-[120px] pb-28">
+                {/* <div className="bg-[url('/images/brand-bg.jpg')] bg-no-repeat bg-center bg-cover pt-[120px] pb-28">
                     <div className="Container relative z-10">
                         <div className="swiper swiper-initialized swiper-horizontal swiper-backface-hidden">
                             <div className="swiper-wrapper">
@@ -446,7 +435,7 @@ const Ourmission = () => {
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> */}
             </div>
 
 

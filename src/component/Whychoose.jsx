@@ -63,13 +63,10 @@ const Whychoose = () => {
                                     IT Support For Business
                                 </h5>
                                 <h1 className="font-Rajdhani font-bold text-[20px] text-HeadingColor-0 leading-7 sm:text-[34px] sm:leading-[44px] md:text-[44px] md:leading-[54px] lg:text-[32px] lg:leading-[42px] xl:text-[36px] xl:leading-[46px] 2xl:text-[42px] 2xl:leading-[52px] mt-[18px]">
-                                    The Toptech IT Services Promise
+                                    The Devlex Innovations Promise
                                 </h1>
                                 <p className="font-Nunito text-TextColor2-0 mt-3 mb-7">
-                                    Monotonectally synergize granular markets and front markets
-                                    collaboratively task state of the art infrastructures for granular
-                                    Maecenas varius sem dui buildings semper ante a viverra posuere
-                                    maecenas fermentum.
+                                    At Devlex Innovations, we empower businesses with cutting-edge technology solutions. Our expertise in IT services ensures seamless operations, enhanced security, and optimized performance to help your business thrive in the digital age.
                                 </p>
                                 <ul>
                                     <li className="flex items-center gap-3 font-Nunito text-lg text-HeadingColor-0">
@@ -85,7 +82,7 @@ const Whychoose = () => {
                                         >
                                             <path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512z" />
                                         </svg>
-                                        Achieve your goals and exceed expectations.
+                                        Cutting-edge technology & tailored IT strategies.
                                     </li>
                                     <li className="flex items-center gap-3 font-Nunito text-lg text-HeadingColor-0 mt-4">
                                         <svg
@@ -100,7 +97,7 @@ const Whychoose = () => {
                                         >
                                             <path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512z" />
                                         </svg>
-                                        Building a website, mobile app or software.
+                                        Reliable IT support & proactive solutions.
                                     </li>
                                     <li className="flex items-center gap-3 font-Nunito text-lg text-HeadingColor-0 mt-4">
                                         <svg
@@ -115,7 +112,7 @@ const Whychoose = () => {
                                         >
                                             <path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512z" />
                                         </svg>
-                                        Our platform is designed to help you.
+                                        Enhanced efficiency & seamless experience.
                                     </li>
                                     <li className="flex items-center gap-3 font-Nunito text-lg text-HeadingColor-0 mt-4">
                                         <svg
@@ -130,7 +127,22 @@ const Whychoose = () => {
                                         >
                                             <path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512z" />
                                         </svg>
-                                        Our platform places emphasis on user experience.
+                                        Web, mobile, and software solutions tailored to your needs.
+                                    </li>
+                                    <li className="flex items-center gap-3 font-Nunito text-lg text-HeadingColor-0 mt-4">
+                                        <svg
+                                            stroke="currentColor"
+                                            fill="currentColor"
+                                            strokeWidth={0}
+                                            viewBox="0 0 512 512"
+                                            className="text-PrimaryColor-0"
+                                            height={9}
+                                            width={9}
+                                            xmlns="http://www.w3.org/2000/svg"
+                                        >
+                                            <path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512z" />
+                                        </svg>
+                                        Scalable and future-ready IT solutions for business growth.
                                     </li>
                                 </ul>
                             </div>
@@ -152,9 +164,7 @@ const Whychoose = () => {
                                         Data Security
                                     </h5>
                                     <p className="font-Nunito text-TextColor2-0 pt-4">
-                                        Monotonectally synergize granular to front markets task state data
-                                        security semper maecenas ferform.
-                                    </p>
+                                        Ensure robust security with cutting-edge solutions, safeguarding data and business integrity.                                    </p>
                                 </div>
                             </div>
                             <div>
@@ -170,9 +180,7 @@ const Whychoose = () => {
                                         IT Services
                                     </h5>
                                     <p className="font-Nunito text-TextColor2-0 pt-4">
-                                        Monotonectally synergize granular to front markets task state data
-                                        security semper maecenas ferform.
-                                    </p>
+                                        Providing innovative solutions to enhance security, efficiency, scalability, and business success.                                    </p>
                                 </div>
                             </div>
                             <div>
@@ -188,8 +196,7 @@ const Whychoose = () => {
                                         Supports
                                     </h5>
                                     <p className="font-Nunito text-TextColor2-0 pt-4">
-                                        Monotonectally synergize granular to front markets task state data
-                                        security semper maecenas ferform.
+                                        Providing reliable solutions to ensure seamless operations, security, and efficiency.
                                     </p>
                                 </div>
                             </div>
@@ -206,8 +213,7 @@ const Whychoose = () => {
                                         Peoples
                                     </h5>
                                     <p className="font-Nunito text-TextColor2-0 pt-4">
-                                        Monotonectally synergize granular to front markets task state data
-                                        security semper maecenas ferform.
+                                        Empowering teams with technology, collaboration, innovation, security, growth, efficiency, and success.
                                     </p>
                                 </div>
                             </div>
@@ -219,8 +225,7 @@ const Whychoose = () => {
                         <div className="grid grid-cols-1 lg:grid-cols-2 lg:items-center">
                             <div>
                                 <h1 className="font-Rajdhani font-bold text-xl leading-7 sm:text-[34px] sm:leading-[44px] md:text-[44px] md:leading-[54px] lg:text-[30px] lg:leading-[40px] xl:text-[36px] xl:leading-[46px] 2xl:text-[42px] 2xl:leading-[52px] text-white mt-[18px] mb-4">
-                                    Get Latest Update from Toptech <br />
-                                    Stay Connect with Us
+                                    Get the Latest Insights & Updates from Devlex Innovations
                                 </h1>
                             </div>
                             <div className="flex lg:justify-end">
@@ -254,7 +259,7 @@ const Whychoose = () => {
                                             Account Register
                                         </h5>
                                         <p className="font-Nunito text-TextColor2-0 sm:w-2/3 md:w-full 2xl:w-3/4 mx-auto">
-                                            Opportunities before extensible market Dramatically pursue us
+                                        Join our platform to access cutting-edge IT solutions and services
                                         </p>
                                     </div>
                                 </div>
@@ -269,7 +274,7 @@ const Whychoose = () => {
                                             Add New Card
                                         </h5>
                                         <p className="font-Nunito text-TextColor2-0 sm:w-2/3 md:w-full 2xl:w-3/4 mx-auto">
-                                            Opportunities before extensible market Dramatically pursue us
+                                        Secure and flexible payment options for hassle-free transactions
                                         </p>
                                     </div>
                                 </div>
@@ -284,7 +289,7 @@ const Whychoose = () => {
                                             Varyfied Account
                                         </h5>
                                         <p className="font-Nunito text-TextColor2-0 sm:w-2/3 md:w-full 2xl:w-3/4 mx-auto">
-                                            Opportunities before extensible market Dramatically pursue us
+                                        Enhance security and gain full access to premium IT services
                                         </p>
                                     </div>
                                 </div>
