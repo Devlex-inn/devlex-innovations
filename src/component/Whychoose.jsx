@@ -1,3 +1,5 @@
+import { Link} from 'react-router-dom';
+
 const Whychoose = () => {
     return (
         <>
@@ -10,7 +12,7 @@ const Whychoose = () => {
                         <div className="border-2 rounded border-BorderColor-0 mt-8 sm:mt-5 inline-block px-8 py-2">
                             <ul className="flex sm:flex-row gap-2 sm:gap-4 sm:items-center justify-start">
                                 <li>
-                                    <a href="/">
+                                    <Link to="/">
                                         <button className="font-Rajdhani font-medium text-lg text-white flex items-center gap-2 transition-all duration-500 hover:text-PrimaryColor-0">
                                             <svg
                                                 stroke="currentColor"
@@ -27,7 +29,7 @@ const Whychoose = () => {
                                             </svg>
                                             Home
                                         </button>
-                                    </a>
+                                    </Link>
                                 </li>
                                 <li>
                                     <div className="text-white hidden sm:block">
@@ -45,11 +47,11 @@ const Whychoose = () => {
                                     </div>
                                 </li>
                                 <li>
-                                    <a href="/why_choose">
+                                    <Link to="/why_choose">
                                         <button className="font-Rajdhani font-medium text-lg capitalize text-white">
                                             Why Choose Us
                                         </button>
-                                    </a>
+                                    </Link>
                                 </li>
                             </ul>
                         </div>

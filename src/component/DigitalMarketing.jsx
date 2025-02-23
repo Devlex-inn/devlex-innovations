@@ -1,3 +1,5 @@
+import { Link} from 'react-router-dom';
+
 const DigitalMarketing = () => {
     return (
         <>
@@ -10,7 +12,7 @@ const DigitalMarketing = () => {
                         <div className="border-2 rounded border-BorderColor-0 mt-8 sm:mt-5 inline-block px-8 py-2">
                             <ul className="flex sm:flex-row gap-2 sm:gap-4 sm:items-center justify-start">
                                 <li>
-                                    <a href="/">
+                                    <Link to="/">
                                         <button className="font-Rajdhani font-medium text-lg text-white flex items-center gap-2 transition-all duration-500 hover:text-PrimaryColor-0">
                                             <svg
                                                 stroke="currentColor"
@@ -27,7 +29,7 @@ const DigitalMarketing = () => {
                                             </svg>
                                             Home
                                         </button>
-                                    </a>
+                                    </Link> 
                                 </li>
                                 <li>
                                     <div className="text-white hidden sm:block">
@@ -45,11 +47,11 @@ const DigitalMarketing = () => {
                                     </div>
                                 </li>
                                 <li>
-                                    <a href="/service_details">
+                                    <Link to="/service_details">
                                         <button className="font-Rajdhani font-medium text-lg capitalize text-white">
                                             Service Details
                                         </button>
-                                    </a>
+                                    </Link> 
                                 </li>
                             </ul>
                         </div>
@@ -65,54 +67,44 @@ const DigitalMarketing = () => {
                                     className="w-full"
                                 />
                                 <h2 className="font-Rajdhani font-bold text-2xl sm:text-4xl text-HeadingColor-0 mt-8">
-                                    Web Development Services
+                                    Digital Marketing
                                 </h2>
                                 <p className="font-Nunito text-TextColor2-0 mt-6">
-                                    Alternative innovation to ethical network environmental whiteboard
-                                    pursue compelling results premier methods empowerment. Dramatically
-                                    architect go forward opportunities before user-centric partner
-                                    Credibly implement exceptional
+                                At Devlex Innovations, we provide data-driven digital marketing solutions designed to enhance brand visibility, engagement, and conversions. Our strategic approach integrates SEO, content marketing, social media management, and performance analytics to craft targeted campaigns that drive measurable success. By leveraging advanced tools and industry best practices, we ensure your brand connects with the right audience at the right time.
                                 </p>
                                 <p className="font-Nunito text-TextColor2-0 mt-7 mb-11">
-                                    Continually fashion orthogonal leadership skills whereas wireless
-                                    metrics. Uniquely syndicate exceptio opportunities with
-                                    interdependent users. Globally enhance fully tested meta-services
-                                    rather than pan solutions. Proactively integrate client-integrate go
-                                    forward architectures and turnkey meta-services. Interactively
-                                    harness integrated ROI whereas frictionless products.
+                                With a focus on innovation and efficiency, we develop tailored marketing strategies that align with your business goals. From optimizing your online presence to executing high-impact campaigns, we help businesses achieve sustainable growth in a competitive market.
                                 </p>
                                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-7">
                                     <div className="flex flex-col md:flex-row lg:flex-col xl:flex-row gap-5 bg-[#f3f4f8] rounded-md px-6 py-7">
                                         <div className="w-[72px] h-[72px] rounded-full bg-white flex justify-center items-center">
                                             <img
-                                                src="/images/services-details-icon-1.png"
+                                                src="/images/services-details-icon-4.png"
                                                 draggable="false"
                                             />
                                         </div>
                                         <div className="flex-1">
                                             <h6 className="font-Rajdhani font-semibold text-[22px] text-HeadingColor-0">
-                                                Custom Software
+                                            Marketing Automation
                                             </h6>
                                             <p className="font-Nunito text-TextColor2-0 mt-3">
-                                                Ethical network environmental architect go forward opportu
-                                                credibly implement
+                                            Streamline campaigns and optimize engagement with our custom digital solutions.
                                             </p>
                                         </div>
                                     </div>
                                     <div className="flex flex-col md:flex-row lg:flex-col xl:flex-row gap-5 bg-[#f3f4f8] rounded-md px-6 py-7">
                                         <div className="w-[72px] h-[72px] rounded-full bg-white flex justify-center items-center">
                                             <img
-                                                src="/images/services-details-icon-2.png"
+                                                src="/images/services-details-icon-5.png"
                                                 draggable="false"
                                             />
                                         </div>
                                         <div className="flex-1">
                                             <h6 className="font-Rajdhani font-semibold text-[22px] text-HeadingColor-0">
-                                                Mobile Application
+                                            Mobile Marketing
                                             </h6>
                                             <p className="font-Nunito text-TextColor2-0 mt-3">
-                                                Ethical network environmental architect go forward opportu
-                                                credibly implement
+                                            Enhance brand reach with data-driven, high-performance mobile solutions.
                                             </p>
                                         </div>
                                     </div>
@@ -134,19 +126,15 @@ const DigitalMarketing = () => {
                                     </div>
                                     <div className="flex-1">
                                         <p className="font-Nunito italic text-lg sm:text-[22px] leading-8 text-white">
-                                            Competently architect intermandated deliverables client
-                                            <br className="hidden 2xl:block" />
-                                            niches continually underwhelm
+                                        Expertly design targeted campaigns that drive client engagement and growth.
                                         </p>
                                     </div>
                                 </div>
                                 <h2 className="font-Rajdhani font-bold text-2xl sm:text-3xl text-HeadingColor-0 mt-[54px]">
-                                    What the Benifits?
+                                Benefits of Digital Marketing
                                 </h2>
                                 <p className="font-Nunito text-TextColor2-0 mt-6">
-                                    Alternative innovation to ethical network environmental whiteboard
-                                    pursue compelling results for premier methods empowerment.
-                                    Dramatically architect go forward opportunities
+                                Boost brand visibility, enhance engagement, drive conversions, optimize campaigns, maximize ROI, and stay ahead with data-driven marketing strategies
                                 </p>
                                 <div className="grid grid-cols-1 md:grid-cols-2 gap-7 mt-9">
                                     <div className="text-center group">
@@ -250,7 +238,7 @@ const DigitalMarketing = () => {
                                     </h4>
                                     <ul className="mt-8">
                                         <li>
-                                            <a href="/web-development">
+                                            <Link to="/web-development">
                                                 <button className="w-full font-Nunito text-left text-white transition-all duration-500 group px-7 py-4 flex items-center justify-between rounded bg-PrimaryColor-0 mb-3 overflow-hidden z-[1] relative before:absolute before:top-0 before:right-0 before:w-0 before:-z-[1] before:h-full before:bg-PrimaryColor-0 before:rounded before:transition-all before:duration-500 hover:before:w-full hover:before:left-0 hover:text-white">
                                                     <span className="flex items-center gap-3 lg:gap-1 xl:gap-3">
                                                         <svg
@@ -280,10 +268,10 @@ const DigitalMarketing = () => {
                                                         <path d="M502.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-128-128c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L402.7 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l370.7 0-73.4 73.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l128-128z" />
                                                     </svg>
                                                 </button>
-                                            </a>
+                                            </Link> 
                                         </li>
                                         <li>
-                                            <a href="/UIUX-design">
+                                            <Link to="/UIUX-design">
                                                 <button className="w-full font-Nunito text-left text-HeadingColor-0 transition-all duration-500 group px-7 py-4 flex items-center justify-between rounded bg-white mb-3 overflow-hidden z-[1] relative before:absolute before:top-0 before:right-0 before:w-0 before:-z-[1] before:h-full before:bg-PrimaryColor-0 before:rounded before:transition-all before:duration-500 hover:before:w-full hover:before:left-0 hover:text-white">
                                                     <span className="flex items-center gap-3 lg:gap-1 xl:gap-3">
                                                         <svg
@@ -313,10 +301,10 @@ const DigitalMarketing = () => {
                                                         <path d="M502.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-128-128c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L402.7 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l370.7 0-73.4 73.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l128-128z" />
                                                     </svg>
                                                 </button>
-                                            </a>
+                                            </Link> 
                                         </li>
                                         <li>
-                                            <a href="/app-development">
+                                            <Link to="/app-development">
                                                 <button className="w-full font-Nunito text-left text-HeadingColor-0 transition-all duration-500 group px-7 py-4 flex items-center justify-between rounded bg-white mb-3 overflow-hidden z-[1] relative before:absolute before:top-0 before:right-0 before:w-0 before:-z-[1] before:h-full before:bg-PrimaryColor-0 before:rounded before:transition-all before:duration-500 hover:before:w-full hover:before:left-0 hover:text-white">
                                                     <span className="flex items-center gap-3 lg:gap-1 xl:gap-3">
                                                         <svg
@@ -346,10 +334,10 @@ const DigitalMarketing = () => {
                                                         <path d="M502.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-128-128c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L402.7 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l370.7 0-73.4 73.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l128-128z" />
                                                     </svg>
                                                 </button>
-                                            </a>
+                                            </Link> 
                                         </li>
                                         <li>
-                                            <a href="/digital-marketing">
+                                            <Link to="/digital-marketing">
                                                 <button className="w-full font-Nunito text-left text-HeadingColor-0 transition-all duration-500 group px-7 py-4 flex items-center justify-between rounded bg-white mb-3 overflow-hidden z-[1] relative before:absolute before:top-0 before:right-0 before:w-0 before:-z-[1] before:h-full before:bg-PrimaryColor-0 before:rounded before:transition-all before:duration-500 hover:before:w-full hover:before:left-0 hover:text-white">
                                                     <span className="flex items-center gap-3 lg:gap-1 xl:gap-3">
                                                         <svg
@@ -379,10 +367,10 @@ const DigitalMarketing = () => {
                                                         <path d="M502.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-128-128c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L402.7 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l370.7 0-73.4 73.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l128-128z" />
                                                     </svg>
                                                 </button>
-                                            </a>
+                                            </Link> 
                                         </li>
                                         <li>
-                                            <a href="/video-editing">
+                                            <Link to="/video-editing">
                                                 <button className="w-full font-Nunito text-left text-HeadingColor-0 transition-all duration-500 group px-7 py-4 flex items-center justify-between rounded bg-white mb-3 overflow-hidden z-[1] relative before:absolute before:top-0 before:right-0 before:w-0 before:-z-[1] before:h-full before:bg-PrimaryColor-0 before:rounded before:transition-all before:duration-500 hover:before:w-full hover:before:left-0 hover:text-white">
                                                     <span className="flex items-center gap-3 lg:gap-1 xl:gap-3">
                                                         <svg
@@ -412,10 +400,10 @@ const DigitalMarketing = () => {
                                                         <path d="M502.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-128-128c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L402.7 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l370.7 0-73.4 73.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l128-128z" />
                                                     </svg>
                                                 </button>
-                                            </a>
+                                            </Link> 
                                         </li>
                                         <li>
-                                            <a href="#">
+                                            <Link to="/devops-services">
                                                 <button className="w-full font-Nunito text-left text-HeadingColor-0 transition-all duration-500 group px-7 py-4 flex items-center justify-between rounded bg-white mb-3 overflow-hidden z-[1] relative before:absolute before:top-0 before:right-0 before:w-0 before:-z-[1] before:h-full before:bg-PrimaryColor-0 before:rounded before:transition-all before:duration-500 hover:before:w-full hover:before:left-0 hover:text-white">
                                                     <span className="flex items-center gap-3 lg:gap-1 xl:gap-3">
                                                         <svg
@@ -445,7 +433,7 @@ const DigitalMarketing = () => {
                                                         <path d="M502.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-128-128c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L402.7 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l370.7 0-73.4 73.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l128-128z" />
                                                     </svg>
                                                 </button>
-                                            </a>
+                                            </Link> 
                                         </li>
                                     </ul>
                                 </div>
@@ -455,7 +443,7 @@ const DigitalMarketing = () => {
                                     </h4>
                                     <ul className="mt-8">
                                         <li>
-                                            <a href="/">
+                                            <Link to="/">
                                                 <button className="w-full font-Nunito bg-SecondaryColor-0 text-left text-white transition-all duration-500 group px-7 py-4 flex items-center justify-between rounded bg-HoverColor-0 mb-3 overflow-hidden z-[1] relative before:absolute before:top-0 before:right-0 before:w-0 before:-z-[1] before:h-full before:bg-PrimaryColor-0 before:rounded before:transition-all before:duration-500 hover:before:w-full hover:before:left-0 hover:text-white">
                                                     <span className="flex items-center gap-3 lg:gap-1 xl:gap-3">
                                                         <svg
@@ -491,10 +479,10 @@ const DigitalMarketing = () => {
                                                         />
                                                     </svg>
                                                 </button>
-                                            </a>
+                                            </Link> 
                                         </li>
                                         <li>
-                                            <a href="/">
+                                            <Link to="/">
                                                 <button className="w-full font-Nunito bg-SecondaryColor-0 text-left text-white transition-all duration-500 group px-7 py-4 flex items-center justify-between rounded bg-HoverColor-0 mb-3 overflow-hidden z-[1] relative before:absolute before:top-0 before:right-0 before:w-0 before:-z-[1] before:h-full before:bg-PrimaryColor-0 before:rounded before:transition-all before:duration-500 hover:before:w-full hover:before:left-0 hover:text-white">
                                                     <span className="flex items-center gap-3 lg:gap-1 xl:gap-3">
                                                         <svg
@@ -530,7 +518,7 @@ const DigitalMarketing = () => {
                                                         />
                                                     </svg>
                                                 </button>
-                                            </a>
+                                            </Link> 
                                         </li>
                                     </ul>
                                 </div>
@@ -539,12 +527,12 @@ const DigitalMarketing = () => {
                                     <h6 className="font-Nunito font-medium text-lg text-white mt-5 mb-2">
                                         Call Us Anytime
                                     </h6>
-                                    <a href="/">
+                                    <Link to="/">
                                         <button className="font-Nunito font-semibold text-2xl text-white">
                                         +91- 6306011968
                                         </button>
-                                    </a>
-                                    <a href="/">
+                                    </Link> 
+                                    <Link to="/">
                                         <button className="font-Nunito text-white flex gap-2 items-center mt-4 mb-[52px]">
                                             <svg
                                                 stroke="currentColor"
@@ -561,8 +549,8 @@ const DigitalMarketing = () => {
                                             </svg>
                                             info.devlexinnovations.com
                                         </button>
-                                    </a>
-                                    <a href="/contact">
+                                    </Link> 
+                                    <Link to="/contact">
                                         <button className="font-Nunito text-white flex gap-2 items-center bg-PrimaryColor-0 w-full h-[58px] rounded-md justify-center z-10 relative before:absolute before:top-0 before:right-0 before:scale-0 before:-z-10 before:w-full before:h-full before:bg-SecondaryColor-0 before:rounded before:transition-all before:duration-500 hover:before:scale-100 hover:text-white">
                                             Contact Us
                                             <svg
@@ -577,7 +565,7 @@ const DigitalMarketing = () => {
                                                 <path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z" />
                                             </svg>
                                         </button>
-                                    </a>
+                                    </Link> 
                                 </div>
                             </div>
                         </div>

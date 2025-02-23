@@ -1,13 +1,12 @@
-import { Link} from 'react-router-dom';
-
-const WebDevelopment = () => {
+import { Link } from 'react-router-dom';
+const DevOps = () => {
     return (
         <>
             <div>
-                <div className="bg-[url('/images/web-development-bg.png')] bg-no-repeat bg-cover bg-center flex items-center justify-start h-[400px] sm:h-[600px] pt-20">
+                <div className="bg-[url('/images/video-editing-bg.png')] bg-no-repeat bg-cover bg-center flex items-center justify-start h-[400px] sm:h-[600px] pt-20">
                     <div className="Container">
                         <h1 className="font-Rajdhani font-bold text-4xl sm:text-[44px] md:text-[55px] text-white capitalize">
-                            Web Development
+                            DevOps Services
                         </h1>
                         <div className="border-2 rounded border-BorderColor-0 mt-8 sm:mt-5 inline-block px-8 py-2">
                             <ul className="flex sm:flex-row gap-2 sm:gap-4 sm:items-center justify-start">
@@ -67,33 +66,29 @@ const WebDevelopment = () => {
                                     className="w-full"
                                 />
                                 <h2 className="font-Rajdhani font-bold text-2xl sm:text-4xl text-HeadingColor-0 mt-8">
-                                    Web Development Services
+                                    DevOps Services
                                 </h2>
                                 <p className="font-Nunito text-TextColor2-0 mt-6">
-                                    At Devlex Innovations, we craft dynamic, user-centric web solutions
-                                    designed to drive business success. Our expertise spans modern frameworks,
-                                    responsive design, and cutting-edge technologies to deliver seamless digital experiences.
-                                </p>
-                                <p className="font-Nunito text-TextColor2-0 mt-7">
-                                    We specialize in building scalable, secure, and high-performing websites tailored to your unique needs. From front-end aesthetics to back-end functionality, our solutions enhance engagement, optimize performance, and ensure long-term growth.
+                                    Devlex Innovations offers advanced DevOps services to streamline software development and IT operations. Through automation, CI/CD pipelines, and cloud computing, we enhance deployment speed, scalability, and security. Our expertise in containerization and infrastructure as code (IaC) ensures reliable, high-performance systems with minimal downtime.
                                 </p>
                                 <p className="font-Nunito text-TextColor2-0 mt-7 mb-11">
-                                    With a commitment to excellence, we empower businesses with future-ready web platforms designed for long-term success in an evolving digital landscape.
+                                    Collaboration and continuous improvement drive our DevOps approach. With real-time feedback loops, automated testing, and secure deployments, we help businesses achieve agility and faster time to market. By leveraging cutting-edge technologies, Devlex Innovations empowers organizations to stay ahead in today’s digital landscape.
                                 </p>
                                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-7">
+
                                     <div className="flex flex-col md:flex-row lg:flex-col xl:flex-row gap-5 bg-[#f3f4f8] rounded-md px-6 py-7">
                                         <div className="w-[72px] h-[72px] rounded-full bg-white flex justify-center items-center">
                                             <img
-                                                src="/images/services-details-icon-1.png"
+                                                src="/images/services-details-icon-7.png"
                                                 draggable="false"
                                             />
                                         </div>
                                         <div className="flex-1">
                                             <h6 className="font-Rajdhani font-semibold text-[22px] text-HeadingColor-0">
-                                                Custom Web Solutions
+                                            CI/CD for Faster Delivery
                                             </h6>
                                             <p className="font-Nunito text-TextColor2-0 mt-3">
-                                                Secure, scalable, and high-performance websites tailored for your business growth
+                                            Automated testing and deployment ensure reliable, efficient software releases.
                                             </p>
                                         </div>
                                     </div>
@@ -106,10 +101,10 @@ const WebDevelopment = () => {
                                         </div>
                                         <div className="flex-1">
                                             <h6 className="font-Rajdhani font-semibold text-[22px] text-HeadingColor-0">
-                                                Advanced Web Applications
+                                            Scalable Infra Automation
                                             </h6>
                                             <p className="font-Nunito text-TextColor2-0 mt-3">
-                                                Secure, feature-rich, and future-ready solutions designed for business growth
+                                            Automation enhances security, scalability, and deployment efficiency.
                                             </p>
                                         </div>
                                     </div>
@@ -131,18 +126,15 @@ const WebDevelopment = () => {
                                     </div>
                                     <div className="flex-1">
                                         <p className="font-Nunito italic text-lg sm:text-[22px] leading-8 text-white">
-                                            Expertly design integrated solutions that consistently
-                                            <br className="hidden 2xl:block" />
-                                            exceed client expectations
+                                        Expertly design tailored solutions for clients, consistently exceeding expectations.
                                         </p>
                                     </div>
                                 </div>
                                 <h2 className="font-Rajdhani font-bold text-2xl sm:text-3xl text-HeadingColor-0 mt-[54px]">
-                                    Why Choose Us?
+                                    DevOps Services Benefits
                                 </h2>
                                 <p className="font-Nunito text-TextColor2-0 mt-6">
-                                    We deliver cutting-edge solutions, enhancing efficiency, security, and growth through innovative technology and strategic expertise.
-                                </p>
+                                Innovative automation and seamless collaboration enhance deployment efficiency and scalability. Accelerate software delivery with secure, reliable, and optimized workflows.                                </p>
                                 <div className="grid grid-cols-1 md:grid-cols-2 gap-7 mt-9">
                                     <div className="text-center group">
                                         <div className="overflow-hidden rounded">
@@ -170,7 +162,7 @@ const WebDevelopment = () => {
                                                     >
                                                         <path d="M186.301 339.893L96 249.461l-32 30.507L186.301 402 448 140.506 416 110z" />
                                                     </svg>
-                                                    Leveraging advanced tools
+                                                    New Modern Equipments
                                                 </li>
                                                 <li className="flex items-center gap-2 text-TextColor2-0 text-left font-Nunito lg:text-sm xl:text-base">
                                                     <svg
@@ -185,7 +177,7 @@ const WebDevelopment = () => {
                                                     >
                                                         <path d="M186.301 339.893L96 249.461l-32 30.507L186.301 402 448 140.506 416 110z" />
                                                     </svg>
-                                                    Expertise for strategic excellence
+                                                    Expert’s Volunteers
                                                 </li>
                                             </ul>
                                         </div>
@@ -216,7 +208,7 @@ const WebDevelopment = () => {
                                                     >
                                                         <path d="M186.301 339.893L96 249.461l-32 30.507L186.301 402 448 140.506 416 110z" />
                                                     </svg>
-                                                    Innovative solutions
+                                                    New Modern Equipments
                                                 </li>
                                                 <li className="flex items-center gap-2 text-TextColor2-0 text-left font-Nunito lg:text-sm xl:text-base">
                                                     <svg
@@ -231,7 +223,7 @@ const WebDevelopment = () => {
                                                     >
                                                         <path d="M186.301 339.893L96 249.461l-32 30.507L186.301 402 448 140.506 416 110z" />
                                                     </svg>
-                                                    Advanced technology and expertise
+                                                    Expert’s Volunteers
                                                 </li>
                                             </ul>
                                         </div>
@@ -536,7 +528,7 @@ const WebDevelopment = () => {
                                     </h6>
                                     <Link to="/">
                                         <button className="font-Nunito font-semibold text-2xl text-white">
-                                        +91- 6306011968
+                                            +91- 6306011968
                                         </button>
                                     </Link>
                                     <Link to="/">
@@ -584,4 +576,4 @@ const WebDevelopment = () => {
     )
 }
 
-export default WebDevelopment;
+export default DevOps;

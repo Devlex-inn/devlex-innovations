@@ -7,9 +7,9 @@ const Footer = () => {
                 <div className="Container">
                     <div className="grid gap-y-7 grid-cols-12">
                         <div className="col-span-12 md:col-span-6 lg:col-span-4">
-                            <a href="/">
-                                <img src="/public/images/Devlex logo (White).png" draggable="false" height={280} width={280} />
-                            </a>
+                            <Link to="/">
+                                <img src="/images/Devlex logo (White).png" draggable="false" height={280} width={280} />
+                            </Link> 
                             <p className="font-Nunito text-white opacity-80 mt-6 mb-8 w-10/12">
 
                                 Devlex Innovation focuses on innovating{" "}
@@ -17,7 +17,7 @@ const Footer = () => {
                                 <br className="hidden xl:block" /> shaping a smarter, more efficient<br className="hidden xl:block" /> future for all.
                             </p>
                             <div>
-                                <a href="/about">
+                                <Link to="/about">
                                     <button className="primary-btn">
                                         Discover More
                                         <svg
@@ -32,7 +32,7 @@ const Footer = () => {
                                             <path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.749.749 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z" />
                                         </svg>
                                     </button>
-                                </a>
+                                </Link> 
                             </div>
                         </div>
                         <div className="col-span-12 md:col-span-6 lg:col-span-2">
@@ -41,7 +41,7 @@ const Footer = () => {
                             </h4>
                             <ul>
                                 <li>
-                                    <a href="/about">
+                                    <Link to="/about">
                                         <button className="flex items-center gap-2 font-Nunito text-white transition-all duration-500 hover:text-PrimaryColor-0 hover:gap-1 mb-5">
                                             <svg
                                                 stroke="currentColor"
@@ -61,10 +61,10 @@ const Footer = () => {
                                             </svg>
                                             About Us
                                         </button>
-                                    </a>
+                                    </Link> 
                                 </li>
                                 <li>
-                                    <a href="/ourmission">
+                                    <Link to="/ourmission">
                                         <button className="flex items-center gap-2 font-Nunito text-white transition-all duration-500 hover:text-PrimaryColor-0 hover:gap-1 mb-5">
                                             <svg
                                                 stroke="currentColor"
@@ -84,10 +84,10 @@ const Footer = () => {
                                             </svg>
                                             Our Mission
                                         </button>
-                                    </a>
+                                    </Link> 
                                 </li>
                                 <li>
-                                    <a href="/faq">
+                                    <Link to="/faq">
                                         <button className="flex items-center gap-2 font-Nunito text-white transition-all duration-500 hover:text-PrimaryColor-0 hover:gap-1 mb-5">
                                             <svg
                                                 stroke="currentColor"
@@ -107,10 +107,10 @@ const Footer = () => {
                                             </svg>
                                             FAQ
                                         </button>
-                                    </a>
+                                    </Link> 
                                 </li>
                                 <li>
-                                    <a href="/">
+                                    <Link to="/">
                                         <button className="flex items-center gap-2 font-Nunito text-white transition-all duration-500 hover:text-PrimaryColor-0 hover:gap-1 mb-5">
                                             <svg
                                                 stroke="currentColor"
@@ -130,10 +130,10 @@ const Footer = () => {
                                             </svg>
                                             Projects
                                         </button>
-                                    </a>
+                                    </Link> 
                                 </li>
                                 <li>
-                                    <a href="/contact">
+                                    <Link to="/contact">
                                         <button className="flex items-center gap-2 font-Nunito text-white transition-all duration-500 hover:text-PrimaryColor-0 hover:gap-1">
                                             <svg
                                                 stroke="currentColor"
@@ -153,7 +153,7 @@ const Footer = () => {
                                             </svg>
                                             Contact Us
                                         </button>
-                                    </a>
+                                    </Link> 
                                 </li>
                             </ul>
                         </div>
@@ -163,7 +163,7 @@ const Footer = () => {
                             </h4>
                             <ul>
                                 <li>
-                                    <a href="/web-development">
+                                    <Link to="/web-development">
                                         <button className="flex items-center gap-2 font-Nunito text-white transition-all duration-500 hover:text-PrimaryColor-0 hover:gap-1 mb-5">
                                             <svg
                                                 stroke="currentColor"
@@ -183,10 +183,10 @@ const Footer = () => {
                                             </svg>
                                             Web Development
                                         </button>
-                                    </a>
+                                    </Link> 
                                 </li>
                                 <li>
-                                    <a href="/UIUX-design">
+                                    <Link to="/UIUX-design">
                                         <button className="flex items-center gap-2 font-Nunito text-white transition-all duration-500 hover:text-PrimaryColor-0 hover:gap-1 mb-5">
                                             <svg
                                                 stroke="currentColor"
@@ -206,10 +206,10 @@ const Footer = () => {
                                             </svg>
                                             UI/UX Design
                                         </button>
-                                    </a>
+                                    </Link> 
                                 </li>
                                 <li>
-                                    <a href="/app-development">
+                                    <Link to="/app-development">
                                         <button className="flex items-center gap-2 font-Nunito text-white transition-all duration-500 hover:text-PrimaryColor-0 hover:gap-1 mb-5">
                                             <svg
                                                 stroke="currentColor"
@@ -229,10 +229,10 @@ const Footer = () => {
                                             </svg>
                                             App Development
                                         </button>
-                                    </a>
+                                    </Link> 
                                 </li>
                                 <li>
-                                    <a href="/digital-marketing">
+                                    <Link to="/digital-marketing">
                                         <button className="flex items-center gap-2 font-Nunito text-white transition-all duration-500 hover:text-PrimaryColor-0 hover:gap-1 mb-5">
                                             <svg
                                                 stroke="currentColor"
@@ -252,10 +252,10 @@ const Footer = () => {
                                             </svg>
                                             Digital Marketing
                                         </button>
-                                    </a>
+                                    </Link> 
                                 </li>
                                 <li>
-                                    <a href="/">
+                                    <Link to="/">
                                         <button className="flex items-center gap-2 font-Nunito text-white transition-all duration-500 hover:text-PrimaryColor-0 hover:gap-1">
                                             <svg
                                                 stroke="currentColor"
@@ -275,7 +275,7 @@ const Footer = () => {
                                             </svg>
                                             DevOps Services
                                         </button>
-                                    </a>
+                                    </Link> 
                                 </li>
                             </ul>
                         </div>
