@@ -198,7 +198,7 @@ const Header = () => {
                                 <Link to="/">
                                     <img
                                         draggable="false"
-                                        src="/public/images/Devlex logo (Black).png"
+                                        src="/images/Devlex logo (Black).png"
                                         className="hidden lg:block"
                                         alt="website_logo"
                                     />
@@ -209,7 +209,7 @@ const Header = () => {
                                     <Link to="/">
                                         <img
                                             draggable="false"
-                                            src="/public/images/Devlex logo (Black).png"
+                                            src="/images/Devlex logo (Black).png"
                                             className="block lg:hidden"
                                             alt="constre_website_logo"
                                         />
@@ -331,6 +331,17 @@ const Header = () => {
                                                             onClick={() => handleLinkClick("/app-development")}
                                                         >
                                                             App Development
+                                                        </Link>
+                                                    </li>
+                                                </div>
+                                                <div className="px-5 group hover:bg-PrimaryColor-0">
+                                                    <li className="hover:ml-3 duration-300">
+                                                        <Link
+                                                            className="py-2 block"
+                                                            to="/devops-services"
+                                                            onClick={() => handleLinkClick("/devops-services")}
+                                                        >
+                                                            DevOps Services
                                                         </Link>
                                                     </li>
                                                 </div>

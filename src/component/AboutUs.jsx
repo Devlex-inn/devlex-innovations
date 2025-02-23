@@ -1,6 +1,7 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Autoplay } from "swiper/modules";
 import { useState, useEffect } from "react";
+import { Link} from 'react-router-dom';
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
@@ -119,7 +120,7 @@ const About = () => {
                         <div className="border-2 rounded border-BorderColor-0 mt-8 sm:mt-5 inline-block px-8 py-2">
                             <ul className="flex sm:flex-row gap-2 sm:gap-4 sm:items-center justify-start">
                                 <li>
-                                    <a href="/">
+                                    <Link to="/">
                                         <button className="font-Rajdhani font-medium text-lg text-white flex items-center gap-2 transition-all duration-500 hover:text-PrimaryColor-0">
                                             <svg
                                                 stroke="currentColor"
@@ -136,7 +137,7 @@ const About = () => {
                                             </svg>
                                             Home
                                         </button>
-                                    </a>
+                                    </Link> 
                                 </li>
                                 <li>
                                     <div className="text-white hidden sm:block">
@@ -154,11 +155,11 @@ const About = () => {
                                     </div>
                                 </li>
                                 <li>
-                                    <a href="/about">
+                                    <Link to="/about">
                                         <button className="font-Rajdhani font-medium text-lg capitalize text-white">
                                             About Us
                                         </button>
-                                    </a>
+                                    </Link> 
                                 </li>
                             </ul>
                         </div>
@@ -363,7 +364,7 @@ const About = () => {
                                         At Devlex Innovations, we deliver top-tier IT solutions to address your digital challenges and drive business success.
                                     </p>
                                 </div>
-                                <a className="mt-9 inline-block" href="/ourmission">
+                                <Link className="mt-9 inline-block" to="/ourmission">
                                     <button className="primary-btn">
                                         More About
                                         <svg
@@ -379,7 +380,7 @@ const About = () => {
                                             <path d="m11.467 11.125-3.214 3.214 1.414 1.414 3.214-3.214 2.125 2.124V9H9.343z" />
                                         </svg>
                                     </button>
-                                </a>
+                                </Link> 
                             </div>
                         </div>
                     </div>
@@ -590,9 +591,9 @@ const About = () => {
                                 </h1>
                             </div>
                             <div className="flex lg:justify-end">
-                                <a href="/contact">
+                                <Link to="/contact">
                                     <button className="primary-btn4">Make An Appointment</button>
-                                </a>
+                                </Link> 
                             </div>
                         </div>
                         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-7 mt-[34px]">
@@ -605,20 +606,20 @@ const About = () => {
                                             className="transition-all duration-500 group-hover:brightness-0 group-hover:invert-[1]"
                                         />
                                     </div>
-                                    <a href="/service_details">
+                                    <Link to="/service_details">
                                         <button className="font-Rajdhani text-left font-semibold text-[22px] sm:text-2xl lg:text-xl xl:text-2xl pb-4 text-white">
                                             Business Planning
                                         </button>
-                                    </a>
+                                    </Link> 
                                     <p className="font-Nunito text-TextColor-0 transition-all duration-500 group-hover:text-white pb-7">
                                         Develop strategic plans to drive growth, optimize operations, and achieve long-term business success.
                                     </p>
 
-                                    {/* <a href="/service_details">
+                                    {/* <Link to="/service_details">
                                         <button className="header-btn !bg-[#ffffff1a] !border-none !px-7 !rounded-full uppercase font-Rajdhani !flex gap-2 items-center group-hover:before:w-full group-hover:before:left-0">
                                             Read More
                                         </button>
-                                    </a> */}
+                                    </Link>  */}
                                 </div>
                             </div>
                             <div>
@@ -630,20 +631,20 @@ const About = () => {
                                             className="transition-all duration-500 group-hover:brightness-0 group-hover:invert-[1]"
                                         />
                                     </div>
-                                    <a href="/service_details">
+                                    <Link to="/service_details">
                                         <button className="font-Rajdhani text-left font-semibold text-[22px] sm:text-2xl lg:text-xl xl:text-2xl pb-4 text-white">
                                             Problem-Solving
                                         </button>
-                                    </a>
+                                    </Link> 
                                     <p className="font-Nunito text-TextColor-0 transition-all duration-500 group-hover:text-white pb-7">
                                         Identify challenges, analyze root causes, and implement effective solutions to drive success and innovation.
                                     </p>
 
-                                    {/* <a href="/service_details">
+                                    {/* <Link to="/service_details">
                                         <button className="header-btn !bg-[#ffffff1a] !border-none !px-7 !rounded-full uppercase font-Rajdhani !flex gap-2 items-center group-hover:before:w-full group-hover:before:left-0">
                                             Read More
                                         </button>
-                                    </a> */}
+                                    </Link>  */}
                                 </div>
                             </div>
                             <div>
@@ -655,20 +656,20 @@ const About = () => {
                                             className="transition-all duration-500 group-hover:brightness-0 group-hover:invert-[1]"
                                         />
                                     </div>
-                                    <a href="/service_details">
+                                    <Link to="/service_details">
                                         <button className="font-Rajdhani text-left font-semibold text-[22px] sm:text-2xl lg:text-xl xl:text-2xl pb-4 text-white">
                                             Project Reporting
                                         </button>
-                                    </a>
+                                    </Link> 
                                     <p className="font-Nunito text-TextColor-0 transition-all duration-500 group-hover:text-white pb-7">
                                         Track project progress, analyze key metrics, and deliver clear, data-driven reports for informed decision-making.
                                     </p>
 
-                                    {/* <a href="/service_details">
+                                    {/* <Link to="/service_details">
                                         <button className="header-btn !bg-[#ffffff1a] !border-none !px-7 !rounded-full uppercase font-Rajdhani !flex gap-2 items-center group-hover:before:w-full group-hover:before:left-0">
                                             Read More
                                         </button>
-                                    </a> */}
+                                    </Link>  */}
                                 </div>
                             </div>
                             <div>
@@ -680,20 +681,20 @@ const About = () => {
                                             className="transition-all duration-500 group-hover:brightness-0 group-hover:invert-[1]"
                                         />
                                     </div>
-                                    <a href="/service_details">
+                                    <Link to="/service_details">
                                         <button className="font-Rajdhani text-left font-semibold text-[22px] sm:text-2xl lg:text-xl xl:text-2xl pb-4 text-white">
                                             Professional Team
                                         </button>
-                                    </a>
+                                    </Link> 
                                     <p className="font-Nunito text-TextColor-0 transition-all duration-500 group-hover:text-white pb-7">
                                         Collaborate with skilled professionals dedicated to delivering expertise, innovation, and exceptional results.
                                     </p>
 
-                                    {/* <a href="/service_details">
+                                    {/* <Link to="/service_details">
                                         <button className="header-btn !bg-[#ffffff1a] !border-none !px-7 !rounded-full uppercase font-Rajdhani !flex gap-2 items-center group-hover:before:w-full group-hover:before:left-0">
                                             Read More
                                         </button>
-                                    </a> */}
+                                    </Link>  */}
                                 </div>
                             </div>
                         </div>
@@ -1476,12 +1477,12 @@ const About = () => {
                                                         Admin
                                                     </p>
                                                 </div>
-                                                <a href="/blog_details">
+                                                <Link to="/blog_details">
                                                     <button className="font-Rajdhani text-left font-semibold text-lg sm:text-[22px] md:text-xl lg:text-base xl:text-xl 2xl:text-[23px] text-HeadingColor-0 transition-all duration-500 group-hover:text-PrimaryColor-0 mt-2 mb-5">
                                                     Difference Between Static and Dynamic Websites
                                                     </button>
-                                                </a>
-                                                <a className="inline-block" href="/blog_details">
+                                                </Link> 
+                                                <Link className="inline-block" to="/blog_details">
                                                     <button className="flex items-center gap-2 text-HeadingColor-0 text-lg font-Rajdhani font-medium transition-all duration-500 group-hover:text-PrimaryColor-0">
                                                         Read More
                                                         <svg
@@ -1496,7 +1497,7 @@ const About = () => {
                                                             <path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.749.749 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path>
                                                         </svg>
                                                     </button>
-                                                </a>
+                                                </Link> 
                                             </div>
                                         </div>
                                     </div>
@@ -1545,12 +1546,12 @@ const About = () => {
                                                         Admin
                                                     </p>
                                                 </div>
-                                                <a href="/blog_details">
+                                                <Link to="/blog_details">
                                                     <button className="font-Rajdhani text-left font-semibold text-lg sm:text-[22px] md:text-xl lg:text-base xl:text-xl 2xl:text-[23px] text-HeadingColor-0 transition-all duration-500 group-hover:text-PrimaryColor-0 mt-2 mb-5">
                                                     Big Data Management in Effective Way
                                                     </button>
-                                                </a>
-                                                <a className="inline-block" href="/blog_details">
+                                                </Link> 
+                                                <Link className="inline-block" to="/blog_details">
                                                     <button className="flex items-center gap-2 text-HeadingColor-0 text-lg font-Rajdhani font-medium transition-all duration-500 group-hover:text-PrimaryColor-0">
                                                         Read More
                                                         <svg
@@ -1565,7 +1566,7 @@ const About = () => {
                                                             <path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.749.749 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path>
                                                         </svg>
                                                     </button>
-                                                </a>
+                                                </Link> 
                                             </div>
                                         </div>
                                     </div>
@@ -1614,12 +1615,12 @@ const About = () => {
                                                         Admin
                                                     </p>
                                                 </div>
-                                                <a href="/blog_details">
+                                                <Link to="/blog_details">
                                                     <button className="font-Rajdhani text-left font-semibold text-lg sm:text-[22px] md:text-xl lg:text-base xl:text-xl 2xl:text-[23px] text-HeadingColor-0 transition-all duration-500 group-hover:text-PrimaryColor-0 mt-2 mb-5">
                                                     Tips to Rank Higher on Google Organically
                                                     </button>
-                                                </a>
-                                                <a className="inline-block" href="/blog_details">
+                                                </Link> 
+                                                <Link className="inline-block" to="/blog_details">
                                                     <button className="flex items-center gap-2 text-HeadingColor-0 text-lg font-Rajdhani font-medium transition-all duration-500 group-hover:text-PrimaryColor-0">
                                                         Read More
                                                         <svg
@@ -1634,7 +1635,7 @@ const About = () => {
                                                             <path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.749.749 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path>
                                                         </svg>
                                                     </button>
-                                                </a>
+                                                </Link> 
                                             </div>
                                         </div>
                                     </div>
@@ -1657,7 +1658,7 @@ const About = () => {
                                 </h1>
                             </div>
                             <div className="flex lg:justify-end">
-                                <a href="/team_inner">
+                                <Link to="/team_inner">
                                     <button className="primary-btn">
                                         All Member
                                         <svg
@@ -1672,7 +1673,7 @@ const About = () => {
                                             <path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.749.749 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z" />
                                         </svg>
                                     </button>
-                                </a>
+                                </Link> 
                             </div>
                         </div>
                         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-x-7 gap-y-[50px] mt-[52px]">
@@ -1693,7 +1694,7 @@ const About = () => {
                                         </p>
                                         <ul className="flex gap-4 justify-center mb-[6px]  transition-all duration-500 group-hover:mb-7 group-hover:mt-[14px]">
                                             <li>
-                                                <a href="/">
+                                                <Link to="/">
                                                     <button className="text-base text-white transition-all duration-500 hover:text-white">
                                                         <svg
                                                             stroke="currentColor"
@@ -1707,10 +1708,10 @@ const About = () => {
                                                             <path d="M80 299.3V512H196V299.3h86.5l18-97.8H196V166.9c0-51.7 20.3-71.5 72.7-71.5c16.3 0 29.4 .4 37 1.2V7.9C291.4 4 256.4 0 236.2 0C129.3 0 80 50.5 80 159.4v42.1H14v97.8H80z" />
                                                         </svg>
                                                     </button>
-                                                </a>
+                                                </Link> 
                                             </li>
                                             <li>
-                                                <a href="/">
+                                                <Link to="/">
                                                     <button className="text-base text-white transition-all duration-500 hover:text-white">
                                                         <svg
                                                             stroke="currentColor"
@@ -1724,10 +1725,10 @@ const About = () => {
                                                             <path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z" />
                                                         </svg>
                                                     </button>
-                                                </a>
+                                                </Link> 
                                             </li>
                                             <li>
-                                                <a href="/">
+                                                <Link to="/">
                                                     <button className="text-base text-white transition-all duration-500 hover:text-white">
                                                         <svg
                                                             stroke="currentColor"
@@ -1741,10 +1742,10 @@ const About = () => {
                                                             <path d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z" />
                                                         </svg>
                                                     </button>
-                                                </a>
+                                                </Link> 
                                             </li>
                                             <li>
-                                                <a href="/">
+                                                <Link to="/">
                                                     <button className="text-base text-white transition-all duration-500 hover:text-white">
                                                         <svg
                                                             stroke="currentColor"
@@ -1758,7 +1759,7 @@ const About = () => {
                                                             <path d="M204 6.5C101.4 6.5 0 74.9 0 185.6 0 256 39.6 296 63.6 296c9.9 0 15.6-27.6 15.6-35.4 0-9.3-23.7-29.1-23.7-67.8 0-80.4 61.2-137.4 140.4-137.4 68.1 0 118.5 38.7 118.5 109.8 0 53.1-21.3 152.7-90.3 152.7-24.9 0-46.2-18-46.2-43.8 0-37.8 26.4-74.4 26.4-113.4 0-66.2-93.9-54.2-93.9 25.8 0 16.8 2.1 35.4 9.6 50.7-13.8 59.4-42 147.9-42 209.1 0 18.9 2.7 37.5 4.5 56.4 3.4 3.8 1.7 3.4 6.9 1.5 50.4-69 48.6-82.5 71.4-172.8 12.3 23.4 44.1 36 69.3 36 106.2 0 153.9-103.5 153.9-196.8C384 71.3 298.2 6.5 204 6.5z" />
                                                         </svg>
                                                     </button>
-                                                </a>
+                                                </Link> 
                                             </li>
                                         </ul>
                                     </div>
@@ -1829,7 +1830,7 @@ const About = () => {
                                         </p>
                                         <ul className="flex gap-4 justify-center mb-[6px]  transition-all duration-500 group-hover:mb-7 group-hover:mt-[14px]">
                                             <li>
-                                                <a href="/">
+                                                <Link to="/">
                                                     <button className="text-base text-white transition-all duration-500 hover:text-white">
                                                         <svg
                                                             stroke="currentColor"
@@ -1843,10 +1844,10 @@ const About = () => {
                                                             <path d="M80 299.3V512H196V299.3h86.5l18-97.8H196V166.9c0-51.7 20.3-71.5 72.7-71.5c16.3 0 29.4 .4 37 1.2V7.9C291.4 4 256.4 0 236.2 0C129.3 0 80 50.5 80 159.4v42.1H14v97.8H80z" />
                                                         </svg>
                                                     </button>
-                                                </a>
+                                                </Link> 
                                             </li>
                                             <li>
-                                                <a href="/">
+                                                <Link to="/">
                                                     <button className="text-base text-white transition-all duration-500 hover:text-white">
                                                         <svg
                                                             stroke="currentColor"
@@ -1860,10 +1861,10 @@ const About = () => {
                                                             <path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z" />
                                                         </svg>
                                                     </button>
-                                                </a>
+                                                </Link> 
                                             </li>
                                             <li>
-                                                <a href="/">
+                                                <Link to="/">
                                                     <button className="text-base text-white transition-all duration-500 hover:text-white">
                                                         <svg
                                                             stroke="currentColor"
@@ -1877,10 +1878,10 @@ const About = () => {
                                                             <path d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z" />
                                                         </svg>
                                                     </button>
-                                                </a>
+                                                </Link> 
                                             </li>
                                             <li>
-                                                <a href="/">
+                                                <Link to="/">
                                                     <button className="text-base text-white transition-all duration-500 hover:text-white">
                                                         <svg
                                                             stroke="currentColor"
@@ -1894,7 +1895,7 @@ const About = () => {
                                                             <path d="M204 6.5C101.4 6.5 0 74.9 0 185.6 0 256 39.6 296 63.6 296c9.9 0 15.6-27.6 15.6-35.4 0-9.3-23.7-29.1-23.7-67.8 0-80.4 61.2-137.4 140.4-137.4 68.1 0 118.5 38.7 118.5 109.8 0 53.1-21.3 152.7-90.3 152.7-24.9 0-46.2-18-46.2-43.8 0-37.8 26.4-74.4 26.4-113.4 0-66.2-93.9-54.2-93.9 25.8 0 16.8 2.1 35.4 9.6 50.7-13.8 59.4-42 147.9-42 209.1 0 18.9 2.7 37.5 4.5 56.4 3.4 3.8 1.7 3.4 6.9 1.5 50.4-69 48.6-82.5 71.4-172.8 12.3 23.4 44.1 36 69.3 36 106.2 0 153.9-103.5 153.9-196.8C384 71.3 298.2 6.5 204 6.5z" />
                                                         </svg>
                                                     </button>
-                                                </a>
+                                                </Link> 
                                             </li>
                                         </ul>
                                     </div>
@@ -1965,7 +1966,7 @@ const About = () => {
                                         </p>
                                         <ul className="flex gap-4 justify-center mb-[6px]  transition-all duration-500 group-hover:mb-7 group-hover:mt-[14px]">
                                             <li>
-                                                <a href="/">
+                                                <Link to="/">
                                                     <button className="text-base text-white transition-all duration-500 hover:text-white">
                                                         <svg
                                                             stroke="currentColor"
@@ -1979,10 +1980,10 @@ const About = () => {
                                                             <path d="M80 299.3V512H196V299.3h86.5l18-97.8H196V166.9c0-51.7 20.3-71.5 72.7-71.5c16.3 0 29.4 .4 37 1.2V7.9C291.4 4 256.4 0 236.2 0C129.3 0 80 50.5 80 159.4v42.1H14v97.8H80z" />
                                                         </svg>
                                                     </button>
-                                                </a>
+                                                </Link> 
                                             </li>
                                             <li>
-                                                <a href="/">
+                                                <Link to="/">
                                                     <button className="text-base text-white transition-all duration-500 hover:text-white">
                                                         <svg
                                                             stroke="currentColor"
@@ -1996,10 +1997,10 @@ const About = () => {
                                                             <path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z" />
                                                         </svg>
                                                     </button>
-                                                </a>
+                                                </Link> 
                                             </li>
                                             <li>
-                                                <a href="/">
+                                                <Link to="/">
                                                     <button className="text-base text-white transition-all duration-500 hover:text-white">
                                                         <svg
                                                             stroke="currentColor"
@@ -2013,10 +2014,10 @@ const About = () => {
                                                             <path d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z" />
                                                         </svg>
                                                     </button>
-                                                </a>
+                                                </Link> 
                                             </li>
                                             <li>
-                                                <a href="/">
+                                                <Link to="/">
                                                     <button className="text-base text-white transition-all duration-500 hover:text-white">
                                                         <svg
                                                             stroke="currentColor"
@@ -2030,7 +2031,7 @@ const About = () => {
                                                             <path d="M204 6.5C101.4 6.5 0 74.9 0 185.6 0 256 39.6 296 63.6 296c9.9 0 15.6-27.6 15.6-35.4 0-9.3-23.7-29.1-23.7-67.8 0-80.4 61.2-137.4 140.4-137.4 68.1 0 118.5 38.7 118.5 109.8 0 53.1-21.3 152.7-90.3 152.7-24.9 0-46.2-18-46.2-43.8 0-37.8 26.4-74.4 26.4-113.4 0-66.2-93.9-54.2-93.9 25.8 0 16.8 2.1 35.4 9.6 50.7-13.8 59.4-42 147.9-42 209.1 0 18.9 2.7 37.5 4.5 56.4 3.4 3.8 1.7 3.4 6.9 1.5 50.4-69 48.6-82.5 71.4-172.8 12.3 23.4 44.1 36 69.3 36 106.2 0 153.9-103.5 153.9-196.8C384 71.3 298.2 6.5 204 6.5z" />
                                                         </svg>
                                                     </button>
-                                                </a>
+                                                </Link> 
                                             </li>
                                         </ul>
                                     </div>
@@ -2101,7 +2102,7 @@ const About = () => {
                                         </p>
                                         <ul className="flex gap-4 justify-center mb-[6px]  transition-all duration-500 group-hover:mb-7 group-hover:mt-[14px]">
                                             <li>
-                                                <a href="/">
+                                                <Link to="/">
                                                     <button className="text-base text-white transition-all duration-500 hover:text-white">
                                                         <svg
                                                             stroke="currentColor"
@@ -2115,10 +2116,10 @@ const About = () => {
                                                             <path d="M80 299.3V512H196V299.3h86.5l18-97.8H196V166.9c0-51.7 20.3-71.5 72.7-71.5c16.3 0 29.4 .4 37 1.2V7.9C291.4 4 256.4 0 236.2 0C129.3 0 80 50.5 80 159.4v42.1H14v97.8H80z" />
                                                         </svg>
                                                     </button>
-                                                </a>
+                                                </Link> 
                                             </li>
                                             <li>
-                                                <a href="/">
+                                                <Link to="/">
                                                     <button className="text-base text-white transition-all duration-500 hover:text-white">
                                                         <svg
                                                             stroke="currentColor"
@@ -2132,10 +2133,10 @@ const About = () => {
                                                             <path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z" />
                                                         </svg>
                                                     </button>
-                                                </a>
+                                                </Link> 
                                             </li>
                                             <li>
-                                                <a href="/">
+                                                <Link to="/">
                                                     <button className="text-base text-white transition-all duration-500 hover:text-white">
                                                         <svg
                                                             stroke="currentColor"
@@ -2149,10 +2150,10 @@ const About = () => {
                                                             <path d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z" />
                                                         </svg>
                                                     </button>
-                                                </a>
+                                                </Link> 
                                             </li>
                                             <li>
-                                                <a href="/">
+                                                <Link to="/">
                                                     <button className="text-base text-white transition-all duration-500 hover:text-white">
                                                         <svg
                                                             stroke="currentColor"
@@ -2166,7 +2167,7 @@ const About = () => {
                                                             <path d="M204 6.5C101.4 6.5 0 74.9 0 185.6 0 256 39.6 296 63.6 296c9.9 0 15.6-27.6 15.6-35.4 0-9.3-23.7-29.1-23.7-67.8 0-80.4 61.2-137.4 140.4-137.4 68.1 0 118.5 38.7 118.5 109.8 0 53.1-21.3 152.7-90.3 152.7-24.9 0-46.2-18-46.2-43.8 0-37.8 26.4-74.4 26.4-113.4 0-66.2-93.9-54.2-93.9 25.8 0 16.8 2.1 35.4 9.6 50.7-13.8 59.4-42 147.9-42 209.1 0 18.9 2.7 37.5 4.5 56.4 3.4 3.8 1.7 3.4 6.9 1.5 50.4-69 48.6-82.5 71.4-172.8 12.3 23.4 44.1 36 69.3 36 106.2 0 153.9-103.5 153.9-196.8C384 71.3 298.2 6.5 204 6.5z" />
                                                         </svg>
                                                     </button>
-                                                </a>
+                                                </Link> 
                                             </li>
                                         </ul>
                                     </div>

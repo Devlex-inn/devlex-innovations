@@ -1,3 +1,4 @@
+import { Link} from 'react-router-dom';
 const Service = () => {
     return (
         <>
@@ -25,7 +26,7 @@ const Service = () => {
                         <div className="border-2 rounded border-BorderColor-0 mt-8 sm:mt-5 inline-block px-8 py-2">
                             <ul className="flex flex-col sm:flex-row gap-2 sm:gap-4 sm:items-center justify-start">
                                 <li>
-                                    <a href="/">
+                                    <Link to="/">
                                         <button className="font-Rajdhani font-medium text-lg text-white flex items-center gap-2 transition-all duration-500 hover:text-PrimaryColor-0">
                                             <svg
                                                 stroke="currentColor"
@@ -42,7 +43,7 @@ const Service = () => {
                                             </svg>
                                             Home
                                         </button>
-                                    </a>
+                                    </Link>
                                 </li>
                                 <li>
                                     <div className="text-white hidden sm:block">
@@ -60,11 +61,11 @@ const Service = () => {
                                     </div>
                                 </li>
                                 <li>
-                                    <a href="/service">
+                                    <Link to="/service">
                                         <button className="font-Rajdhani font-medium text-lg capitalize text-white">
                                             Our Services
                                         </button>
-                                    </a>
+                                    </Link>
                                 </li>
                             </ul>
                         </div>
@@ -90,16 +91,16 @@ const Service = () => {
                                                 <img src="/images/service-icon1.png" draggable="false" />
                                             </div>
                                         </div>
-                                        <a href="/service_details">
+                                        <Link to="/service_details">
                                             <button className="font-Rajdhani font-semibold text-2xl lg:text-xl xl:text-2xl 2xl:text-[26px] text-HeadingColor-0">
                                                 Cloud Services
                                             </button>
-                                        </a>
+                                        </Link>
                                         <p className="font-Nunito text-TextColor2-0 pt-2 pb-6">
                                             Monotonectal grants to business visualize provid solution
                                             services business provid done
                                         </p>
-                                        <a href="/service_details">
+                                        <Link to="/service_details">
                                             <button className="font-Nunito text-white border border-PrimaryColor-0 rounded-full font-medium flex items-center justify-center gap-2 w-full py-2 transition-all duration-500 group-hover:text-HeadingColor-0 relative z-10 before:absolute before:-z-10 before:w-full before:h-full before:bg-PrimaryColor-0 before:rounded-full before:transition-all before:duration-500 before:scale-100 group-hover:before:scale-0">
                                                 Learn More
                                                 <svg
@@ -119,7 +120,7 @@ const Service = () => {
                                                     />
                                                 </svg>
                                             </button>
-                                        </a>
+                                        </Link>
                                     </div>
                                 </div>
                                 <div>
@@ -129,16 +130,16 @@ const Service = () => {
                                                 <img src="/images/service-icon2.png" draggable="false" />
                                             </div>
                                         </div>
-                                        <a href="/service_details">
+                                        <Link to="/service_details">
                                             <button className="font-Rajdhani font-semibold text-2xl lg:text-xl xl:text-2xl 2xl:text-[26px] text-HeadingColor-0">
                                                 IT Management
                                             </button>
-                                        </a>
+                                        </Link>
                                         <p className="font-Nunito text-TextColor2-0 pt-2 pb-6">
                                             Monotonectal grants to business visualize provid solution
                                             services business provid done
                                         </p>
-                                        <a href="/service_details">
+                                        <Link to="/service_details">
                                             <button className="font-Nunito text-white border border-PrimaryColor-0 rounded-full font-medium flex items-center justify-center gap-2 w-full py-2 transition-all duration-500 group-hover:text-HeadingColor-0 relative z-10 before:absolute before:-z-10 before:w-full before:h-full before:bg-PrimaryColor-0 before:rounded-full before:transition-all before:duration-500 before:scale-100 group-hover:before:scale-0">
                                                 Learn More
                                                 <svg
@@ -158,7 +159,7 @@ const Service = () => {
                                                     />
                                                 </svg>
                                             </button>
-                                        </a>
+                                        </Link>
                                     </div>
                                 </div>
                                 <div>
@@ -168,16 +169,16 @@ const Service = () => {
                                                 <img src="/images/service-icon4.png" draggable="false" />
                                             </div>
                                         </div>
-                                        <a href="/service_details">
+                                        <Link to="/service_details">
                                             <button className="font-Rajdhani font-semibold text-2xl lg:text-xl xl:text-2xl 2xl:text-[26px] text-HeadingColor-0">
                                                 Software Renew
                                             </button>
-                                        </a>
+                                        </Link>
                                         <p className="font-Nunito text-TextColor2-0 pt-2 pb-6">
                                             Monotonectal grants to business visualize provid solution
                                             services business provid done
                                         </p>
-                                        <a href="/service_details">
+                                        <Link to="/service_details">
                                             <button className="font-Nunito text-white border border-PrimaryColor-0 rounded-full font-medium flex items-center justify-center gap-2 w-full py-2 transition-all duration-500 group-hover:text-HeadingColor-0 relative z-10 before:absolute before:-z-10 before:w-full before:h-full before:bg-PrimaryColor-0 before:rounded-full before:transition-all before:duration-500 before:scale-100 group-hover:before:scale-0">
                                                 Learn More
                                                 <svg
@@ -197,7 +198,7 @@ const Service = () => {
                                                     />
                                                 </svg>
                                             </button>
-                                        </a>
+                                        </Link>
                                     </div>
                                 </div>
                                 <div>
@@ -207,16 +208,16 @@ const Service = () => {
                                                 <img src="/images/service-icon3.png" draggable="false" />
                                             </div>
                                         </div>
-                                        <a href="/service_details">
+                                        <Link to="/service_details">
                                             <button className="font-Rajdhani font-semibold text-2xl lg:text-xl xl:text-2xl 2xl:text-[26px] text-HeadingColor-0">
                                                 Machine Learning
                                             </button>
-                                        </a>
+                                        </Link>
                                         <p className="font-Nunito text-TextColor2-0 pt-2 pb-6">
                                             Monotonectal grants to business visualize provid solution
                                             services business provid done
                                         </p>
-                                        <a href="/service_details">
+                                        <Link to="/service_details">
                                             <button className="font-Nunito text-white border border-PrimaryColor-0 rounded-full font-medium flex items-center justify-center gap-2 w-full py-2 transition-all duration-500 group-hover:text-HeadingColor-0 relative z-10 before:absolute before:-z-10 before:w-full before:h-full before:bg-PrimaryColor-0 before:rounded-full before:transition-all before:duration-500 before:scale-100 group-hover:before:scale-0">
                                                 Learn More
                                                 <svg
@@ -236,7 +237,7 @@ const Service = () => {
                                                     />
                                                 </svg>
                                             </button>
-                                        </a>
+                                        </Link>
                                     </div>
                                 </div>
                                 <div>
@@ -246,16 +247,16 @@ const Service = () => {
                                                 <img src="/images/service-icon5.png" draggable="false" />
                                             </div>
                                         </div>
-                                        <a href="/service_details">
+                                        <Link to="/service_details">
                                             <button className="font-Rajdhani font-semibold text-2xl lg:text-xl xl:text-2xl 2xl:text-[26px] text-HeadingColor-0">
                                                 Digital Marketing
                                             </button>
-                                        </a>
+                                        </Link>
                                         <p className="font-Nunito text-TextColor2-0 pt-2 pb-6">
                                             Monotonectal grants to business visualize provid solution
                                             services business provid done
                                         </p>
-                                        <a href="/service_details">
+                                        <Link to="/service_details">
                                             <button className="font-Nunito text-white border border-PrimaryColor-0 rounded-full font-medium flex items-center justify-center gap-2 w-full py-2 transition-all duration-500 group-hover:text-HeadingColor-0 relative z-10 before:absolute before:-z-10 before:w-full before:h-full before:bg-PrimaryColor-0 before:rounded-full before:transition-all before:duration-500 before:scale-100 group-hover:before:scale-0">
                                                 Learn More
                                                 <svg
@@ -275,7 +276,7 @@ const Service = () => {
                                                     />
                                                 </svg>
                                             </button>
-                                        </a>
+                                        </Link>
                                     </div>
                                 </div>
                                 <div>
@@ -285,16 +286,16 @@ const Service = () => {
                                                 <img src="/images/service-icon6.png" draggable="false" />
                                             </div>
                                         </div>
-                                        <a href="/service_details">
+                                        <Link to="/service_details">
                                             <button className="font-Rajdhani font-semibold text-2xl lg:text-xl xl:text-2xl 2xl:text-[26px] text-HeadingColor-0">
                                                 Web Development
                                             </button>
-                                        </a>
+                                        </Link>
                                         <p className="font-Nunito text-TextColor2-0 pt-2 pb-6">
                                             Monotonectal grants to business visualize provid solution
                                             services business provid done
                                         </p>
-                                        <a href="/service_details">
+                                        <Link to="/service_details">
                                             <button className="font-Nunito text-white border border-PrimaryColor-0 rounded-full font-medium flex items-center justify-center gap-2 w-full py-2 transition-all duration-500 group-hover:text-HeadingColor-0 relative z-10 before:absolute before:-z-10 before:w-full before:h-full before:bg-PrimaryColor-0 before:rounded-full before:transition-all before:duration-500 before:scale-100 group-hover:before:scale-0">
                                                 Learn More
                                                 <svg
@@ -314,7 +315,7 @@ const Service = () => {
                                                     />
                                                 </svg>
                                             </button>
-                                        </a>
+                                        </Link>
                                     </div>
                                 </div>
                                 <div>
@@ -324,16 +325,16 @@ const Service = () => {
                                                 <img src="/images/service-icon6.png" draggable="false" />
                                             </div>
                                         </div>
-                                        <a href="/service_details">
+                                        <Link to="/service_details">
                                             <button className="font-Rajdhani font-semibold text-2xl lg:text-xl xl:text-2xl 2xl:text-[26px] text-HeadingColor-0">
                                                 Cyber Security
                                             </button>
-                                        </a>
+                                        </Link>
                                         <p className="font-Nunito text-TextColor2-0 pt-2 pb-6">
                                             Monotonectal grants to business visualize provid solution
                                             services business provid done
                                         </p>
-                                        <a href="/service_details">
+                                        <Link to="/service_details">
                                             <button className="font-Nunito text-white border border-PrimaryColor-0 rounded-full font-medium flex items-center justify-center gap-2 w-full py-2 transition-all duration-500 group-hover:text-HeadingColor-0 relative z-10 before:absolute before:-z-10 before:w-full before:h-full before:bg-PrimaryColor-0 before:rounded-full before:transition-all before:duration-500 before:scale-100 group-hover:before:scale-0">
                                                 Learn More
                                                 <svg
@@ -353,7 +354,7 @@ const Service = () => {
                                                     />
                                                 </svg>
                                             </button>
-                                        </a>
+                                        </Link>
                                     </div>
                                 </div>
                                 <div>
@@ -363,16 +364,16 @@ const Service = () => {
                                                 <img src="/images/service-icon6.png" draggable="false" />
                                             </div>
                                         </div>
-                                        <a href="/service_details">
+                                        <Link to="/service_details">
                                             <button className="font-Rajdhani font-semibold text-2xl lg:text-xl xl:text-2xl 2xl:text-[26px] text-HeadingColor-0">
                                                 Data Analytic
                                             </button>
-                                        </a>
+                                        </Link>
                                         <p className="font-Nunito text-TextColor2-0 pt-2 pb-6">
                                             Monotonectal grants to business visualize provid solution
                                             services business provid done
                                         </p>
-                                        <a href="/service_details">
+                                        <Link to="/service_details">
                                             <button className="font-Nunito text-white border border-PrimaryColor-0 rounded-full font-medium flex items-center justify-center gap-2 w-full py-2 transition-all duration-500 group-hover:text-HeadingColor-0 relative z-10 before:absolute before:-z-10 before:w-full before:h-full before:bg-PrimaryColor-0 before:rounded-full before:transition-all before:duration-500 before:scale-100 group-hover:before:scale-0">
                                                 Learn More
                                                 <svg
@@ -392,7 +393,7 @@ const Service = () => {
                                                     />
                                                 </svg>
                                             </button>
-                                        </a>
+                                        </Link>
                                     </div>
                                 </div>
                             </div>

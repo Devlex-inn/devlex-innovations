@@ -1,3 +1,5 @@
+import { Link} from 'react-router-dom';
+
 const UiUxDesign = () => {
     return (
         <>
@@ -10,7 +12,7 @@ const UiUxDesign = () => {
                         <div className="border-2 rounded border-BorderColor-0 mt-8 sm:mt-5 inline-block px-8 py-2">
                             <ul className="flex sm:flex-row gap-2 sm:gap-4 sm:items-center justify-start">
                                 <li>
-                                    <a href="/">
+                                    <Link to="/">
                                         <button className="font-Rajdhani font-medium text-lg text-white flex items-center gap-2 transition-all duration-500 hover:text-PrimaryColor-0">
                                             <svg
                                                 stroke="currentColor"
@@ -27,7 +29,7 @@ const UiUxDesign = () => {
                                             </svg>
                                             Home
                                         </button>
-                                    </a>
+                                    </Link>
                                 </li>
                                 <li>
                                     <div className="text-white hidden sm:block">
@@ -45,11 +47,11 @@ const UiUxDesign = () => {
                                     </div>
                                 </li>
                                 <li>
-                                    <a href="/service_details">
+                                    <Link to="/service_details">
                                         <button className="font-Rajdhani font-medium text-lg capitalize text-white">
                                             Service Details
                                         </button>
-                                    </a>
+                                    </Link>
                                 </li>
                             </ul>
                         </div>
@@ -65,13 +67,13 @@ const UiUxDesign = () => {
                                     className="w-full"
                                 />
                                 <h2 className="font-Rajdhani font-bold text-2xl sm:text-4xl text-HeadingColor-0 mt-8">
-                                UI/UX Design Services
+                                    UI/UX Design Services
                                 </h2>
                                 <p className="font-Nunito text-TextColor2-0 mt-6">
-                                At Devlex Innovations, we craft intuitive and engaging digital experiences that seamlessly blend aesthetics with functionality. Our user-centric approach ensures smooth navigation, accessibility, and responsiveness, enhancing overall user engagement.
+                                    At Devlex Innovations, we craft intuitive and engaging digital experiences that seamlessly blend aesthetics with functionality. Our user-centric approach ensures smooth navigation, accessibility, and responsiveness, enhancing overall user engagement.
                                 </p>
                                 <p className="font-Nunito text-TextColor2-0 mt-7 mb-11">
-                                We leverage modern design trends, innovative prototyping, and performance-driven strategies to create visually compelling interfaces that prioritize usability. By integrating cutting-edge technologies and design principles, we deliver scalable and interactive UI/UX solutions that align with your business goals. Elevate your digital presence with our expertly designed, future-ready interfaces.
+                                    We leverage modern design trends, innovative prototyping, and performance-driven strategies to create visually compelling interfaces that prioritize usability. By integrating cutting-edge technologies and design principles, we deliver scalable and interactive UI/UX solutions that align with your business goals. Elevate your digital presence with our expertly designed, future-ready interfaces.
                                 </p>
                                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-7">
                                     <div className="flex flex-col md:flex-row lg:flex-col xl:flex-row gap-5 bg-[#f3f4f8] rounded-md px-6 py-7">
@@ -83,10 +85,10 @@ const UiUxDesign = () => {
                                         </div>
                                         <div className="flex-1">
                                             <h6 className="font-Rajdhani font-semibold text-[22px] text-HeadingColor-0">
-                                            UI/UX Excellence
+                                                UI/UX Excellence
                                             </h6>
                                             <p className="font-Nunito text-TextColor2-0 mt-3">
-                                            Crafting intuitive, user-centric designs for seamless digital experiences
+                                                Crafting intuitive, user-centric designs for seamless digital experiences
                                             </p>
                                         </div>
                                     </div>
@@ -102,7 +104,7 @@ const UiUxDesign = () => {
                                                 UI/UX Innovation
                                             </h6>
                                             <p className="font-Nunito text-TextColor2-0 mt-3">
-                                            Designing engaging, accessible interfaces with brand consistency in mind
+                                                Designing engaging, accessible interfaces with brand consistency in mind
                                             </p>
                                         </div>
                                     </div>
@@ -124,19 +126,15 @@ const UiUxDesign = () => {
                                     </div>
                                     <div className="flex-1">
                                         <p className="font-Nunito italic text-lg sm:text-[22px] leading-8 text-white">
-                                            Competently architect intermandated deliverables client
-                                            <br className="hidden 2xl:block" />
-                                            niches continually underwhelm
+                                            Strategically delivering tailored solutions to enhance efficiency and growth
                                         </p>
                                     </div>
                                 </div>
                                 <h2 className="font-Rajdhani font-bold text-2xl sm:text-3xl text-HeadingColor-0 mt-[54px]">
-                                    What the Benifits?
+                                    Key Benefits
                                 </h2>
                                 <p className="font-Nunito text-TextColor2-0 mt-6">
-                                    Alternative innovation to ethical network environmental whiteboard
-                                    pursue compelling results for premier methods empowerment.
-                                    Dramatically architect go forward opportunities
+                                    Unlock innovative solutions designed to enhance efficiency, scalability, and user experience. Leverage cutting-edge strategies and advanced technologies to drive sustainable growth, improve operational performance, and maximize business success.
                                 </p>
                                 <div className="grid grid-cols-1 md:grid-cols-2 gap-7 mt-9">
                                     <div className="text-center group">
@@ -165,7 +163,7 @@ const UiUxDesign = () => {
                                                     >
                                                         <path d="M186.301 339.893L96 249.461l-32 30.507L186.301 402 448 140.506 416 110z" />
                                                     </svg>
-                                                    New Modern Equipments
+                                                    Leveraging advanced tools
                                                 </li>
                                                 <li className="flex items-center gap-2 text-TextColor2-0 text-left font-Nunito lg:text-sm xl:text-base">
                                                     <svg
@@ -180,7 +178,7 @@ const UiUxDesign = () => {
                                                     >
                                                         <path d="M186.301 339.893L96 249.461l-32 30.507L186.301 402 448 140.506 416 110z" />
                                                     </svg>
-                                                    Expert’s Volunteers
+                                                    Expertise for strategic excellence
                                                 </li>
                                             </ul>
                                         </div>
@@ -211,7 +209,7 @@ const UiUxDesign = () => {
                                                     >
                                                         <path d="M186.301 339.893L96 249.461l-32 30.507L186.301 402 448 140.506 416 110z" />
                                                     </svg>
-                                                    New Modern Equipments
+                                                    Innovative solutions
                                                 </li>
                                                 <li className="flex items-center gap-2 text-TextColor2-0 text-left font-Nunito lg:text-sm xl:text-base">
                                                     <svg
@@ -226,7 +224,7 @@ const UiUxDesign = () => {
                                                     >
                                                         <path d="M186.301 339.893L96 249.461l-32 30.507L186.301 402 448 140.506 416 110z" />
                                                     </svg>
-                                                    Expert’s Volunteers
+                                                    Advanced technology and expertise
                                                 </li>
                                             </ul>
                                         </div>
@@ -240,7 +238,7 @@ const UiUxDesign = () => {
                                     </h4>
                                     <ul className="mt-8">
                                         <li>
-                                            <a href="/web-development">
+                                            <Link to="/web-development">
                                                 <button className="w-full font-Nunito text-left text-white transition-all duration-500 group px-7 py-4 flex items-center justify-between rounded bg-PrimaryColor-0 mb-3 overflow-hidden z-[1] relative before:absolute before:top-0 before:right-0 before:w-0 before:-z-[1] before:h-full before:bg-PrimaryColor-0 before:rounded before:transition-all before:duration-500 hover:before:w-full hover:before:left-0 hover:text-white">
                                                     <span className="flex items-center gap-3 lg:gap-1 xl:gap-3">
                                                         <svg
@@ -270,10 +268,10 @@ const UiUxDesign = () => {
                                                         <path d="M502.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-128-128c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L402.7 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l370.7 0-73.4 73.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l128-128z" />
                                                     </svg>
                                                 </button>
-                                            </a>
+                                            </Link>
                                         </li>
                                         <li>
-                                            <a href="/UIUX-design">
+                                            <Link to="/UIUX-design">
                                                 <button className="w-full font-Nunito text-left text-HeadingColor-0 transition-all duration-500 group px-7 py-4 flex items-center justify-between rounded bg-white mb-3 overflow-hidden z-[1] relative before:absolute before:top-0 before:right-0 before:w-0 before:-z-[1] before:h-full before:bg-PrimaryColor-0 before:rounded before:transition-all before:duration-500 hover:before:w-full hover:before:left-0 hover:text-white">
                                                     <span className="flex items-center gap-3 lg:gap-1 xl:gap-3">
                                                         <svg
@@ -303,10 +301,10 @@ const UiUxDesign = () => {
                                                         <path d="M502.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-128-128c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L402.7 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l370.7 0-73.4 73.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l128-128z" />
                                                     </svg>
                                                 </button>
-                                            </a>
+                                            </Link>
                                         </li>
                                         <li>
-                                            <a href="/app-development">
+                                            <Link to="/app-development">
                                                 <button className="w-full font-Nunito text-left text-HeadingColor-0 transition-all duration-500 group px-7 py-4 flex items-center justify-between rounded bg-white mb-3 overflow-hidden z-[1] relative before:absolute before:top-0 before:right-0 before:w-0 before:-z-[1] before:h-full before:bg-PrimaryColor-0 before:rounded before:transition-all before:duration-500 hover:before:w-full hover:before:left-0 hover:text-white">
                                                     <span className="flex items-center gap-3 lg:gap-1 xl:gap-3">
                                                         <svg
@@ -336,10 +334,10 @@ const UiUxDesign = () => {
                                                         <path d="M502.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-128-128c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L402.7 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l370.7 0-73.4 73.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l128-128z" />
                                                     </svg>
                                                 </button>
-                                            </a>
+                                            </Link>
                                         </li>
                                         <li>
-                                            <a href="/digital-marketing">
+                                            <Link to="/digital-marketing">
                                                 <button className="w-full font-Nunito text-left text-HeadingColor-0 transition-all duration-500 group px-7 py-4 flex items-center justify-between rounded bg-white mb-3 overflow-hidden z-[1] relative before:absolute before:top-0 before:right-0 before:w-0 before:-z-[1] before:h-full before:bg-PrimaryColor-0 before:rounded before:transition-all before:duration-500 hover:before:w-full hover:before:left-0 hover:text-white">
                                                     <span className="flex items-center gap-3 lg:gap-1 xl:gap-3">
                                                         <svg
@@ -369,10 +367,10 @@ const UiUxDesign = () => {
                                                         <path d="M502.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-128-128c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L402.7 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l370.7 0-73.4 73.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l128-128z" />
                                                     </svg>
                                                 </button>
-                                            </a>
+                                            </Link>
                                         </li>
                                         <li>
-                                            <a href="/video-editing">
+                                            <Link to="/video-editing">
                                                 <button className="w-full font-Nunito text-left text-HeadingColor-0 transition-all duration-500 group px-7 py-4 flex items-center justify-between rounded bg-white mb-3 overflow-hidden z-[1] relative before:absolute before:top-0 before:right-0 before:w-0 before:-z-[1] before:h-full before:bg-PrimaryColor-0 before:rounded before:transition-all before:duration-500 hover:before:w-full hover:before:left-0 hover:text-white">
                                                     <span className="flex items-center gap-3 lg:gap-1 xl:gap-3">
                                                         <svg
@@ -402,10 +400,10 @@ const UiUxDesign = () => {
                                                         <path d="M502.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-128-128c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L402.7 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l370.7 0-73.4 73.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l128-128z" />
                                                     </svg>
                                                 </button>
-                                            </a>
+                                            </Link>
                                         </li>
                                         <li>
-                                            <a href="#">
+                                            <Link to="/devops-services">
                                                 <button className="w-full font-Nunito text-left text-HeadingColor-0 transition-all duration-500 group px-7 py-4 flex items-center justify-between rounded bg-white mb-3 overflow-hidden z-[1] relative before:absolute before:top-0 before:right-0 before:w-0 before:-z-[1] before:h-full before:bg-PrimaryColor-0 before:rounded before:transition-all before:duration-500 hover:before:w-full hover:before:left-0 hover:text-white">
                                                     <span className="flex items-center gap-3 lg:gap-1 xl:gap-3">
                                                         <svg
@@ -435,7 +433,7 @@ const UiUxDesign = () => {
                                                         <path d="M502.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-128-128c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L402.7 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l370.7 0-73.4 73.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l128-128z" />
                                                     </svg>
                                                 </button>
-                                            </a>
+                                            </Link>
                                         </li>
                                     </ul>
                                 </div>
@@ -445,7 +443,7 @@ const UiUxDesign = () => {
                                     </h4>
                                     <ul className="mt-8">
                                         <li>
-                                            <a href="/">
+                                            <Link to="/">
                                                 <button className="w-full font-Nunito bg-SecondaryColor-0 text-left text-white transition-all duration-500 group px-7 py-4 flex items-center justify-between rounded bg-HoverColor-0 mb-3 overflow-hidden z-[1] relative before:absolute before:top-0 before:right-0 before:w-0 before:-z-[1] before:h-full before:bg-PrimaryColor-0 before:rounded before:transition-all before:duration-500 hover:before:w-full hover:before:left-0 hover:text-white">
                                                     <span className="flex items-center gap-3 lg:gap-1 xl:gap-3">
                                                         <svg
@@ -481,10 +479,10 @@ const UiUxDesign = () => {
                                                         />
                                                     </svg>
                                                 </button>
-                                            </a>
+                                            </Link>
                                         </li>
                                         <li>
-                                            <a href="/">
+                                            <Link to="/">
                                                 <button className="w-full font-Nunito bg-SecondaryColor-0 text-left text-white transition-all duration-500 group px-7 py-4 flex items-center justify-between rounded bg-HoverColor-0 mb-3 overflow-hidden z-[1] relative before:absolute before:top-0 before:right-0 before:w-0 before:-z-[1] before:h-full before:bg-PrimaryColor-0 before:rounded before:transition-all before:duration-500 hover:before:w-full hover:before:left-0 hover:text-white">
                                                     <span className="flex items-center gap-3 lg:gap-1 xl:gap-3">
                                                         <svg
@@ -520,7 +518,7 @@ const UiUxDesign = () => {
                                                         />
                                                     </svg>
                                                 </button>
-                                            </a>
+                                            </Link>
                                         </li>
                                     </ul>
                                 </div>
@@ -529,12 +527,12 @@ const UiUxDesign = () => {
                                     <h6 className="font-Nunito font-medium text-lg text-white mt-5 mb-2">
                                         Call Us Anytime
                                     </h6>
-                                    <a href="/">
+                                    <Link to="/">
                                         <button className="font-Nunito font-semibold text-2xl text-white">
-                                        +91- 6306011968
+                                            +91- 6306011968
                                         </button>
-                                    </a>
-                                    <a href="/">
+                                    </Link>
+                                    <Link to="/">
                                         <button className="font-Nunito text-white flex gap-2 items-center mt-4 mb-[52px]">
                                             <svg
                                                 stroke="currentColor"
@@ -551,8 +549,8 @@ const UiUxDesign = () => {
                                             </svg>
                                             info.devlexinnovations.com
                                         </button>
-                                    </a>
-                                    <a href="/contact">
+                                    </Link>
+                                    <Link to="/contact">
                                         <button className="font-Nunito text-white flex gap-2 items-center bg-PrimaryColor-0 w-full h-[58px] rounded-md justify-center z-10 relative before:absolute before:top-0 before:right-0 before:scale-0 before:-z-10 before:w-full before:h-full before:bg-SecondaryColor-0 before:rounded before:transition-all before:duration-500 hover:before:scale-100 hover:text-white">
                                             Contact Us
                                             <svg
@@ -567,7 +565,7 @@ const UiUxDesign = () => {
                                                 <path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z" />
                                             </svg>
                                         </button>
-                                    </a>
+                                    </Link>
                                 </div>
                             </div>
                         </div>

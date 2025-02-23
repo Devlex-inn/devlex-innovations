@@ -15,6 +15,7 @@ import AppDevelopment from './component/AppDevelopment';
 import DigitalMarketing from './component/DigitalMarketing';
 import VideoEditing from './component/VideoEditing';
 import Blog from './component/Blog';
+import DevOps from './component/DevOps';
 
 function App() {
   return (
@@ -29,13 +30,14 @@ function App() {
         <Route path="/app-development" element={<AppDevelopment />} />
         <Route path="/digital-marketing" element={<DigitalMarketing />} />
         <Route path="/video-editing" element={<VideoEditing />} />
-
+        <Route path="/devops-services" element={<DevOps />} />
 
         <Route path="/contact" element={<Contact />} />
         <Route path="/ourmission" element={<Ourmission />} />
         <Route path="/whychoose" element={<Whychoose />} />
         <Route path="/faq" element={<Faq />} />
         <Route path="/blog" element={<Blog />} />
+
 
 
       </Routes>

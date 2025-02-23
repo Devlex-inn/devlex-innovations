@@ -1,8 +1,9 @@
+import { Link} from 'react-router-dom';
 const Ourmission = () => {
     return (
         <>
             <div>
-                <div className="bg-[url('/images/breadcrumb-bg.png')] bg-no-repeat bg-cover bg-center flex items-center justify-start h-[400px] sm:h-[500px] pt-20">
+                <div className="bg-[url('/images/breadcrumb-bg.png')] bg-no-repeat bg-cover bg-center flex items-center justify-start h-[400px] sm:h-[300px] pt-5">
                     <div className="Container">
                         <h1 className="font-Rajdhani font-bold text-4xl sm:text-[44px] md:text-[55px] text-white capitalize">
                             Our Mission Vission &amp; Goal
@@ -10,7 +11,7 @@ const Ourmission = () => {
                         <div className="border-2 rounded border-BorderColor-0 mt-8 sm:mt-5 inline-block px-8 py-2">
                             <ul className="flex flex-col sm:flex-row gap-2 sm:gap-4 sm:items-center justify-start">
                                 <li>
-                                    <a href="/">
+                                    <Link to="/">
                                         <button className="font-Rajdhani font-medium text-lg text-white flex items-center gap-2 transition-all duration-500 hover:text-PrimaryColor-0">
                                             <svg
                                                 stroke="currentColor"
@@ -27,7 +28,7 @@ const Ourmission = () => {
                                             </svg>
                                             Home
                                         </button>
-                                    </a>
+                                    </Link>
                                 </li>
                                 <li>
                                     <div className="text-white hidden sm:block">
@@ -45,17 +46,17 @@ const Ourmission = () => {
                                     </div>
                                 </li>
                                 <li>
-                                    <a href="/mission_inner">
+                                    <Link to="/mission_inner">
                                         <button className="font-Rajdhani font-medium text-lg capitalize text-white">
                                             Our Mission Vission &amp; Goal
                                         </button>
-                                    </a>
+                                    </Link>
                                 </li>
                             </ul>
                         </div>
                     </div>
                 </div>
-                <section className="relative pt-28 pb-[120px] bg-[#f5f8ed] z-10">
+                <section className="relative pt-20 pb-[120px] bg-[#f5f8ed] z-10">
                     <div className="Container">
                         <div className="grid grid-cols-1 lg:grid-cols-2 lg:items-center gap-10 lg:gap-0 bg-BodyBg-0 rounded-md mb-8 lg:mb-0">
                             <div>
@@ -124,9 +125,9 @@ const Ourmission = () => {
                                         With a deep understanding of your business needs, our expert support team is always ready to ensure seamless IT operations.
                                     </p>
                                 </div>
-                                {/* <a href="/">
+                                {/* <Link to="/">
                                     <button className="primary-btn4">Find Out More</button>
-                                </a> */}
+                                </Link> */}
                             </div>
                         </div>
                         <div className="grid grid-cols-1 lg:grid-cols-2 lg:items-center gap-10 lg:gap-0 bg-BodyBg-0 rounded-md mb-8 lg:mb-0">
@@ -194,9 +195,9 @@ const Ourmission = () => {
                                         With a commitment to excellence, our support team ensures seamless operations and sustained success.
                                     </p>
                                 </div>
-                                {/* <a href="/">
+                                {/* <Link to="/">
                                     <button className="primary-btn4">Find Out More</button>
-                                </a> */}
+                                </Link> */}
                             </div>
                             <div>
                                 <img src="/images/mission-2.png" draggable="false" />
@@ -270,9 +271,9 @@ const Ourmission = () => {
                                         Our expert support team ensures seamless operations and continuous growth.
                                     </p>
                                 </div>
-                                {/* <a href="/">
+                                {/* <Link to="/">
                                     <button className="primary-btn4">Find Out More</button>
-                                </a> */}
+                                </Link> */}
                             </div>
                         </div>
                     </div>

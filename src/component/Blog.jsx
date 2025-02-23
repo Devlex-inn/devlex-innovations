@@ -1,10 +1,11 @@
 
+import { Link} from 'react-router-dom';
 
 const Blog = () => {
     return (
         <>
             <div>
-                <div className="bg-[url('/images/breadcrumb-bg.png')] bg-no-repeat bg-cover bg-center flex items-center justify-start h-[400px] sm:h-[500px] pt-20">
+                <div className="bg-[url('/images/breadcrumb-bg.png')] bg-no-repeat bg-cover bg-center flex items-center justify-start h-[400px] sm:h-[300px] pt-5">
                     <div className="Container">
                         <h1 className="font-Rajdhani font-bold text-4xl sm:text-[44px] md:text-[55px] text-white capitalize">
                             Blog
@@ -12,7 +13,7 @@ const Blog = () => {
                         <div className="border-2 rounded border-BorderColor-0 mt-8 sm:mt-5 inline-block px-8 py-2">
                             <ul className="flex flex-col sm:flex-row gap-2 sm:gap-4 sm:items-center justify-start">
                                 <li>
-                                    <a href="/">
+                                    <Link to="/">
                                         <button className="font-Rajdhani font-medium text-lg text-white flex items-center gap-2 transition-all duration-500 hover:text-PrimaryColor-0">
                                             <svg
                                                 stroke="currentColor"
@@ -29,7 +30,7 @@ const Blog = () => {
                                             </svg>
                                             Home
                                         </button>
-                                    </a>
+                                    </Link> 
                                 </li>
                                 <li>
                                     <div className="text-white hidden sm:block">
@@ -47,17 +48,17 @@ const Blog = () => {
                                     </div>
                                 </li>
                                 <li>
-                                    <a href="/blog">
+                                    <Link to="/blog">
                                         <button className="font-Rajdhani font-medium text-lg capitalize text-white">
                                             Blog
                                         </button>
-                                    </a>
+                                    </Link> 
                                 </li>
                             </ul>
                         </div>
                     </div>
                 </div>
-                <section className="pt-[120px]">
+                <section className="pt-[80px]">
                     <div className="Container">
                         <div className="grid grid-cols-2 lg:grid-cols-3 gap-12">
                             <div className="col-span-2 lg:col-span-1">
@@ -93,7 +94,7 @@ const Blog = () => {
                                     </h4>
                                     <ul className="mt-8">
                                         <li>
-                                            <a href="/service_details">
+                                            <Link to="/service_details">
                                                 <button className="w-full font-Nunito text-left text-HeadingColor-0 transition-all duration-500 group px-7 py-4 flex items-center justify-between rounded bg-white mb-3 overflow-hidden z-[1] relative before:absolute before:top-0 before:right-0 before:w-0 before:-z-[1] before:h-full before:bg-PrimaryColor-0 before:rounded before:transition-all before:duration-500 hover:before:w-full hover:before:left-0 hover:text-white">
                                                     <span className="flex items-center gap-3 lg:gap-1 xl:gap-3">
                                                         <svg
@@ -123,10 +124,10 @@ const Blog = () => {
                                                         <path d="M502.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-128-128c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L402.7 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l370.7 0-73.4 73.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l128-128z" />
                                                     </svg>
                                                 </button>
-                                            </a>
+                                            </Link> 
                                         </li>
                                         <li>
-                                            <a href="/service_details2">
+                                            <Link to="/service_details2">
                                                 <button className="w-full font-Nunito text-left text-HeadingColor-0 transition-all duration-500 group px-7 py-4 flex items-center justify-between rounded bg-white mb-3 overflow-hidden z-[1] relative before:absolute before:top-0 before:right-0 before:w-0 before:-z-[1] before:h-full before:bg-PrimaryColor-0 before:rounded before:transition-all before:duration-500 hover:before:w-full hover:before:left-0 hover:text-white">
                                                     <span className="flex items-center gap-3 lg:gap-1 xl:gap-3">
                                                         <svg
@@ -156,10 +157,10 @@ const Blog = () => {
                                                         <path d="M502.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-128-128c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L402.7 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l370.7 0-73.4 73.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l128-128z" />
                                                     </svg>
                                                 </button>
-                                            </a>
+                                            </Link> 
                                         </li>
                                         <li>
-                                            <a href="/service_details3">
+                                            <Link to="/service_details3">
                                                 <button className="w-full font-Nunito text-left text-HeadingColor-0 transition-all duration-500 group px-7 py-4 flex items-center justify-between rounded bg-white mb-3 overflow-hidden z-[1] relative before:absolute before:top-0 before:right-0 before:w-0 before:-z-[1] before:h-full before:bg-PrimaryColor-0 before:rounded before:transition-all before:duration-500 hover:before:w-full hover:before:left-0 hover:text-white">
                                                     <span className="flex items-center gap-3 lg:gap-1 xl:gap-3">
                                                         <svg
@@ -189,10 +190,10 @@ const Blog = () => {
                                                         <path d="M502.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-128-128c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L402.7 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l370.7 0-73.4 73.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l128-128z" />
                                                     </svg>
                                                 </button>
-                                            </a>
+                                            </Link> 
                                         </li>
                                         <li>
-                                            <a href="/service_details4">
+                                            <Link to="/service_details4">
                                                 <button className="w-full font-Nunito text-left text-HeadingColor-0 transition-all duration-500 group px-7 py-4 flex items-center justify-between rounded bg-white mb-3 overflow-hidden z-[1] relative before:absolute before:top-0 before:right-0 before:w-0 before:-z-[1] before:h-full before:bg-PrimaryColor-0 before:rounded before:transition-all before:duration-500 hover:before:w-full hover:before:left-0 hover:text-white">
                                                     <span className="flex items-center gap-3 lg:gap-1 xl:gap-3">
                                                         <svg
@@ -222,10 +223,10 @@ const Blog = () => {
                                                         <path d="M502.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-128-128c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L402.7 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l370.7 0-73.4 73.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l128-128z" />
                                                     </svg>
                                                 </button>
-                                            </a>
+                                            </Link> 
                                         </li>
                                         <li>
-                                            <a href="/service_details5">
+                                            <Link to="/service_details5">
                                                 <button className="w-full font-Nunito text-left text-HeadingColor-0 transition-all duration-500 group px-7 py-4 flex items-center justify-between rounded bg-white mb-3 overflow-hidden z-[1] relative before:absolute before:top-0 before:right-0 before:w-0 before:-z-[1] before:h-full before:bg-PrimaryColor-0 before:rounded before:transition-all before:duration-500 hover:before:w-full hover:before:left-0 hover:text-white">
                                                     <span className="flex items-center gap-3 lg:gap-1 xl:gap-3">
                                                         <svg
@@ -255,10 +256,10 @@ const Blog = () => {
                                                         <path d="M502.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-128-128c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L402.7 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l370.7 0-73.4 73.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l128-128z" />
                                                     </svg>
                                                 </button>
-                                            </a>
+                                            </Link> 
                                         </li>
                                         <li>
-                                            <a href="/service_details6">
+                                            <Link to="/service_details6">
                                                 <button className="w-full font-Nunito text-left text-HeadingColor-0 transition-all duration-500 group px-7 py-4 flex items-center justify-between rounded bg-white mb-3 overflow-hidden z-[1] relative before:absolute before:top-0 before:right-0 before:w-0 before:-z-[1] before:h-full before:bg-PrimaryColor-0 before:rounded before:transition-all before:duration-500 hover:before:w-full hover:before:left-0 hover:text-white">
                                                     <span className="flex items-center gap-3 lg:gap-1 xl:gap-3">
                                                         <svg
@@ -288,7 +289,7 @@ const Blog = () => {
                                                         <path d="M502.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-128-128c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L402.7 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l370.7 0-73.4 73.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l128-128z" />
                                                     </svg>
                                                 </button>
-                                            </a>
+                                            </Link> 
                                         </li>
                                     </ul>
                                 </div> */}
@@ -296,7 +297,7 @@ const Blog = () => {
                                     <h4 className="font-Rajdhani font-bold text-left text-[28px] text-HeadingColor-0 pb-3 mb-8 relative before:absolute before:bottom-0 before:left-0 before:w-7 before:h-[2px] before:bg-PrimaryColor-0">
                                         Popular Post
                                     </h4>
-                                    <a href="/blog-details">
+                                    <Link to="/blog-details">
                                         <button className="group flex gap-4 mb-6">
                                             <div className="rounded overflow-hidden">
                                                 <img draggable="false" src="/images/recent-post-1.png" />
@@ -310,8 +311,8 @@ const Blog = () => {
                                                 </p>
                                             </div>
                                         </button>
-                                    </a>
-                                    <a href="/blog_details">
+                                    </Link> 
+                                    <Link to="/blog_details">
                                         <button className="group flex gap-4 my-6">
                                             <div className="rounded overflow-hidden">
                                                 <img draggable="false" src="/images/recent-post-2.png" />
@@ -325,8 +326,8 @@ const Blog = () => {
                                                 </p>
                                             </div>
                                         </button>
-                                    </a>
-                                    <a href="/blog_details">
+                                    </Link> 
+                                    <Link to="/blog_details">
                                         <button className="group flex gap-4 my-6">
                                             <div className="rounded overflow-hidden">
                                                 <img draggable="false" src="/images/recent-post-2.png" />
@@ -340,8 +341,8 @@ const Blog = () => {
                                                 </p>
                                             </div>
                                         </button>
-                                    </a>
-                                    <a href="/blog_details">
+                                    </Link> 
+                                    <Link to="/blog_details">
                                         <button className="group flex gap-4 my-6">
                                             <div className="rounded overflow-hidden">
                                                 <img draggable="false" src="/images/recent-post-2.png" />
@@ -355,9 +356,9 @@ const Blog = () => {
                                                 </p>
                                             </div>
                                         </button>
-                                    </a>
+                                    </Link> 
                                     
-                                    <a href="/blog_details">
+                                    <Link to="/blog_details">
                                         <button className="group flex gap-4 my-6">
                                             <div className="rounded overflow-hidden">
                                                 <img draggable="false" src="/images/recent-post-3.png" />
@@ -371,7 +372,7 @@ const Blog = () => {
                                                 </p>
                                             </div>
                                         </button>
-                                    </a>
+                                    </Link> 
                                 </div>
                                 <div className="bg-[#f3f4f8] rounded-md px-4 sm:px-8 lg:px-6 xl:px-8 pt-7 pb-10 mb-7">
                                     <h4 className="font-Rajdhani font-bold text-left text-[28px] text-HeadingColor-0 pb-3 mb-8 relative before:absolute before:bottom-0 before:left-0 before:w-7 before:h-[2px] before:bg-PrimaryColor-0">
@@ -379,46 +380,46 @@ const Blog = () => {
                                     </h4>
                                     <ul className="inline-block">
                                         <li className="inline-block mr-[10px] mb-[10px]">
-                                            <a href="/">
+                                            <Link to="/">
                                                 <button className="bg-white rounded flex items-center justify-center text-HeadingColor-0 transition-all duration-500 font-medium px-5 py-2 font-Nunito text-sm relative z-[1] before:absolute before:top-0 before:left-0 before:rounded before:w-full before:h-full before:bg-PrimaryColor-0 before:transition-all before:duration-500 before:scale-0 before:-z-[1] hover:before:scale-100 hover:text-white">
                                                     Cyber Security
                                                 </button>
-                                            </a>
+                                            </Link> 
                                         </li>
                                         <li className="inline-block mr-[10px] mb-[10px]">
-                                            <a href="/">
+                                            <Link to="/">
                                                 <button className="bg-white rounded flex items-center justify-center text-HeadingColor-0 transition-all duration-500 font-medium px-5 py-2 font-Nunito text-sm relative z-[1] before:absolute before:top-0 before:left-0 before:rounded before:w-full before:h-full before:bg-PrimaryColor-0 before:transition-all before:duration-500 before:scale-0 before:-z-[1] hover:before:scale-100 hover:text-white">
                                                     Learning
                                                 </button>
-                                            </a>
+                                            </Link> 
                                         </li>
                                         <li className="inline-block mr-[10px] mb-[10px]">
-                                            <a href="/">
+                                            <Link to="/">
                                                 <button className="bg-white rounded flex items-center justify-center text-HeadingColor-0 transition-all duration-500 font-medium px-5 py-2 font-Nunito text-sm relative z-[1] before:absolute before:top-0 before:left-0 before:rounded before:w-full before:h-full before:bg-PrimaryColor-0 before:transition-all before:duration-500 before:scale-0 before:-z-[1] hover:before:scale-100 hover:text-white">
                                                     Web Drvelopment
                                                 </button>
-                                            </a>
+                                            </Link> 
                                         </li>
                                         <li className="inline-block mr-[10px] mb-[10px]">
-                                            <a href="/">
+                                            <Link to="/">
                                                 <button className="bg-white rounded flex items-center justify-center text-HeadingColor-0 transition-all duration-500 font-medium px-5 py-2 font-Nunito text-sm relative z-[1] before:absolute before:top-0 before:left-0 before:rounded before:w-full before:h-full before:bg-PrimaryColor-0 before:transition-all before:duration-500 before:scale-0 before:-z-[1] hover:before:scale-100 hover:text-white">
                                                     IT Solution
                                                 </button>
-                                            </a>
+                                            </Link> 
                                         </li>
                                         <li className="inline-block mr-[10px] mb-[10px]">
-                                            <a href="/">
+                                            <Link to="/">
                                                 <button className="bg-white rounded flex items-center justify-center text-HeadingColor-0 transition-all duration-500 font-medium px-5 py-2 font-Nunito text-sm relative z-[1] before:absolute before:top-0 before:left-0 before:rounded before:w-full before:h-full before:bg-PrimaryColor-0 before:transition-all before:duration-500 before:scale-0 before:-z-[1] hover:before:scale-100 hover:text-white">
                                                     Marketing
                                                 </button>
-                                            </a>
+                                            </Link> 
                                         </li>
                                         <li className="inline-block mr-[10px] mb-[10px]">
-                                            <a href="/">
+                                            <Link to="/">
                                                 <button className="bg-white rounded flex items-center justify-center text-HeadingColor-0 transition-all duration-500 font-medium px-5 py-2 font-Nunito text-sm relative z-[1] before:absolute before:top-0 before:left-0 before:rounded before:w-full before:h-full before:bg-PrimaryColor-0 before:transition-all before:duration-500 before:scale-0 before:-z-[1] hover:before:scale-100 hover:text-white">
                                                     Technology
                                                 </button>
-                                            </a>
+                                            </Link> 
                                         </li>
                                     </ul>
                                 </div>
@@ -446,11 +447,11 @@ const Blog = () => {
                                                 Comments (04)
                                             </h6>
                                         </div>
-                                        <a href="/blog_details/blog_details">
+                                        <Link to="/blog_details/blog_details">
                                             <button className="font-Rajdhani font-bold text-left text-lg sm:text-2xl text-HeadingColor-0 transition-all duration-500 hover:text-PrimaryColor-0 mt-7 mb-5">
                                                 Solution This Business For is Marketing Blog
                                             </button>
-                                        </a>
+                                        </Link> 
                                         <p className="font-Nunito text-TextColor2-0 pb-9">
                                             Alternative innovation to ethical network environmental whiteboard
                                             pursue compelling results for methods empowerment. Dramatically
@@ -484,11 +485,11 @@ const Blog = () => {
                                                 </h6>
                                             </div>
                                         </div>
-                                        <a href="/blog_details">
+                                        <Link to="/blog_details">
                                             <button className="font-Rajdhani font-bold text-left text-lg sm:text-[28px] text-HeadingColor-0 transition-all duration-500 hover:text-PrimaryColor-0 mt-14 mb-4">
                                                 Our Begin Now To Beingonl
                                             </button>
-                                        </a>
+                                        </Link> 
                                         <p className="font-Nunito text-TextColor2-0">
                                             Dramatically matrix cross-media vortals wireless deliverables.
                                             Phosfluorescently underwhelm market driven e-services and 24/365
@@ -585,11 +586,11 @@ const Blog = () => {
                                                 />
                                             </div>
                                         </div>
-                                        <a href="/blog_details">
+                                        <Link to="/blog_details">
                                             <button className="font-Rajdhani font-bold text-left text-lg sm:text-[28px] text-HeadingColor-0 transition-all duration-500 hover:text-PrimaryColor-0 mt-10 mb-4">
                                                 Tree Plantation for Human
                                             </button>
-                                        </a>
+                                        </Link> 
                                         <p className="font-Nunito font-light text-TextColor2-0">
                                             Dramatically matrix cross-media vortals wireless deliverables.
                                             Phosfluorescently underwhelm market driven e-services and 24/365
@@ -598,21 +599,21 @@ const Blog = () => {
                                     </div>
                                     <div className="flex flex-col sm:flex-row gap-5 items-start sm:justify-between border-t border-BorderColor1-0 mt-9 py-5 px-4 md:px-8 border-r border-BorderColor2-0">
                                         <div className="font-Nunito text-lg font-medium flex flex-col sm:flex-row gap-2">
-                                            <a href="/">
+                                            <Link to="/">
                                                 <button className="font-Nunito px-5 py-2 text-HeadingColor-0 text-sm rounded bg-[#f3f4f8] transition-all duration-500 hover:bg-PrimaryColor-0 hover:text-white">
                                                     Digital Marketing
                                                 </button>
-                                            </a>
-                                            <a href="/">
+                                            </Link> 
+                                            <Link to="/">
                                                 <button className="font-Nunito px-5 py-2 text-HeadingColor-0 text-sm rounded bg-[#f3f4f8] transition-all duration-500 hover:bg-PrimaryColor-0 hover:text-white">
                                                     Development
                                                 </button>
-                                            </a>
+                                            </Link> 
                                         </div>
                                         <div>
                                             <ul className="flex justify-center items-center gap-2">
                                                 <li>
-                                                    <a href="/">
+                                                    <Link to="/">
                                                         <button className="text-white w-9 h-9 rounded-full bg-[#1673ea] flex justify-center items-center">
                                                             <svg
                                                                 stroke="currentColor"
@@ -626,10 +627,10 @@ const Blog = () => {
                                                                 <path d="M80 299.3V512H196V299.3h86.5l18-97.8H196V166.9c0-51.7 20.3-71.5 72.7-71.5c16.3 0 29.4 .4 37 1.2V7.9C291.4 4 256.4 0 236.2 0C129.3 0 80 50.5 80 159.4v42.1H14v97.8H80z" />
                                                             </svg>
                                                         </button>
-                                                    </a>
+                                                    </Link> 
                                                 </li>
                                                 <li>
-                                                    <a href="/">
+                                                    <Link to="/">
                                                         <button className="text-white w-9 h-9 rounded-full bg-[#38ceff] flex justify-center items-center">
                                                             <svg
                                                                 stroke="currentColor"
@@ -643,10 +644,10 @@ const Blog = () => {
                                                                 <path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z" />
                                                             </svg>
                                                         </button>
-                                                    </a>
+                                                    </Link> 
                                                 </li>
                                                 <li>
-                                                    <a href="/">
+                                                    <Link to="/">
                                                         <button className="text-white w-9 h-9 rounded-full bg-[#0b4ab1] flex justify-center items-center">
                                                             <svg
                                                                 stroke="currentColor"
@@ -660,10 +661,10 @@ const Blog = () => {
                                                                 <path d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z" />
                                                             </svg>
                                                         </button>
-                                                    </a>
+                                                    </Link> 
                                                 </li>
                                                 <li>
-                                                    <a href="/">
+                                                    <Link to="/">
                                                         <button className="text-white w-9 h-9 rounded-full bg-[#e92928] flex justify-center items-center">
                                                             <svg
                                                                 stroke="currentColor"
@@ -677,7 +678,7 @@ const Blog = () => {
                                                                 <path d="M204 6.5C101.4 6.5 0 74.9 0 185.6 0 256 39.6 296 63.6 296c9.9 0 15.6-27.6 15.6-35.4 0-9.3-23.7-29.1-23.7-67.8 0-80.4 61.2-137.4 140.4-137.4 68.1 0 118.5 38.7 118.5 109.8 0 53.1-21.3 152.7-90.3 152.7-24.9 0-46.2-18-46.2-43.8 0-37.8 26.4-74.4 26.4-113.4 0-66.2-93.9-54.2-93.9 25.8 0 16.8 2.1 35.4 9.6 50.7-13.8 59.4-42 147.9-42 209.1 0 18.9 2.7 37.5 4.5 56.4 3.4 3.8 1.7 3.4 6.9 1.5 50.4-69 48.6-82.5 71.4-172.8 12.3 23.4 44.1 36 69.3 36 106.2 0 153.9-103.5 153.9-196.8C384 71.3 298.2 6.5 204 6.5z" />
                                                             </svg>
                                                         </button>
-                                                    </a>
+                                                    </Link> 
                                                 </li>
                                             </ul>
                                         </div>

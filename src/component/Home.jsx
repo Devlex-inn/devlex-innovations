@@ -1,5 +1,6 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination, Autoplay } from 'swiper/modules';
+import { Link} from 'react-router-dom';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
@@ -17,7 +18,7 @@ const testimonials = [
   {
     name: 'Rajesh Kumar',
     role: 'Business Executive',
-    img: '/public/images/bussiness-man.png',
+    img: '/images/bussiness-man.png',
     date: '20 July, 2024',
     review:
       'Their exceptional IT services transformed our business operations efficiently. Highly recommend their expertise for innovative digital solutions.',
@@ -25,7 +26,7 @@ const testimonials = [
   {
     name: 'Priya Sharma',
     role: 'Civil Engineer',
-    img: '/public/images/girl.png',
+    img: '/images/girl.png',
     date: '20 July, 2024',
     review:
       'A reliable partner for all our design needs. Their professionalism, creativity, and attention to detail are truly unmatched and exceptional'
@@ -99,9 +100,9 @@ const Home = () => {
           <div className="Container">
             <div className="grid lg:grid-cols-2 items-center gap-16 lg:gap-0">
               <div className="relative">
-                <h5 className="font-Rajdhani text-white text-[19px] font-medium flex items-center gap-2 mb-4">
+                {/* <h5 className="font-Rajdhani text-white text-[19px] font-medium flex items-center gap-2 mb-4">
                   IT SOLUTION AGENCY IN INDIA
-                </h5>
+                </h5> */}
                 <h1 className="font-Rajdhani font-extrabold text-white text-[30px] leading-[36px] sm:text-[48px] sm:leading-[60px] md:text-[68x] lg:text-[45px] xl:text-[53px] xl:leading-[68px] 2xl:text-[60px] 2xl:leading-[79px]">
                   INNOVATING CODE FOR A
                   <br />
@@ -112,7 +113,7 @@ const Home = () => {
                   <br className="hidden 2xl:block" /> innovation and seamless interaction.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-5">
-                  <a href="/contact">
+                  <Link to="/contact">
                     <button className="primary-btn">
                       Lets Talk
                       <svg
@@ -128,10 +129,10 @@ const Home = () => {
                         <path d="m11.467 11.125-3.214 3.214 1.414 1.414 3.214-3.214 2.125 2.124V9H9.343z"></path>
                       </svg>
                     </button>
-                  </a>
-                  <a href="/about">
+                  </Link> 
+                  <Link to="/about">
                     <button className="primary-btn">Read More</button>
-                  </a>
+                  </Link> 
                 </div>
               </div>
               <div className="sm:flex justify-center lg:justify-end -mb-[132px] lg:-mb-12 relative hidden">
@@ -177,14 +178,14 @@ const Home = () => {
                   <p className="font-Nunito text-TextColor2-0 transition-all duration-500 group-hover:text-white mb-[18px]">
                     Gaining expertise to deliver impactful solutions and innovation
                   </p>
-                  <a
+                  <Link
                     className="inline-block relative before:absolute before:top-1/2 before:-translate-y-1/2 before:left-1/2 before:w-8 before:h-[2px] before:-translate-x-1/2 before:bg-PrimaryColor-0 before:transition-all before:duration-500 group-hover:before:w-4 group-hover:before:bg-white group-hover:before:-left-6 group-hover:before:-translate-x-0"
-                    href="/service"
+                    to="/service"
                   >
                     <button className="font-Nunito font-medium text-white opacity-0 transition-all duration-500 group-hover:opacity-100">
                       Read More
                     </button>
-                  </a>
+                  </Link> 
                 </div>
               </div>
               <div>
@@ -212,14 +213,14 @@ const Home = () => {
                   <p className="font-Nunito text-TextColor2-0 transition-all duration-500 group-hover:text-white mb-[18px]">
                     Passionately collaborate to achieve goals and drive collective success
                   </p>
-                  <a
+                  <Link
                     className="inline-block relative before:absolute before:top-1/2 before:-translate-y-1/2 before:left-1/2 before:w-8 before:h-[2px] before:-translate-x-1/2 before:bg-PrimaryColor-0 before:transition-all before:duration-500 group-hover:before:w-4 group-hover:before:bg-white group-hover:before:-left-6 group-hover:before:-translate-x-0"
-                    href="/service"
+                    to="/service"
                   >
                     <button className="font-Nunito font-medium text-white opacity-0 transition-all duration-500 group-hover:opacity-100">
                       Read More
                     </button>
-                  </a>
+                  </Link> 
                 </div>
               </div>
               <div>
@@ -247,14 +248,14 @@ const Home = () => {
                   <p className="font-Nunito text-TextColor2-0 transition-all duration-500 group-hover:text-white mb-[18px]">
                     Consistently empowering growth through reliable and strategic assistance
                   </p>
-                  <a
+                  <Link
                     className="inline-block relative before:absolute before:top-1/2 before:-translate-y-1/2 before:left-1/2 before:w-8 before:h-[2px] before:-translate-x-1/2 before:bg-PrimaryColor-0 before:transition-all before:duration-500 group-hover:before:w-4 group-hover:before:bg-white group-hover:before:-left-6 group-hover:before:-translate-x-0"
-                    href="/service"
+                    to="/service"
                   >
                     <button className="font-Nunito font-medium text-white opacity-0 transition-all duration-500 group-hover:opacity-100">
                       Read More
                     </button>
-                  </a>
+                  </Link> 
                 </div>
               </div>
             </div>
@@ -333,7 +334,7 @@ const Home = () => {
                     </div>
                   </div>
                 </div>
-                <a href="/about">
+                <Link to="/about">
                   <button className="primary-btn">
                     Discover More
                     <svg
@@ -348,7 +349,7 @@ const Home = () => {
                       <path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.749.749 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path>
                     </svg>
                   </button>
-                </a>
+                </Link> 
                 {/* <img
                   src="images/about-shape2.png"
                   draggable="false"
@@ -384,15 +385,15 @@ const Home = () => {
                       01
                     </h5>
                   </div>
-                  <a href="/app-development">
+                  <Link to="/app-development">
                     <button className="font-Rajdhani font-bold text-[22px] sm:text-[26px] pb-[10px] text-HeadingColor-0 transition-all duration-500 group-hover:text-white mt-4">
                       Web Development
                     </button>
-                  </a>
+                  </Link> 
                   <p className="font-Nunito text-TextColor2-0 transition-all duration-500 group-hover:text-white pb-6">
                     Building responsive, user-friendly, scalable websites for enhanced online presence
                   </p>
-                  <a href="/app-development">
+                  <Link to="/app-development">
                     <button className="font-Rajdhani font-medium text-white text-[19px] flex gap-2 items-center transition-all duration-500 -ml-[90px] group-hover:ml-0">
                       <span className="opacity-0 transition-all duration-500 group-hover:opacity-100">
                         Read More
@@ -416,7 +417,7 @@ const Home = () => {
                         </svg>
                       </span>
                     </button>
-                  </a>
+                  </Link> 
                 </div>
               </div>
               <div>
@@ -433,15 +434,15 @@ const Home = () => {
                       02
                     </h5>
                   </div>
-                  <a href="/UIUX-design">
+                  <Link to="/UIUX-design">
                     <button className="font-Rajdhani font-bold text-[22px] sm:text-[26px] pb-[10px] text-HeadingColor-0 transition-all duration-500 group-hover:text-white mt-4">
                       UI/UX Design
                     </button>
-                  </a>
+                  </Link> 
                   <p className="font-Nunito text-TextColor2-0 transition-all duration-500 group-hover:text-white pb-6">
                     Creating intuitive, user-friendly designs for exceptional digital experiences
                   </p>
-                  <a href="/UIUX-design">
+                  <Link to="/UIUX-design">
                     <button className="font-Rajdhani font-medium text-white text-[19px] flex gap-2 items-center transition-all duration-500 -ml-[90px] group-hover:ml-0">
                       <span className="opacity-0 transition-all duration-500 group-hover:opacity-100">
                         Read More
@@ -465,7 +466,7 @@ const Home = () => {
                         </svg>
                       </span>
                     </button>
-                  </a>
+                  </Link> 
                 </div>
               </div>
               <div>
@@ -482,15 +483,15 @@ const Home = () => {
                       03
                     </h5>
                   </div>
-                  <a href="/app-development">
+                  <Link to="/app-development">
                     <button className="font-Rajdhani font-bold text-[22px] sm:text-[26px] pb-[10px] text-HeadingColor-0 transition-all duration-500 group-hover:text-white mt-4">
                       App Development
                     </button>
-                  </a>
+                  </Link> 
                   <p className="font-Nunito text-TextColor2-0 transition-all duration-500 group-hover:text-white pb-6">
                     Creating user-friendly, scalable, innovative, and secure mobile apps
                   </p>
-                  <a href="/app-development">
+                  <Link to="/app-development">
                     <button className="font-Rajdhani font-medium text-white text-[19px] flex gap-2 items-center transition-all duration-500 -ml-[90px] group-hover:ml-0">
                       <span className="opacity-0 transition-all duration-500 group-hover:opacity-100">
                         Read More
@@ -514,7 +515,7 @@ const Home = () => {
                         </svg>
                       </span>
                     </button>
-                  </a>
+                  </Link> 
                 </div>
               </div>
               <div>
@@ -531,15 +532,15 @@ const Home = () => {
                       04
                     </h5>
                   </div>
-                  <a href="/digital-marketing">
+                  <Link to="/digital-marketing">
                     <button className="font-Rajdhani font-bold text-[22px] sm:text-[26px] pb-[10px] text-HeadingColor-0 transition-all duration-500 group-hover:text-white mt-4">
                       Digital Marketing
                     </button>
-                  </a>
+                  </Link> 
                   <p className="font-Nunito text-TextColor2-0 transition-all duration-500 group-hover:text-white pb-6">
                     Digital marketing enhances brand visibility, engagement, and online growth
                   </p>
-                  <a href="/digital-marketing">
+                  <Link to="/digital-marketing">
                     <button className="font-Rajdhani font-medium text-white text-[19px] flex gap-2 items-center transition-all duration-500 -ml-[90px] group-hover:ml-0">
                       <span className="opacity-0 transition-all duration-500 group-hover:opacity-100">
                         Read More
@@ -563,7 +564,7 @@ const Home = () => {
                         </svg>
                       </span>
                     </button>
-                  </a>
+                  </Link> 
                 </div>
               </div>
               <div>
@@ -580,15 +581,15 @@ const Home = () => {
                       05
                     </h5>
                   </div>
-                  <a href="/video-editing">
+                  <Link to="/video-editing">
                     <button className="font-Rajdhani font-bold text-[22px] sm:text-[26px] pb-[10px] text-HeadingColor-0 transition-all duration-500 group-hover:text-white mt-4">
                       Video Editing
                     </button>
-                  </a>
+                  </Link> 
                   <p className="font-Nunito text-TextColor2-0 transition-all duration-500 group-hover:text-white pb-6">
                     Video editing enhances creativity, storytelling, and visual content impact
                   </p>
-                  <a href="/video-editing">
+                  <Link to="/video-editing">
                     <button className="font-Rajdhani font-medium text-white text-[19px] flex gap-2 items-center transition-all duration-500 -ml-[90px] group-hover:ml-0">
                       <span className="opacity-0 transition-all duration-500 group-hover:opacity-100">
                         Read More
@@ -612,7 +613,7 @@ const Home = () => {
                         </svg>
                       </span>
                     </button>
-                  </a>
+                  </Link> 
                 </div>
               </div>
               <div>
@@ -629,15 +630,15 @@ const Home = () => {
                       06
                     </h5>
                   </div>
-                  <a href="#">
+                  <Link to="#">
                     <button className="font-Rajdhani font-bold text-[22px] sm:text-[26px] pb-[10px] text-HeadingColor-0 transition-all duration-500 group-hover:text-white mt-4">
                       DevOps Services
                     </button>
-                  </a>
+                  </Link> 
                   <p className="font-Nunito text-TextColor2-0 transition-all duration-500 group-hover:text-white pb-6">
                     DevOps services streamline development, improve collaboration, and ensure efficiency
                   </p>
-                  <a href="#">
+                  <Link to="#">
                     <button className="font-Rajdhani font-medium text-white text-[19px] flex gap-2 items-center transition-all duration-500 -ml-[90px] group-hover:ml-0">
                       <span className="opacity-0 transition-all duration-500 group-hover:opacity-100">
                         Read More
@@ -661,7 +662,7 @@ const Home = () => {
                         </svg>
                       </span>
                     </button>
-                  </a>
+                  </Link> 
                 </div>
               </div>
             </div>
@@ -680,7 +681,7 @@ const Home = () => {
                 </h1>
               </div>
               <div className="flex lg:justify-end">
-                <a href="/team_inner">
+                <Link to="/team_inner">
                   <button className="primary-btn">
                     All Member
                     <svg
@@ -695,7 +696,7 @@ const Home = () => {
                       <path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.749.749 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path>
                     </svg>
                   </button>
-                </a>
+                </Link> 
               </div>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-x-7 gap-y-[50px] mt-[52px]">
@@ -716,7 +717,7 @@ const Home = () => {
                     </p>
                     <ul className="flex gap-4 justify-center mb-[6px]  transition-all duration-500 group-hover:mb-7 group-hover:mt-[14px]">
                       <li>
-                        <a href="/">
+                        <Link to="/">
                           <button className="text-base text-white transition-all duration-500 hover:text-white">
                             <svg
                               stroke="currentColor"
@@ -730,10 +731,10 @@ const Home = () => {
                               <path d="M80 299.3V512H196V299.3h86.5l18-97.8H196V166.9c0-51.7 20.3-71.5 72.7-71.5c16.3 0 29.4 .4 37 1.2V7.9C291.4 4 256.4 0 236.2 0C129.3 0 80 50.5 80 159.4v42.1H14v97.8H80z"></path>
                             </svg>
                           </button>
-                        </a>
+                        </Link> 
                       </li>
                       <li>
-                        <a href="/">
+                        <Link to="/">
                           <button className="text-base text-white transition-all duration-500 hover:text-white">
                             <svg
                               stroke="currentColor"
@@ -747,10 +748,10 @@ const Home = () => {
                               <path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"></path>
                             </svg>
                           </button>
-                        </a>
+                        </Link> 
                       </li>
                       <li>
-                        <a href="/">
+                        <Link to="/">
                           <button className="text-base text-white transition-all duration-500 hover:text-white">
                             <svg
                               stroke="currentColor"
@@ -764,10 +765,10 @@ const Home = () => {
                               <path d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"></path>
                             </svg>
                           </button>
-                        </a>
+                        </Link> 
                       </li>
                       <li>
-                        <a href="/">
+                        <Link to="/">
                           <button className="text-base text-white transition-all duration-500 hover:text-white">
                             <svg
                               stroke="currentColor"
@@ -781,7 +782,7 @@ const Home = () => {
                               <path d="M204 6.5C101.4 6.5 0 74.9 0 185.6 0 256 39.6 296 63.6 296c9.9 0 15.6-27.6 15.6-35.4 0-9.3-23.7-29.1-23.7-67.8 0-80.4 61.2-137.4 140.4-137.4 68.1 0 118.5 38.7 118.5 109.8 0 53.1-21.3 152.7-90.3 152.7-24.9 0-46.2-18-46.2-43.8 0-37.8 26.4-74.4 26.4-113.4 0-66.2-93.9-54.2-93.9 25.8 0 16.8 2.1 35.4 9.6 50.7-13.8 59.4-42 147.9-42 209.1 0 18.9 2.7 37.5 4.5 56.4 3.4 3.8 1.7 3.4 6.9 1.5 50.4-69 48.6-82.5 71.4-172.8 12.3 23.4 44.1 36 69.3 36 106.2 0 153.9-103.5 153.9-196.8C384 71.3 298.2 6.5 204 6.5z"></path>
                             </svg>
                           </button>
-                        </a>
+                        </Link> 
                       </li>
                     </ul>
                   </div>
@@ -852,7 +853,7 @@ const Home = () => {
                     </p>
                     <ul className="flex gap-4 justify-center mb-[6px]  transition-all duration-500 group-hover:mb-7 group-hover:mt-[14px]">
                       <li>
-                        <a href="/">
+                        <Link to="/">
                           <button className="text-base text-white transition-all duration-500 hover:text-white">
                             <svg
                               stroke="currentColor"
@@ -866,10 +867,10 @@ const Home = () => {
                               <path d="M80 299.3V512H196V299.3h86.5l18-97.8H196V166.9c0-51.7 20.3-71.5 72.7-71.5c16.3 0 29.4 .4 37 1.2V7.9C291.4 4 256.4 0 236.2 0C129.3 0 80 50.5 80 159.4v42.1H14v97.8H80z"></path>
                             </svg>
                           </button>
-                        </a>
+                        </Link> 
                       </li>
                       <li>
-                        <a href="/">
+                        <Link to="/">
                           <button className="text-base text-white transition-all duration-500 hover:text-white">
                             <svg
                               stroke="currentColor"
@@ -883,10 +884,10 @@ const Home = () => {
                               <path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"></path>
                             </svg>
                           </button>
-                        </a>
+                        </Link> 
                       </li>
                       <li>
-                        <a href="/">
+                        <Link to="/">
                           <button className="text-base text-white transition-all duration-500 hover:text-white">
                             <svg
                               stroke="currentColor"
@@ -900,10 +901,10 @@ const Home = () => {
                               <path d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"></path>
                             </svg>
                           </button>
-                        </a>
+                        </Link> 
                       </li>
                       <li>
-                        <a href="/">
+                        <Link to="/">
                           <button className="text-base text-white transition-all duration-500 hover:text-white">
                             <svg
                               stroke="currentColor"
@@ -917,7 +918,7 @@ const Home = () => {
                               <path d="M204 6.5C101.4 6.5 0 74.9 0 185.6 0 256 39.6 296 63.6 296c9.9 0 15.6-27.6 15.6-35.4 0-9.3-23.7-29.1-23.7-67.8 0-80.4 61.2-137.4 140.4-137.4 68.1 0 118.5 38.7 118.5 109.8 0 53.1-21.3 152.7-90.3 152.7-24.9 0-46.2-18-46.2-43.8 0-37.8 26.4-74.4 26.4-113.4 0-66.2-93.9-54.2-93.9 25.8 0 16.8 2.1 35.4 9.6 50.7-13.8 59.4-42 147.9-42 209.1 0 18.9 2.7 37.5 4.5 56.4 3.4 3.8 1.7 3.4 6.9 1.5 50.4-69 48.6-82.5 71.4-172.8 12.3 23.4 44.1 36 69.3 36 106.2 0 153.9-103.5 153.9-196.8C384 71.3 298.2 6.5 204 6.5z"></path>
                             </svg>
                           </button>
-                        </a>
+                        </Link> 
                       </li>
                     </ul>
                   </div>
@@ -988,7 +989,7 @@ const Home = () => {
                     </p>
                     <ul className="flex gap-4 justify-center mb-[6px]  transition-all duration-500 group-hover:mb-7 group-hover:mt-[14px]">
                       <li>
-                        <a href="/">
+                        <Link to="/">
                           <button className="text-base text-white transition-all duration-500 hover:text-white">
                             <svg
                               stroke="currentColor"
@@ -1002,10 +1003,10 @@ const Home = () => {
                               <path d="M80 299.3V512H196V299.3h86.5l18-97.8H196V166.9c0-51.7 20.3-71.5 72.7-71.5c16.3 0 29.4 .4 37 1.2V7.9C291.4 4 256.4 0 236.2 0C129.3 0 80 50.5 80 159.4v42.1H14v97.8H80z"></path>
                             </svg>
                           </button>
-                        </a>
+                        </Link> 
                       </li>
                       <li>
-                        <a href="/">
+                        <Link to="/">
                           <button className="text-base text-white transition-all duration-500 hover:text-white">
                             <svg
                               stroke="currentColor"
@@ -1019,10 +1020,10 @@ const Home = () => {
                               <path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"></path>
                             </svg>
                           </button>
-                        </a>
+                        </Link> 
                       </li>
                       <li>
-                        <a href="/">
+                        <Link to="/">
                           <button className="text-base text-white transition-all duration-500 hover:text-white">
                             <svg
                               stroke="currentColor"
@@ -1036,10 +1037,10 @@ const Home = () => {
                               <path d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"></path>
                             </svg>
                           </button>
-                        </a>
+                        </Link> 
                       </li>
                       <li>
-                        <a href="/">
+                        <Link to="/">
                           <button className="text-base text-white transition-all duration-500 hover:text-white">
                             <svg
                               stroke="currentColor"
@@ -1053,7 +1054,7 @@ const Home = () => {
                               <path d="M204 6.5C101.4 6.5 0 74.9 0 185.6 0 256 39.6 296 63.6 296c9.9 0 15.6-27.6 15.6-35.4 0-9.3-23.7-29.1-23.7-67.8 0-80.4 61.2-137.4 140.4-137.4 68.1 0 118.5 38.7 118.5 109.8 0 53.1-21.3 152.7-90.3 152.7-24.9 0-46.2-18-46.2-43.8 0-37.8 26.4-74.4 26.4-113.4 0-66.2-93.9-54.2-93.9 25.8 0 16.8 2.1 35.4 9.6 50.7-13.8 59.4-42 147.9-42 209.1 0 18.9 2.7 37.5 4.5 56.4 3.4 3.8 1.7 3.4 6.9 1.5 50.4-69 48.6-82.5 71.4-172.8 12.3 23.4 44.1 36 69.3 36 106.2 0 153.9-103.5 153.9-196.8C384 71.3 298.2 6.5 204 6.5z"></path>
                             </svg>
                           </button>
-                        </a>
+                        </Link> 
                       </li>
                     </ul>
                   </div>
@@ -1125,7 +1126,7 @@ const Home = () => {
                     </p>
                     <ul className="flex gap-4 justify-center mb-[6px]  transition-all duration-500 group-hover:mb-7 group-hover:mt-[14px]">
                       <li>
-                        <a href="/">
+                        <Link to="/">
                           <button className="text-base text-white transition-all duration-500 hover:text-white">
                             <svg
                               stroke="currentColor"
@@ -1139,10 +1140,10 @@ const Home = () => {
                               <path d="M80 299.3V512H196V299.3h86.5l18-97.8H196V166.9c0-51.7 20.3-71.5 72.7-71.5c16.3 0 29.4 .4 37 1.2V7.9C291.4 4 256.4 0 236.2 0C129.3 0 80 50.5 80 159.4v42.1H14v97.8H80z"></path>
                             </svg>
                           </button>
-                        </a>
+                        </Link> 
                       </li>
                       <li>
-                        <a href="/">
+                        <Link to="/">
                           <button className="text-base text-white transition-all duration-500 hover:text-white">
                             <svg
                               stroke="currentColor"
@@ -1156,10 +1157,10 @@ const Home = () => {
                               <path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"></path>
                             </svg>
                           </button>
-                        </a>
+                        </Link> 
                       </li>
                       <li>
-                        <a href="/">
+                        <Link to="/">
                           <button className="text-base text-white transition-all duration-500 hover:text-white">
                             <svg
                               stroke="currentColor"
@@ -1173,10 +1174,10 @@ const Home = () => {
                               <path d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"></path>
                             </svg>
                           </button>
-                        </a>
+                        </Link> 
                       </li>
                       <li>
-                        <a href="/">
+                        <Link to="/">
                           <button className="text-base text-white transition-all duration-500 hover:text-white">
                             <svg
                               stroke="currentColor"
@@ -1190,7 +1191,7 @@ const Home = () => {
                               <path d="M204 6.5C101.4 6.5 0 74.9 0 185.6 0 256 39.6 296 63.6 296c9.9 0 15.6-27.6 15.6-35.4 0-9.3-23.7-29.1-23.7-67.8 0-80.4 61.2-137.4 140.4-137.4 68.1 0 118.5 38.7 118.5 109.8 0 53.1-21.3 152.7-90.3 152.7-24.9 0-46.2-18-46.2-43.8 0-37.8 26.4-74.4 26.4-113.4 0-66.2-93.9-54.2-93.9 25.8 0 16.8 2.1 35.4 9.6 50.7-13.8 59.4-42 147.9-42 209.1 0 18.9 2.7 37.5 4.5 56.4 3.4 3.8 1.7 3.4 6.9 1.5 50.4-69 48.6-82.5 71.4-172.8 12.3 23.4 44.1 36 69.3 36 106.2 0 153.9-103.5 153.9-196.8C384 71.3 298.2 6.5 204 6.5z"></path>
                             </svg>
                           </button>
-                        </a>
+                        </Link> 
                       </li>
                     </ul>
                   </div>
@@ -1283,11 +1284,11 @@ const Home = () => {
                       <div className="portfolio-content relative z-10 py-3 xl:-mt-[70px] rounded-l-lg rounded-r-lg xl:rounded-l-none xl:rounded-r-md bg-white xl:w-10/12 2xl:w-9/12 border-l-[7px] pl-7 cborder-PrimaryColor-0 transition-all duration-500 group-hover:rounded-se-none">
                         <div className="flex items-center gap-6 lg:gap-4 xl:gap-6">
                           <h1 className="portfolio-icon font-Rajdhani font-bold text-5xl sm:text-[76px] xl:text-5xl 2xl:text-[76px] text-transparent transition-all duration-500 my-1">{project.number}</h1>
-                          <a href="/project_details">
+                          <Link to="/project_details">
                             <button className="portfolio-title font-Rajdhani font-semibold text-xl lg:text-lg xl:text-[22px] 2xl:text-2xl text-HeadingColor-0 text-left transition-all duration-500 group-hover:#9C5EEE">
                               {project.title}
                             </button>
-                          </a>
+                          </Link> 
                         </div>
                       </div>
                     </div>
@@ -2364,11 +2365,11 @@ const Home = () => {
                         <br className="hidden sm:block lg:hidden 2xl:block" />{" "}
                         superior scenarios my coordinate
                       </p>
-                      <a href="/">
+                      <Link to="/">
                         <button className="pricing-btn font-Rajdhani font-medium text-lg text-HeadingColor-0 border border-PrimaryColor-0 rounded px-7 py-2 transition-all duration-500">
                           Purchaces
                         </button>
-                      </a>
+                      </Link> 
                     </div>
                   </div>
                 </div>
@@ -2410,11 +2411,11 @@ const Home = () => {
                         <br className="hidden sm:block lg:hidden 2xl:block" />{" "}
                         superior scenarios my coordinate
                       </p>
-                      <a href="/">
+                      <Link to="/">
                         <button className="pricing-btn font-Rajdhani font-medium text-lg text-HeadingColor-0 border border-PrimaryColor-0 rounded px-7 py-2 transition-all duration-500">
                           Purchaces
                         </button>
-                      </a>
+                      </Link> 
                     </div>
                   </div>
                 </div>
@@ -2479,12 +2480,12 @@ const Home = () => {
                             Admin
                           </p>
                         </div>
-                        <a href="/blog_details">
+                        <Link to="/blog_details">
                           <button className="font-Rajdhani text-left font-semibold text-lg sm:text-[22px] md:text-xl lg:text-base xl:text-xl 2xl:text-[23px] text-HeadingColor-0 transition-all duration-500 group-hover:#9C5EEE mt-2 mb-5">
                             Most Popular Chrome Extensionfor Business Promot
                           </button>
-                        </a>
-                        <a className="inline-block" href="/blog_details">
+                        </Link> 
+                        <Link className="inline-block" to="/blog_details">
                           <button className="flex items-center gap-2 text-HeadingColor-0 text-lg font-Rajdhani font-medium transition-all duration-500 group-hover:#9C5EEE">
                             Read More
                             <svg
@@ -2499,7 +2500,7 @@ const Home = () => {
                               <path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.749.749 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path>
                             </svg>
                           </button>
-                        </a>
+                        </Link> 
                       </div>
                     </div>
                   </div>
@@ -2548,12 +2549,12 @@ const Home = () => {
                             Admin
                           </p>
                         </div>
-                        <a href="/blog_details">
+                        <Link to="/blog_details">
                           <button className="font-Rajdhani text-left font-semibold text-lg sm:text-[22px] md:text-xl lg:text-base xl:text-xl 2xl:text-[23px] text-HeadingColor-0 transition-all duration-500 group-hover:#9C5EEE mt-2 mb-5">
                             How to Secure your facebook Business Account
                           </button>
-                        </a>
-                        <a className="inline-block" href="/blog_details">
+                        </Link> 
+                        <Link className="inline-block" to="/blog_details">
                           <button className="flex items-center gap-2 text-HeadingColor-0 text-lg font-Rajdhani font-medium transition-all duration-500 group-hover:#9C5EEE">
                             Read More
                             <svg
@@ -2568,7 +2569,7 @@ const Home = () => {
                               <path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.749.749 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path>
                             </svg>
                           </button>
-                        </a>
+                        </Link> 
                       </div>
                     </div>
                   </div>
@@ -2617,12 +2618,12 @@ const Home = () => {
                             Admin
                           </p>
                         </div>
-                        <a href="/blog_details">
+                        <Link to="/blog_details">
                           <button className="font-Rajdhani text-left font-semibold text-lg sm:text-[22px] md:text-xl lg:text-base xl:text-xl 2xl:text-[23px] text-HeadingColor-0 transition-all duration-500 group-hover:#9C5EEE mt-2 mb-5">
                             Better Context Menus With Safe Triangles
                           </button>
-                        </a>
-                        <a className="inline-block" href="/blog_details">
+                        </Link> 
+                        <Link className="inline-block" to="/blog_details">
                           <button className="flex items-center gap-2 text-HeadingColor-0 text-lg font-Rajdhani font-medium transition-all duration-500 group-hover:#9C5EEE">
                             Read More
                             <svg
@@ -2637,7 +2638,7 @@ const Home = () => {
                               <path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.749.749 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path>
                             </svg>
                           </button>
-                        </a>
+                        </Link> 
                       </div>
                     </div>
                   </div>
