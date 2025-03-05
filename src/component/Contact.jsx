@@ -1,12 +1,44 @@
-import { useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import {useState} from "react";
 
 const Contact = () => {
-       useEffect(() => {
-            window.scrollTo({ top: 0, behavior: 'smooth' });
-        }, []);
-    return (
+    const [formData, setFormData] = useState({
+        name: "",
+        email: "",
+        phone: "",
+        address: "",
+        message: "",
+    });
 
+    const handleChange = (e) => {
+        const { name, value } = e.target;
+        setFormData({ ...formData, [name]: value });
+    };
+
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+
+        try {
+            const response = await fetch("https://devlex-innovations.onrender.com/contact", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                },
+                body: JSON.stringify(formData),
+            });
+
+            const result = await response.json();
+            if (response.ok) {
+                setFormData({ name: "", email: "", phone: "", address: "", message: "" });
+            } else {
+                console.error("Error")
+            }
+        } catch (error) {
+            console.error("Failed to send message");
+        }
+    };
+
+    return (
         <>
             <div>
                 <div className="bg-[url('/images/contact-banner-bg.png')] bg-no-repeat bg-cover bg-center flex items-center justify-start h-[400px] sm:h-[500px] pt-20">
@@ -62,89 +94,6 @@ const Contact = () => {
                         </div>
                     </div>
                 </div>
-                {/* <section className="py-28 relative bg-[url(/images/about-bg.jpg)] z-10 ">
-                    <div className="Container">
-                        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-7 gap-y-10">
-                            <div>
-                                <div className="group px-5 sm:px-[30px] md:px-5 xl:px-[30px] py-6 rounded-md flex items-center gap-2 sm:gap-5 lg:gap-2 2xl:gap-5 border border-PrimaryColor-0 bg-white relative z-10 before:absolute before:top-0 before:right-0 before:-z-10 before:w-0 before:h-full before:bg-PrimaryColor-0 before:transition-all before:duration-500 hover:before:w-full hover:before:left-0">
-                                    <div className="size-[64px] rounded-full border-2 border-PrimaryColor-0 flex justify-center items-center text-PrimaryColor-0 text-3xl transition-all duration-500 group-hover:text-white group-hover:border-white">
-                                        <svg
-                                            stroke="currentColor"
-                                            fill="currentColor"
-                                            strokeWidth={0}
-                                            viewBox="0 0 512 512"
-                                            height="1em"
-                                            width="1em"
-                                            xmlns="http://www.w3.org/2000/svg"
-                                        >
-                                            <path d="M497.39 361.8l-112-48a24 24 0 0 0-28 6.9l-49.6 60.6A370.66 370.66 0 0 1 130.6 204.11l60.6-49.6a23.94 23.94 0 0 0 6.9-28l-48-112A24.16 24.16 0 0 0 122.6.61l-104 24A24 24 0 0 0 0 48c0 256.5 207.9 464 464 464a24 24 0 0 0 23.4-18.6l24-104a24.29 24.29 0 0 0-14.01-27.6z" />
-                                        </svg>
-                                    </div>
-                                    <div className="flex-1">
-                                        <h5 className="font-Rajdhani font-semibold text-xl text-HeadingColor-0 transition-all duration-500 group-hover:text-white mb-2">
-                                            Call Us Anytime
-                                        </h5>
-                                        <p className="font-Rajdhani text-PrimaryColor-0 font-semibold text-xl sm:text-2xl md:text-xl xl:text-2xl transition-all duration-500 group-hover:text-white">
-                                            +123 (4547) 563
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div>
-                                <div className="group px-5 sm:px-[30px] md:px-5 xl:px-[30px] py-6 rounded-md flex items-center gap-2 sm:gap-5 lg:gap-2 2xl:gap-5 border border-PrimaryColor-0 bg-white relative z-10 before:absolute before:top-0 before:right-0 before:-z-10 before:w-0 before:h-full before:bg-PrimaryColor-0 before:transition-all before:duration-500 hover:before:w-full hover:before:left-0">
-                                    <div className="size-[64px] rounded-full border-2 border-PrimaryColor-0 flex justify-center items-center text-PrimaryColor-0 text-3xl transition-all duration-500 group-hover:text-white group-hover:border-white">
-                                        <svg
-                                            stroke="currentColor"
-                                            fill="currentColor"
-                                            strokeWidth={0}
-                                            viewBox="0 0 24 24"
-                                            height="1em"
-                                            width="1em"
-                                            xmlns="http://www.w3.org/2000/svg"
-                                        >
-                                            <path fill="none" d="M0 0h24v24H0V0z" />
-                                            <path d="M22 6c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6zm-2 0-8 4.99L4 6h16zm0 12H4V8l8 5 8-5v10z" />
-                                        </svg>
-                                    </div>
-                                    <div className="flex-1">
-                                        <h5 className="font-Rajdhani font-semibold text-xl text-HeadingColor-0 transition-all duration-500 group-hover:text-white mb-2">
-                                            Send E-Mail
-                                        </h5>
-                                        <p className="font-Rajdhani text-PrimaryColor-0 font-semibold text-xl sm:text-2xl md:text-xl xl:text-2xl transition-all duration-500 group-hover:text-white">
-                                            info@gmail.com
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div>
-                                <div className="group px-5 sm:px-[30px] md:px-5 xl:px-[30px] py-6 rounded-md flex items-center gap-2 sm:gap-5 lg:gap-2 2xl:gap-5 border border-PrimaryColor-0 bg-white relative z-10 before:absolute before:top-0 before:right-0 before:-z-10 before:w-0 before:h-full before:bg-PrimaryColor-0 before:transition-all before:duration-500 hover:before:w-full hover:before:left-0">
-                                    <div className="size-[64px] rounded-full border-2 border-PrimaryColor-0 flex justify-center items-center text-PrimaryColor-0 text-3xl transition-all duration-500 group-hover:text-white group-hover:border-white">
-                                        <svg
-                                            stroke="currentColor"
-                                            fill="currentColor"
-                                            strokeWidth={0}
-                                            viewBox="0 0 1024 1024"
-                                            height="1em"
-                                            width="1em"
-                                            xmlns="http://www.w3.org/2000/svg"
-                                        >
-                                            <path d="M512 64C264.6 64 64 264.6 64 512s200.6 448 448 448 448-200.6 448-448S759.4 64 512 64zm0 820c-205.4 0-372-166.6-372-372s166.6-372 372-372 372 166.6 372 372-166.6 372-372 372z" />
-                                            <path d="M686.7 638.6L544.1 535.5V288c0-4.4-3.6-8-8-8H488c-4.4 0-8 3.6-8 8v275.4c0 2.6 1.2 5 3.3 6.5l165.4 120.6c3.6 2.6 8.6 1.8 11.2-1.7l28.6-39c2.6-3.7 1.8-8.7-1.8-11.2z" />
-                                        </svg>
-                                    </div>
-                                    <div className="flex-1">
-                                        <h5 className="font-Rajdhani font-semibold text-xl text-HeadingColor-0 transition-all duration-500 group-hover:text-white mb-2">
-                                            Opening Hours
-                                        </h5>
-                                        <p className="font-Rajdhani text-PrimaryColor-0 font-semibold text-xl sm:text-2xl md:text-xl xl:text-2xl transition-all duration-500 group-hover:text-white">
-                                            Fri - Mon (9.00 - 5.00)
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section> */}
 
                 <section className="py-[50px] relative bg-[url(/images/contact-bottom-bg.jpg)] bg-cover bg-no-repeat bg-center">
                     <div className="Container">
@@ -330,21 +279,24 @@ const Contact = () => {
                             <h1 className="font-Rajdhani font-bold text-xl leading-7 sm:text-[34px] sm:leading-[44px] md:text-[44px] md:leading-[54px] lg:text-[30px] lg:leading-[40px] xl:text-[36px] xl:leading-[46px] 2xl:text-[42px] 2xl:leading-[52px] text-HeadingColor-0 mt-[18px] mb-12">
                                 Connect with our experts for expert IT solutions and support
                             </h1>
-                            <form action="#" method="post" className="flex flex-col gap-7">
+                            <form onSubmit={handleSubmit} className="flex flex-col gap-7">
                                 <div className="flex flex-col md:flex-row gap-7">
                                     <input
                                         type="text"
                                         name="name"
-                                        id="name"
-                                        placeholder="Your Name*"
-                                        required=""
+                                        placeholder="Your Name"
+                                        value={formData.name}
+                                        onChange={handleChange}
+                                        required
                                         className="border border-BorderColor2-0 rounded py-2 px-6 outline-none h-[56px] w-full"
                                     />
                                     <input
                                         type="text"
-                                        name="number"
-                                        id="number"
-                                        placeholder="Your Number"
+                                        name="phone"
+                                        placeholder="Your Phone"
+                                        value={formData.phone}
+                                        onChange={handleChange}
+                                        required
                                         className="border border-BorderColor2-0 rounded py-2 px-6 outline-none h-[56px] w-full"
                                     />
                                 </div>
@@ -352,23 +304,28 @@ const Contact = () => {
                                     <input
                                         type="email"
                                         name="email"
-                                        id="email"
-                                        placeholder="Your E-Mail*"
-                                        required=""
+                                        placeholder="Your Email"
+                                        value={formData.email}
+                                        onChange={handleChange}
+                                        required
                                         className="border border-BorderColor2-0 rounded py-2 px-6 outline-none h-[56px] w-full"
                                     />
                                     <input
                                         type="text"
                                         name="address"
-                                        id="address"
                                         placeholder="Your Address"
+                                        value={formData.address}
+                                        onChange={handleChange}
+                                        required
                                         className="border border-BorderColor2-0 rounded py-2 px-6 outline-none h-[56px] w-full"
                                     />
                                 </div>
                                 <textarea
                                     name="message"
-                                    id="message"
-                                    placeholder="Write A Message..."
+                                    placeholder="Your Message"
+                                    value={formData.message}
+                                    onChange={handleChange}
+                                    required
                                     className="border border-BorderColor2-0 rounded py-2 px-6 outline-none resize-none h-[140px] w-full"
                                     defaultValue={""}
                                 />
@@ -402,4 +359,3 @@ const Contact = () => {
 }
 
 export default Contact
-
