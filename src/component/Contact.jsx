@@ -1,7 +1,12 @@
+import { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 
 const Contact = () => {
+       useEffect(() => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }, []);
     return (
+
         <>
             <div>
                 <div className="bg-[url('/images/contact-banner-bg.png')] bg-no-repeat bg-cover bg-center flex items-center justify-start h-[400px] sm:h-[500px] pt-20">

@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Link} from 'react-router-dom';
 
 const faqs = [
@@ -32,6 +32,9 @@ const faqs = [
 
 
 const Faq = () => {
+       useEffect(() => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }, []);
     const [openIndex, setOpenIndex] = useState(0);
 
     const toggleFAQ = (index) => {

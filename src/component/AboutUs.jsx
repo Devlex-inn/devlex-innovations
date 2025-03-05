@@ -66,10 +66,6 @@ const testimonials1 = [
 ];
 
 
-
-
-
-
 // const testimonials = [
 //     {
 //         text: "Completely extend leveraged customer service rather than performance-based imperatives. Magnetic relationships rather than leveraged e-markets. Rapidiously transform timely niches technology.",
@@ -83,6 +79,9 @@ const testimonials1 = [
 //     },
 // ];
 const About = () => {
+    useEffect(() => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    }, []);
     const skillData = [
         { title: "IT Management", targetWidth: 80 },
         { title: "Data Security", targetWidth: 95 },
@@ -108,7 +107,7 @@ const About = () => {
             }, 20); // Adjust the interval for animation speed (lower value = faster animation)
         });
     }, []);
-
+   
     return (
         <>
             <div>

@@ -5,6 +5,7 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import CountUp from 'react-countup';
+import { useEffect } from 'react';
 const formatNumber = (num, suffix) => {
   if (suffix === '%') {
     return num + '%';
@@ -78,6 +79,9 @@ const projects = [
 ];
 
 const Home = () => {
+     useEffect(() => {
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+      }, []);
   return (
     <>
       <div className="relative">

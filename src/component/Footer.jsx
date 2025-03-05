@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 
 const Footer = () => {
+    
     return (
         <>
             <footer className="bg-[url('/images/footer-bg.jpg')] bg-no-repeat bg-center bg-cover relative z-10 pt-28 overflow-hidden">
