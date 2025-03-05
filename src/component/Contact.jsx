@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
-import {useState} from "react";
+import { useState, useEffect } from "react";
+import Swal from "sweetalert2";
 
 const Contact = () => {
     const [formData, setFormData] = useState({
@@ -15,9 +16,10 @@ const Contact = () => {
         setFormData({ ...formData, [name]: value });
     };
 
+
     const handleSubmit = async (e) => {
         e.preventDefault();
-
+    
         try {
             const response = await fetch("https://devlex-innovations.onrender.com/contact", {
                 method: "POST",
@@ -26,20 +28,46 @@ const Contact = () => {
                 },
                 body: JSON.stringify(formData),
             });
-
+    
             const result = await response.json();
             if (response.ok) {
                 setFormData({ name: "", email: "", phone: "", address: "", message: "" });
+    
+                Swal.fire({
+                    title: "Success!",
+                    text: "Your message has been sent successfully.",
+                    icon: "success",
+                    confirmButtonText: "OK",
+                    timer: 3000,
+                    timerProgressBar: true,
+                    showClass: {
+                        popup: "animate__animated animate__fadeInDown",
+                    },
+                    hideClass: {
+                        popup: "animate__animated animate__fadeOutUp",
+                    },
+                });
             } else {
-                console.error("Error")
+                Swal.fire({
+                    title: "Oops!",
+                    text: "Something went wrong. Please try again later.",
+                    icon: "error",
+                    confirmButtonText: "OK",
+                });
             }
         } catch (error) {
-            console.error("Failed to send message");
+            Swal.fire({
+                title: "Error!",
+                text: "Failed to send message. Please check your connection.",
+                icon: "error",
+                confirmButtonText: "OK",
+            });
         }
     };
- useEffect(() => {
-            window.scrollTo({ top: 0, behavior: 'smooth' });
-        }, []);
+    
+    useEffect(() => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    }, []);
     return (
         <>
             <div>
